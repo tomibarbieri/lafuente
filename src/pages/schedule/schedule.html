@@ -5,11 +5,8 @@
     </button>
 
     <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
-      <ion-segment-button value="all">
-        All
-      </ion-segment-button>
-      <ion-segment-button value="favorites">
-        Favorites
+      <ion-segment-button value="All">
+        La Fuente - Horarios
       </ion-segment-button>
     </ion-segment>
 
@@ -24,7 +21,7 @@
     <ion-searchbar color="primary"
                    [(ngModel)]="queryText"
                    (ionInput)="updateSchedule()"
-                   placeholder="Search">
+                   placeholder="Buscar materia">
     </ion-searchbar>
   </ion-toolbar>
 </ion-header>
