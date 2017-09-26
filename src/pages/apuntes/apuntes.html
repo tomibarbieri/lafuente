@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Apuntes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="map-page">
+  <ion-card>
+    <ion-card-header>
+      WEB de Apuntes
+    </ion-card-header>
+
+    <ion-list>
+      <button ion-item (click)="launch()">
+        <ion-icon name="book" item-start></ion-icon>
+        Abrir
+      </button>
+    </ion-list>
+  </ion-card>
+  <!--<div style="height: 100%; width: 100%" #mapCanvas id="map_canvas"></div>-->
+</ion-content>

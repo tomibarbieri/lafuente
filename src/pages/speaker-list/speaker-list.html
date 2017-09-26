@@ -3,11 +3,131 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Speakers</ion-title>
+    <ion-title>Noticias</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="outer-content speaker-list">
+
+  <ion-list>
+    <ion-grid fixed>
+
+      <ion-card>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-1/p200x200/14991822_971040319669396_8054558254465505995_n.png?oh=a476f55c8fa69f0b4d1a27fce5fd78ff&oe=5A5F19AC">
+          </ion-avatar>
+          <h2>La Fuente</h2>
+          <p>Agosto 29, 2017</p>
+        </ion-item>
+
+        <img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/21078823_1221062458000513_8679773092087587082_n.jpg?oh=99ab405378c3861dfc2c43ef05eaea59&oe=5A29EC78">
+
+        <ion-card-content>
+          <p>¡Fiesta Linuxera en WILKENNY!
+            ¡No hace falta excusa, solo ganas de divertirse y pasarla bien entre compañerxs!</p>
+        </ion-card-content>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>12 Me gusta</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>4 Comentarios</div>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
+      <ion-card>
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-1/p200x200/14991822_971040319669396_8054558254465505995_n.png?oh=a476f55c8fa69f0b4d1a27fce5fd78ff&oe=5A5F19AC">
+          </ion-avatar>
+          <h2>La Fuente</h2>
+          <p>Agosto 29, 2017</p>
+        </ion-item>
+        <ion-card-content>
+          <ion-card-title>
+            Taller de tecnologías de producción de software 
+          </ion-card-title>
+          <p>
+            Opciones:
+
+            – JAVA. Horarios : viernes de 13hs a 15hs y de 15hs a 20hs. Comienzo: 18/8
+            – Ingeniería de Software Aplicada. Horarios : martes de 16:30hs a 18:30hs. Comienzo: 22/8
+            – Técnicas y estrategias de resolución de problemas. Horarios: martes 14:30hs y viernes 15hs
+            – RUBY. Horarios: lunes y jueves de 19hs a 21hs. Comienzo: 24/8
+            – Desarrollo de software guiado por requerimientos. Horarios: miercoles 17hs . Comienzo 23/8
+
+            La inscripción se realizará por el SIU-Guaraní a partir de la semana del 14/8.
+          </p>
+        </ion-card-content>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>12 Me gusta</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="text"></ion-icon>
+              <div>4 Comentarios</div>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
+
+      <ion-card>
+        <img src="http://lafuenteunlp.com.ar/web/wp-content/uploads/2017/08/photo4983696359278356482.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Charla de Drones
+          </ion-card-title>
+          <p>
+            Este jueves presentamos el PROYECTO SMART DRONE, desarrollado por La Fuente Ingeniería,
+            La Fuente Informática – Centro de Estudiantes de la Facultad de Informática y la EALP –
+            Escuela de Aeromodelismo de La PLata.
+          </p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-content>
+          <ion-card-title>
+            Conseguimos la 4ta fecha de CADP
+          </ion-card-title>
+          <img src="http://lafuenteunlp.com.ar/web/wp-content/uploads/2017/08/photo4929464417117120450-300x300.jpg"/>
+          <br/>
+          <p>
+            Buenas compañerxs, queremos informarles que dadas las discusiones llevadas a
+            cabo con la gestión y la cátedra en base a las encuestas realizadas por la
+            materia CADP por el gran indice de est
+          </p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          Notas Matematica 3
+        </ion-card-header>
+        <ion-card-content>
+          Pueden acceder a las notas en el siguiente link <a>Notas</a>. La muestra es
+          el dia jueves 22 a las 18hs en el aula 8.
+        </ion-card-content>
+      </ion-card>
+
+
+
+    </ion-grid>
+  </ion-list>
+
   <ion-list [virtualScroll]="speakers">
     <ion-grid fixed>
       <ion-row align-items-stretch>
