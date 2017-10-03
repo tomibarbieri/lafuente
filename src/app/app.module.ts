@@ -31,6 +31,7 @@ import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { SupportPage } from '../pages/support/support';
+import { WelcomePage } from '../pages/welcome/welcome';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';

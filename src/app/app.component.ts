@@ -87,9 +87,11 @@ export class ConferenceApp {
     this.storage.get('hasSeenTutorial')
       .then((hasSeenTutorial) => {
         if (hasSeenTutorial) {
-          this.rootPage = TabsPage;
+          //          this.rootPage = TabsPage;
+          this.rootPage = WelcomePage;
         } else {
-          this.rootPage = TutorialPage;
+          //          this.rootPage = TutorialPage;
+          this.rootPage = WelcomePage;
         }
         this.platformReady()
       });
