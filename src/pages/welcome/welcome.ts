@@ -1,25 +1,51 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the WelcomePage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 
-@IonicPage()
+import { Component, ViewChild } from '@angular/core';
+
+import { MenuController, NavController, Slides } from 'ionic-angular';
+
+import { Storage } from '@ionic/storage';
+
+import { TabsPage } from '../tabs-page/tabs-page';
+
 @Component({
   selector: 'page-welcome',
-  templateUrl: 'welcome.html',
+  templateUrl: 'welcome.html'
 })
-export class WelcomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+export class WelcomePage {
+  showSkip = true;
+
+	@ViewChild('slides') slides: Slides;
+
+  constructor(
+    public navCtrl: NavController,
+    public menu: MenuController,
+    public storage: Storage
+  ) { }
+
+  startApp() {
+    this.navCtrl.push(TabsPage).then(() => {
+      this.storage.set('hasSeenWelcomePage', 'true');
+    })
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad WelcomePage');
+  onSlideChangeStart(slider: Slides) {
+    this.showSkip = !slider.isEnd();
+  }
+
+	ionViewWillEnter() {
+		this.slides.update();
+	}
+
+  ionViewDidEnter() {
+    // the root left menu should be disabled on the welcome page
+    this.menu.enable(false);
+  }
+
+  ionViewDidLeave() {
+    // enable the root left menu when leaving the welcome page
+    this.menu.enable(true);
   }
 
 }

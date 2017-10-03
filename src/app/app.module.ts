@@ -29,7 +29,6 @@ import { SignupPage } from '../pages/signup/signup';
 import { SpeakerDetailPage } from '../pages/speaker-detail/speaker-detail';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
-import { TutorialPage } from '../pages/tutorial/tutorial';
 import { SupportPage } from '../pages/support/support';
 import { WelcomePage } from '../pages/welcome/welcome';
 
@@ -54,7 +53,6 @@ import { UserData } from '../providers/user-data';
     SpeakerDetailPage,
     SpeakerListPage,
     TabsPage,
-    TutorialPage,
     SupportPage,
     WelcomePage
   ],
@@ -73,7 +71,7 @@ import { UserData } from '../providers/user-data';
         { component: ApuntesPage, name: 'Apuntes', segment: 'apuntes' }, // Aca tambien modificar
         { component: PlanesPage, name: 'Planes', segment: 'planes' },
         { component: AboutPage, name: 'About', segment: 'about' },
-        { component: TutorialPage, name: 'Tutorial', segment: 'tutorial' },
+        { component: WelcomePage, name: 'Welcome', segment: 'welcome' },
         { component: SupportPage, name: 'SupportPage', segment: 'support' },
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
@@ -100,7 +98,6 @@ import { UserData } from '../providers/user-data';
     SpeakerDetailPage,
     SpeakerListPage,
     TabsPage,
-    TutorialPage,
     SupportPage,
     WelcomePage
   ],

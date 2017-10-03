@@ -17,7 +17,6 @@ import { PlanesPage } from '../pages/planes/planes';
 
 import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
-import { TutorialPage } from '../pages/tutorial/tutorial';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { SupportPage } from '../pages/support/support';
@@ -70,7 +69,8 @@ export class ConferenceApp {
     { title: 'Support', name: 'SupportPage', component: SupportPage, icon: 'help' },
     { title: 'Signup', name: 'SignupPage', component: SignupPage, icon: 'person-add' }
   ];
-  //  rootPage: WelcomePage;
+
+  rootPage: any;
 
   constructor(
     public events: Events,
@@ -82,15 +82,14 @@ export class ConferenceApp {
     public splashScreen: SplashScreen
   ) {
 
-    // Check if the user has already seen the tutorial
+    // Check if the user has already seen the welcome page
 
-    this.storage.get('hasSeenTutorial')
-      .then((hasSeenTutorial) => {
-        if (hasSeenTutorial) {
-          //          this.rootPage = TabsPage;
-          this.rootPage = WelcomePage;
+    this.storage.get('hasSeenWelcomePage')
+      .then((hasSeenWelcomePage) => {
+       
+        if(hasSeenWelcomePage) {
+          this.rootPage = AboutPage;
         } else {
-          //          this.rootPage = TutorialPage;
           this.rootPage = WelcomePage;
         }
         this.platformReady()
@@ -136,8 +135,8 @@ export class ConferenceApp {
     }
   }
 
-  openTutorial() {
-    this.nav.setRoot(TutorialPage);
+  openWelcomePage() {
+    this.nav.setRoot(WelcomePage);
   }
 
   openPlanes() {
