@@ -1,0 +1,28 @@
+.tomson {
+  background-image: url("../assets/img/remediar.png");
+  background-position: center top;
+  background-size: 100% auto;
+}
+
+.logo-index {
+  margin: 10%;
+  background-color: transparent;
+  width: 80%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.boton-container-index {
+  margin: 0% 10%;
+  width: 80%;
+  height: 20%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background-color: transparent;
+  .button-index {
+    background-color: transparent;
+    width: 40%;
+    margin: 4%;
+    height: 80%;
+  }
+}
