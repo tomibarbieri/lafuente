@@ -13,6 +13,7 @@ import { LoginPage } from '../pages/login/login';
 
 import { ApuntesPage } from '../pages/apuntes/apuntes';
 import { PlanesPage } from '../pages/planes/planes';
+import { HomePage } from '../pages/home/home';
 
 
 import { SignupPage } from '../pages/signup/signup';
@@ -50,7 +51,7 @@ export class ConferenceApp {
   // the left menu only works after login
   // the login page disables the left menu
   appPages: PageInterface[] = [
-    { title: 'Inicio', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 0, icon: 'home' },
+    { title: 'Inicio', name: 'TabsPage', component: TabsPage, tabComponent: HomePage, index: 0, icon: 'home' },
     { title: 'Materias', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
     { title: 'Noticias', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
     /*{ title: 'Schedule', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },

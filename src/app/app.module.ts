@@ -21,6 +21,7 @@ import { MapPage } from '../pages/map/map';
 // Aca van los import nuevos de La Fuente
 import { ApuntesPage } from '../pages/apuntes/apuntes';
 import { PlanesPage } from '../pages/planes/planes';
+import { HomePage } from '../pages/home/home';
 
 import { SchedulePage } from '../pages/schedule/schedule';
 import { ScheduleFilterPage } from '../pages/schedule-filter/schedule-filter';
@@ -45,6 +46,7 @@ import { UserData } from '../providers/user-data';
     MapPage,
     ApuntesPage, // Agregar los nuevos aca tambien
     PlanesPage,
+    HomePage,
     PopoverPage,
     SchedulePage,
     ScheduleFilterPage,
@@ -69,6 +71,7 @@ import { UserData } from '../providers/user-data';
         { component: SpeakerDetailPage, name: 'SpeakerDetail', segment: 'speakerDetail/:speakerId' },
         { component: MapPage, name: 'Map', segment: 'map' },
         { component: ApuntesPage, name: 'Apuntes', segment: 'apuntes' }, // Aca tambien modificar
+        { component: HomePage, name: 'Home', segment: 'home' },
         { component: PlanesPage, name: 'Planes', segment: 'planes' },
         { component: AboutPage, name: 'About', segment: 'about' },
         { component: WelcomePage, name: 'Welcome', segment: 'welcome' },
@@ -89,6 +92,7 @@ import { UserData } from '../providers/user-data';
     LoginPage,
     MapPage,
     ApuntesPage, // aca tambien modificar
+    HomePage,
     PlanesPage,
     PopoverPage,
     SchedulePage,
