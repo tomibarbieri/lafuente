@@ -87,9 +87,9 @@ export class ConferenceApp {
 
     this.storage.get('hasSeenWelcomePage')
       .then((hasSeenWelcomePage) => {
-       
+
         if(hasSeenWelcomePage) {
-          this.rootPage = AboutPage;
+          this.rootPage = HomePage;
         } else {
           this.rootPage = WelcomePage;
         }

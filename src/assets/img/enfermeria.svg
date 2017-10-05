@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48.158928mm"
+   height="48.158863mm"
+   viewBox="0 0 170.64187 170.64164"
+   id="svg4604"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="enfermeria.svg">
+  <defs
+     id="defs4606">
+    <clipPath
+       id="clipPath3460"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3462"
+         d="m 363.242,457.133 152.504,0 0,-152.505 -152.504,0 0,152.505 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath3476"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3478"
+         d="m 549.035,459.675 152.504,0 0,-152.505 -152.504,0 0,152.505 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath3420"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3422"
+         d="m 315.305,222.529 54.489,0 0,-131.1384 -54.489,0 0,131.1384 z" />
+    </clipPath>
+    <clipPath
+       id="clipPath3496"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3498"
+         d="m 448.712,230.71 152.504,0 0,-152.5039 -152.504,0 0,152.5039 z" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="58.349988"
+     inkscape:cy="88.026178"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="683"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata4609">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-401.54257,-407.3535)">
+    <g
+       clip-path="url(#clipPath3496)"
+       id="g3502"
+       transform="matrix(1.1189337,0,0,-1.1189337,-100.53641,665.50269)"
+       inkscape:export-xdpi="126"
+       inkscape:export-ydpi="126">
+      <g
+         transform="translate(574.291,140.7832)"
+         id="g3504">
+        <path
+           d="m 0,0 0,23.952 c 0,3.567 -2.898,6.464 -6.465,6.464 l -22.74,0 0,22.74 c 0,3.568 -2.889,6.456 -6.456,6.456 l -23.951,0 c -3.567,0 -6.456,-2.888 -6.456,-6.456 l 0,-22.74 -22.741,0 c -3.566,0 -6.464,-2.897 -6.464,-6.464 l 0,-23.952 c 0,-3.566 2.898,-6.456 6.464,-6.456 l 22.741,0 0,-22.74 c 0,-3.567 2.889,-6.456 6.456,-6.456 l 23.951,0 c 3.567,0 6.456,2.889 6.456,6.456 l 0,22.74 22.74,0 C -2.898,-6.456 0,-3.566 0,0 m -49.327,89.927 c 42.108,0 76.252,-34.144 76.252,-76.252 0,-42.117 -34.144,-76.252 -76.252,-76.252 -42.116,0 -76.252,34.135 -76.252,76.252 0,42.108 34.136,76.252 76.252,76.252"
+           style="fill:#3871c1;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path3506"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+  </g>
+</svg>
