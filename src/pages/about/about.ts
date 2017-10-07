@@ -16,4 +16,8 @@ export class AboutPage {
     let popover = this.popoverCtrl.create(PopoverPage);
     popover.present({ ev: event });
   }
+
+  openPage(page: somePage){
+ 	this.navCtrl.push(somePage);
+  }
 }
