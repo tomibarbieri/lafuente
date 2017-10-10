@@ -10,7 +10,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Remediar</ion-title>
+    <ion-title>Inicio</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -22,30 +22,93 @@
     <img src="/../assets/img/logo.png"/>
   </ion-card>
 
-  <ion-card class="boton-container-index">
+  <ion-card class="img-container-index">
 
-    <button icon-start="" ion-button="" outline="" class="button-index disable-hover button button-ios button-outline button-outline-ios" style="transition: none;"><span class="button-inner">
-      <ion-icon is-active="false" name="bookmark" role="img" class="icon icon-ios ion-ios-briefcase" aria-label="briefcase"></ion-icon>
-      Noticias</span><div class="button-effect"></div>
-    </button>
+    <div class="img-div">
+    <a [navPush]="carreraPage" >
+    <img class="img-remediar" src="/../assets/img/medicina.svg" alt="medicina" />
+    MEDICINA
+    </a>
+    </div>
+    <div class="img-div text-cardio">
+    <img class="img-remediar" src="/../assets/img/cardio.svg" alt="practicas cardiologicas" />
+    PRÁCTICAS CARDIOLOGICAS
+    </div>
+    <div class="img-div">
+    <img class="img-remediar" src="/../assets/img/nutricion.svg" alt="nutricion" />
 
-    <button icon-start="" ion-button="" outline="" class="button-index disable-hover button button-ios button-outline button-outline-ios" style="transition: none;"><span class="button-inner">
-      <ion-icon is-active="false" name="home" role="img" class="icon icon-ios ion-ios-briefcase" aria-label="briefcase"></ion-icon>
-      Facultad</span><div class="button-effect"></div>
-    </button>
-
+    NUTRICIÓN
+  </div>
   </ion-card>
 
-  <ion-card class="boton-container-index">
-    <button icon-start="" ion-button="" outline="" class="button-index disable-hover button button-ios button-outline button-outline-ios" style="transition: none;"><span class="button-inner">
-      <ion-icon is-active="false" name="albums" role="img" class="icon icon-ios ion-ios-briefcase" aria-label="briefcase"></ion-icon>
-      Apuntes</span><div class="button-effect"></div>
-    </button>
+  <ion-card class="second-container img-container-index">
 
-    <button icon-start="" ion-button="" outline="" class="button-index disable-hover button button-ios button-outline button-outline-ios" style="transition: none;"><span class="button-inner">
-      <ion-icon is-active="false" name="book" role="img" class="icon icon-ios ion-ios-briefcase" aria-label="briefcase"></ion-icon>
-      Materias</span><div class="button-effect"></div>
-    </button>
+    <div class="img-div">
+    <img class="img-remediar" src="/../assets/img/obstetricia.svg" alt="obstetricia" />
+    OBSTETRICIA
+    </div>
+
+    <div class="img-div">
+    <img class="img-remediar" src="/../assets/img/enfermeria.svg" alt="enfermeria" />
+    ENFERMERÍA
+    </div>
+
   </ion-card>
 
 </ion-content>
+
+
+<!--
+  <ion-card class="boton-container-index">
+
+    <button icon-start="" ion-button="" class="button-back-remediar button-index disable-hover button button-ios button-default button-default-ios" style="transition: none;">
+      <span class="letter-remediar button-inner">
+      <ion-icon name="bookmark" role="img" class="icon icon-ios ion-ios-home" aria-label="home"></ion-icon>
+      Noticias
+    </span><div class="button-effect"></div></button>
+
+    <button icon-start="" ion-button="" class="button-index disable-hover button button-ios button-default button-default-ios" style="transition: none;"><span class="button-inner">
+      <ion-icon name="home" role="img" class="icon icon-ios ion-ios-home" aria-label="home"></ion-icon>
+      Facultad
+    </span><div class="button-effect"></div></button>
+
+  </ion-card>
+
+  <ion-card class="boton-container-index">
+
+    <button icon-start="" ion-button="" class="button-index disable-hover button button-ios button-default button-default-ios" style="transition: none;"><span class="button-inner">
+      <ion-icon name="albums" role="img" class="icon icon-ios ion-ios-home" aria-label="home"></ion-icon>
+      Apuntes
+    </span><div class="button-effect"></div></button>
+
+    <button icon-start="" ion-button="" class="button-index disable-hover button button-ios button-default button-default-ios" style="transition: none;"><span class="button-inner">
+      <ion-icon name="book" role="img" class="icon icon-ios ion-ios-home" aria-label="home"></ion-icon>
+      Materias
+    </span><div class="button-effect"></div></button>
+
+  </ion-card>
+
+</ion-content>
+-->
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="toolbar-content toolbar-content-ios">
+      <ion-title class="title title-ios title-footer">Buscanos</ion-title>
+    </div>
+    <ion-buttons start="" class="buttons-footer-index bar-buttons bar-buttons-ios">
+      <button icon-only="" ion-button="" class="disable-hover bar-button bar-button-ios bar-button-default bar-button-default-ios"><span class="button-inner">
+        <ion-icon name="logo-facebook" role="img" class="icon icon-ios ion-ios-contact" aria-label="contact"></ion-icon>
+      </span><div class="button-effect"></div></button>
+      <button icon-only="" ion-button="" class="disable-hover bar-button bar-button-ios bar-button-default bar-button-default-ios" style="transition: none;"><span class="button-inner">
+        <ion-icon name="logo-twitter" role="img" class="icon icon-ios ion-ios-search" aria-label="search"></ion-icon>
+      </span><div class="button-effect"></div></button>
+      <button icon-only="" ion-button="" class="disable-hover bar-button bar-button-ios bar-button-default bar-button-default-ios" style="transition: none;"><span class="button-inner">
+        <ion-icon name="logo-instagram" role="img" class="icon icon-ios ion-ios-search" aria-label="search"></ion-icon>
+      </span><div class="button-effect"></div></button>
+      <button icon-only="" ion-button="" class="disable-hover bar-button bar-button-ios bar-button-default bar-button-default-ios" style="transition: none;"><span class="button-inner">
+        <ion-icon name="mail" role="img" class="icon icon-ios ion-ios-search" aria-label="search"></ion-icon>
+      </span><div class="button-effect"></div></button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

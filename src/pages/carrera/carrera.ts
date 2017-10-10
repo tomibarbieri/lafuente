@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { CarreraPage } from '../carrera/carrera';
 
 /**
- * Generated class for the HomePage page.
+ * Generated class for the CarreraPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -11,22 +10,17 @@ import { CarreraPage } from '../carrera/carrera';
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-carrera',
+  templateUrl: 'carrera.html',
 })
-export class HomePage {
-
-  carreraPage = CarreraPage;
+export class CarreraPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
-  }
-
-  carrera() {
-    this.navCtrl.push(CarreraPage);
+    console.log('ionViewDidLoad CarreraPage');
   }
 
 }
