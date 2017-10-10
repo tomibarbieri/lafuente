@@ -3,27 +3,67 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Quienes somos</ion-title>
-    <ion-buttons end>
-      <button ion-button icon-only (click)="presentPopover($event)">
-        <ion-icon name="more"></ion-icon>
-      </button>
-    </ion-buttons>
+
+    <ion-title>
+      <img src="assets/img/about_page/pill-bg-white.svg">
+      Somos Nosotros
+    </ion-title>
   </ion-navbar>
+  <ion-toolbar>
+    <div padding>
+      <ion-segment [(ngModel)]="about">
+        <ion-segment-button value="group">
+          Agrupación
+        </ion-segment-button>
+        <ion-segment-button value="achievements">
+          Logros
+        </ion-segment-button>
+        <ion-segment-button value="proposals">
+          Propuestas
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div padding class="about-info">
-      <ion-list>
-        <button ion-item (click)="openPage(WelcomePage)">
-          Quienes somos
-        </button>  
-        <button ion-item (click)="openPage(WelcomePage)">
-          Logros
-        </button>  
-        <button ion-item (click)="openPage(WelcomePage)">
-          Propuestas
-        </button>  
-      </ion-list>
+  <div [ngSwitch]="about">
+    <ion-list *ngSwitchCase="'group'">
+      <ion-item text-wrap>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Fusce a magna nec turpis tempor facilisis. Phasellus dignissim lorem ornare velit auctor,
+          vel congue metus lobortis. Ut condimentum mollis iaculis.
+          Praesent et venenatis quam, a tincidunt orci. Morbi augue justo, semper in urna nec,
+          placerat vehicula velit. Nunc dui mauris, luctus rutrum tellus sed, laoreet bibendum justo.
+          Ut ultrices, lorem sit amet mattis dictum, ligula nisl ultrices erat,
+          vitae tincidunt ante nisl ut velit. Ut sed ipsum turpis. Fusce ac tempor lectus.
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'achievements'">
+      <ion-item text-wrap>
+        Quisque risus elit, aliquet vitae enim non, lobortis laoreet lectus.
+        Sed ac mattis diam. Integer efficitur urna at ultrices rhoncus.
+        Phasellus sit amet lorem congue, sollicitudin mi sed, mollis erat.
+        Donec ornare risus at nibh feugiat, tristique euismod ipsum pharetra.
+        Nunc vel imperdiet libero. Aenean tempus finibus efficitur.
+        Proin fringilla lorem eu dapibus pharetra. Pellentesque turpis ante,
+        ultricies at erat id, iaculis condimentum nisi. Donec luctus vehicula lacus,
+        a viverra nunc iaculis vel. Nullam euismod venenatis ante, vitae facilisis urna auctor eu.
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'proposals'">
+      <ion-item text-wrap>
+        Curabitur faucibus suscipit turpis, et auctor arcu eleifend a.
+        Cras sed risus ullamcorper, laoreet ipsum et, hendrerit lectus.
+        In aliquam augue orci, id tincidunt erat dapibus et.
+        Sed id feugiat dui, sed tempor enim. Nulla facilisi.
+        Integer luctus, urna dignissim posuere gravida, arcu lorem rhoncus lectus,
+        eget vestibulum metus magna eget orci. Aenean eget ultricies est.
+        Praesent porttitor augue interdum purus accumsan commodo.
+        Etiam finibus auctor velit eget scelerisque.
+        Vestibulum placerat purus quam, quis lacinia magna rutrum at.
+        Suspendisse eu mollis metus, sed faucibus lacus.
+      </ion-item>
+    </ion-list>
   </div>
 </ion-content>
