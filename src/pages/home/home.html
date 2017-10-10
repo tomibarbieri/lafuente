@@ -25,8 +25,10 @@
   <ion-card class="img-container-index">
 
     <div class="img-div">
+    <a [navPush]="carreraPage" >
     <img class="img-remediar" src="/../assets/img/medicina.svg" alt="medicina" />
     MEDICINA
+    </a>
     </div>
     <div class="img-div text-cardio">
     <img class="img-remediar" src="/../assets/img/cardio.svg" alt="practicas cardiologicas" />
@@ -108,11 +110,5 @@
         <ion-icon name="mail" role="img" class="icon icon-ios ion-ios-search" aria-label="search"></ion-icon>
       </span><div class="button-effect"></div></button>
     </ion-buttons>
-<!--
-      <ion-icon name="logo-facebook"><a href="#">RSS</a></ion-icon>
-      <ion-icon name="logo-twitter"><a href='#'>Facebook</a></ion-icon>
-      <ion-icon name="logo-instagram"><a href='#'>Twitter</a></ion-icon>
-      <ion-icon name="mail"><a href='#'>flickr</a></ion-icon>
-    -->
   </ion-toolbar>
 </ion-footer>

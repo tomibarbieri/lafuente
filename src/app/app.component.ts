@@ -5,22 +5,23 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Storage } from '@ionic/storage';
 
-import { AboutPage } from '../pages/about/about';
-import { AccountPage } from '../pages/account/account';
-import { LoginPage } from '../pages/login/login';
+//import { AboutPage } from '../pages/about/about';
+//import { AccountPage } from '../pages/account/account';
+//import { LoginPage } from '../pages/login/login';
 
 /*import { MapPage } from '../pages/map/map';*/
 
-import { ApuntesPage } from '../pages/apuntes/apuntes';
+//import { ApuntesPage } from '../pages/apuntes/apuntes';
 import { PlanesPage } from '../pages/planes/planes';
 import { HomePage } from '../pages/home/home';
+import { BienestarPage } from '../pages/bienestar/bienestar';
+//import { CarreraPage } from '../pages/carrera/carrera';
 
-
-import { SignupPage } from '../pages/signup/signup';
-import { TabsPage } from '../pages/tabs-page/tabs-page';
-import { SchedulePage } from '../pages/schedule/schedule';
-import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
-import { SupportPage } from '../pages/support/support';
+//import { SignupPage } from '../pages/signup/signup';
+//import { TabsPage } from '../pages/tabs-page/tabs-page';
+//import { SchedulePage } from '../pages/schedule/schedule';
+//import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
+//import { SupportPage } from '../pages/support/support';
 
 import { WelcomePage  } from '../pages/welcome/welcome';
 
@@ -51,15 +52,18 @@ export class ConferenceApp {
   // the left menu only works after login
   // the login page disables the left menu
   appPages: PageInterface[] = [
-    { title: 'Inicio', name: 'TabsPage', component: TabsPage, tabComponent: HomePage, index: 0, icon: 'home' },
-    { title: 'Materias', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
-    { title: 'Noticias', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
-    /*{ title: 'Schedule', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
-    { title: 'Speakers', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },*/
-    { title: 'Apuntes', name: 'TabsPage', component: TabsPage, tabComponent: ApuntesPage, index: 2, icon: 'book' },
-    { title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' }
+    { title: 'Inicio', name: 'HomePage', component: HomePage, tabComponent: HomePage, icon: 'home' },
+    { title: 'Facultad', name: 'PlanesPage', component: PlanesPage, icon: 'medical' },
+    { title: 'Bienestar Estudiantil', name: 'Bienestar', component: BienestarPage, icon: 'megaphone' },
+    { title: 'Somos nosotros', name: 'PlanesPage', component: PlanesPage, icon: 'medkit' },
+    //{ title: 'Materias', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
+    //{ title: 'Noticias', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
+    //{ title: 'Schedule', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
+    //{ title: 'Speakers', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
+    //{ title: 'Apuntes', name: 'TabsPage', component: TabsPage, tabComponent: ApuntesPage, index: 2, icon: 'book' },
+    //{ title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' }
   ];
-  loggedInPages: PageInterface[] = [
+  /*loggedInPages: PageInterface[] = [
     { title: 'Account', name: 'AccountPage', component: AccountPage, icon: 'person' },
     { title: 'Support', name: 'SupportPage', component: SupportPage, icon: 'help' },
     { title: 'Logout', name: 'TabsPage', component: TabsPage, icon: 'log-out', logsOut: true }
@@ -69,7 +73,7 @@ export class ConferenceApp {
     { title: 'Login', name: 'LoginPage', component: LoginPage, icon: 'log-in' },
     { title: 'Support', name: 'SupportPage', component: SupportPage, icon: 'help' },
     { title: 'Signup', name: 'SignupPage', component: SignupPage, icon: 'person-add' }
-  ];
+  ];*/
 
   rootPage: any;
 
@@ -109,14 +113,14 @@ export class ConferenceApp {
   }
 
   openPage(page: PageInterface) {
-    let params = {};
+    //let params = {};
 
     // the nav component was found using @ViewChild(Nav)
     // setRoot on the nav to remove previous pages and only have this page
     // we wouldn't want the back button to show in this scenario
-    if (page.index) {
+    /*if (page.index) {
       params = { tabIndex: page.index };
-    }
+    }*/
 
     // If we are already on tabs just change the selected tab
     // don't setRoot again, this maintains the history stack of the
@@ -124,8 +128,8 @@ export class ConferenceApp {
     if (this.nav.getActiveChildNavs().length && page.index != undefined) {
       this.nav.getActiveChildNavs()[0].select(page.index);
     // Set the root of the nav with params if it's a tab index
-  } else {
-      this.nav.setRoot(page.name, params).catch((err: any) => {
+    } else {
+      this.nav.setRoot(page.name/*, params*/).catch((err: any) => {
         console.log(`Didn't set nav root: ${err}`);
       });
     }

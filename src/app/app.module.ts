@@ -22,6 +22,9 @@ import { MapPage } from '../pages/map/map';
 import { ApuntesPage } from '../pages/apuntes/apuntes';
 import { PlanesPage } from '../pages/planes/planes';
 import { HomePage } from '../pages/home/home';
+import { BienestarPage } from '../pages/bienestar/bienestar';
+import { CarreraPage } from '../pages/carrera/carrera';
+
 
 import { SchedulePage } from '../pages/schedule/schedule';
 import { ScheduleFilterPage } from '../pages/schedule-filter/schedule-filter';
@@ -44,9 +47,13 @@ import { UserData } from '../providers/user-data';
     AccountPage,
     LoginPage,
     MapPage,
+    //
     ApuntesPage, // Agregar los nuevos aca tambien
     PlanesPage,
     HomePage,
+    BienestarPage,
+    CarreraPage,
+    //
     PopoverPage,
     SchedulePage,
     ScheduleFilterPage,
@@ -72,6 +79,8 @@ import { UserData } from '../providers/user-data';
         { component: MapPage, name: 'Map', segment: 'map' },
         { component: ApuntesPage, name: 'Apuntes', segment: 'apuntes' }, // Aca tambien modificar
         { component: HomePage, name: 'Home', segment: 'home' },
+        { component: BienestarPage, name: 'Bienestar', segment: 'bienestar' },
+        { component: CarreraPage, name: 'Carrera', segment: 'carrera' },
         { component: PlanesPage, name: 'Planes', segment: 'planes' },
         { component: AboutPage, name: 'About', segment: 'about' },
         { component: WelcomePage, name: 'Welcome', segment: 'welcome' },
@@ -93,7 +102,10 @@ import { UserData } from '../providers/user-data';
     MapPage,
     ApuntesPage, // aca tambien modificar
     HomePage,
+    BienestarPage,
     PlanesPage,
+    CarreraPage,
+    //
     PopoverPage,
     SchedulePage,
     ScheduleFilterPage,
