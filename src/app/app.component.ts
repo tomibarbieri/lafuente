@@ -23,7 +23,9 @@ import { BienestarPage } from '../pages/bienestar/bienestar';
 //import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 //import { SupportPage } from '../pages/support/support';
 
+import { AboutPage  } from '../pages/about/about';
 import { WelcomePage  } from '../pages/welcome/welcome';
+
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
@@ -55,7 +57,7 @@ export class ConferenceApp {
     { title: 'Inicio', name: 'HomePage', component: HomePage, tabComponent: HomePage, icon: 'home' },
     { title: 'Facultad', name: 'PlanesPage', component: PlanesPage, icon: 'medical' },
     { title: 'Bienestar Estudiantil', name: 'Bienestar', component: BienestarPage, icon: 'megaphone' },
-    { title: 'Somos nosotros', name: 'PlanesPage', component: PlanesPage, icon: 'medkit' },
+    { title: 'Remediar', name: 'About', component: AboutPage, icon: 'medkit' },
     //{ title: 'Materias', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
     //{ title: 'Noticias', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
     //{ title: 'Schedule', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
