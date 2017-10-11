@@ -58,7 +58,6 @@
     </ion-header>
 
     <ion-content class="outer-content">
-
       <ion-list>
         <ion-list-header>
           Opciones
@@ -68,32 +67,38 @@
           {{p.title}}
         </button>
       </ion-list>
-
-      <ion-list>
-        <ion-list-header>
-          Account
-        </ion-list-header>
-        <button ion-item menuClose *ngFor="let p of loggedInPages" (click)="openPage(p)">
-          <ion-icon item-start [name]="p.icon" [color]="isActive(p)"></ion-icon>
-          {{p.title}}
-        </button>
-      </ion-list>
-
-      <ion-list>
-        <ion-list-header>
-          Tutorial
-        </ion-list-header>
-        <button ion-item menuClose (click)="openWelcomePage()">
-          <ion-icon item-start name="hammer"></ion-icon>
-          Show Tutorial
-        </button>
-      </ion-list>
-
     </ion-content>
-
   </ion-menu>
 
   <!-- main navigation -->
   <ion-nav [root]="rootPage" #content swipeBackEnabled="false" main name="app"></ion-nav>
+
+  <ion-footer>
+    <ion-toolbar>
+      <!--falta ver como se redirige a facebook a twitter a gmail y a instagram!! -->
+      <ion-row>
+        <ion-col offset-1 col-2>
+          <button ion-fab browse-to="https://www.facebook.com/RemediarUNLP/">
+            <ion-icon ios="logo-facebook" md="logo-facebook"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col offset-1 col-2>
+          <button ion-fab browse-to="">
+            <ion-icon ios="logo-twitter" md="logo-twitter"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col offset-1 col-2>
+          <button ion-fab browse-to="https://www.instagram.com/remediarUNLP/">
+            <ion-icon ios="logo-instagram" md="logo-instagram"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col  offset-1 col-2>
+          <button ion-fab browse-to="mailto:remediarcienciasmedicas@gmail.com">
+            <ion-icon  ios="ios-mail" md="md-mail"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-footer>
 
 </ion-split-pane>
