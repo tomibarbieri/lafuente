@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { BenefitPage } from '../benefit/benefit'; //sobre las becas universitarias
+
 /**
  * Generated class for the BienestarPage page.
  *
@@ -15,8 +17,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class BienestarPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  onBenefitPage = BenefitPage;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BienestarPage');

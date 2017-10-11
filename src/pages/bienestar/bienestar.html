@@ -17,4 +17,22 @@
 
 
 <ion-content padding>
+  <ion-content padding>
+    <ion-list>
+      <ion-item>
+        <a  [navPush]="onBenefitPage">
+          <ion-icon name="leaf" item-start></ion-icon>
+            Becas
+          <ion-note item-right>info sobre las becas que ofrece nación, pcia, unlp y medicina</ion-note>
+        </a>
+      </ion-item>
+      <ion-item>
+        <a [navPush]="onBenefitPage">
+          <ion-icon name="leaf" item-start></ion-icon>
+            Comedor
+          <ion-note item-right>info sobre las sedes de los comedores</ion-note>
+        </a>
+      </ion-item>
+    </ion-list>
+  </ion-content>
 </ion-content>

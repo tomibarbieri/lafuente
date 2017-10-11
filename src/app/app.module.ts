@@ -26,8 +26,6 @@ import { HomePage } from '../pages/home/home';
 import { PlanesPage } from '../pages/planes/planes';
 import { BenefitPage } from '../pages/benefit/benefit'; //sobre las becas universitarias
 
-
-
 import { SchedulePage } from '../pages/schedule/schedule';
 import { ScheduleFilterPage } from '../pages/schedule-filter/schedule-filter';
 import { SessionDetailPage } from '../pages/session-detail/session-detail';
@@ -58,6 +56,7 @@ import { UserData } from '../providers/user-data';
     BienestarPage,
     CarreraPage,
     BenefitPage,
+    WelcomePage,
     //
     PopoverPage,
     SchedulePage,
@@ -67,8 +66,7 @@ import { UserData } from '../providers/user-data';
     SpeakerDetailPage,
     SpeakerListPage,
     TabsPage,
-    SupportPage,
-    WelcomePage
+    SupportPage
   ],
   imports: [
     BrowserModule,
@@ -93,8 +91,7 @@ import { UserData } from '../providers/user-data';
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
         { component: SignupPage, name: 'SignupPage', segment: 'signup' },
-        { component: WelcomePage, name: 'WelcomePage', segment: 'welcome' },
-        { component: BenefitPage, name: 'WelcomePage', segment: 'becas' }
+        { component: BenefitPage, name: 'WelcomePage', segment: 'becas' },
       ]
     }),
     IonicStorageModule.forRoot()
@@ -111,6 +108,7 @@ import { UserData } from '../providers/user-data';
     BienestarPage,
     PlanesPage,
     CarreraPage,
+    WelcomePage,
     BenefitPage,
     //
     PopoverPage,
@@ -121,8 +119,7 @@ import { UserData } from '../providers/user-data';
     SpeakerDetailPage,
     SpeakerListPage,
     TabsPage,
-    SupportPage,
-    WelcomePage
+    SupportPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
