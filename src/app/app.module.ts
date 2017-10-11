@@ -24,8 +24,6 @@ import { BienestarPage } from '../pages/bienestar/bienestar';
 import { CarreraPage } from '../pages/carrera/carrera';
 import { HomePage } from '../pages/home/home';
 import { PlanesPage } from '../pages/planes/planes';
-import { BenefitPage } from '../pages/benefit/benefit'; //sobre las becas universitarias
-
 
 
 import { SchedulePage } from '../pages/schedule/schedule';
@@ -57,7 +55,6 @@ import { UserData } from '../providers/user-data';
     HomePage,
     BienestarPage,
     CarreraPage,
-    BenefitPage,
     //
     PopoverPage,
     SchedulePage,
@@ -93,8 +90,7 @@ import { UserData } from '../providers/user-data';
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
         { component: SignupPage, name: 'SignupPage', segment: 'signup' },
-        { component: WelcomePage, name: 'WelcomePage', segment: 'welcome' },
-        { component: BenefitPage, name: 'WelcomePage', segment: 'becas' }
+        { component: WelcomePage, name: 'WelcomePage', segment: 'welcome' }
       ]
     }),
     IonicStorageModule.forRoot()
@@ -111,7 +107,6 @@ import { UserData } from '../providers/user-data';
     BienestarPage,
     PlanesPage,
     CarreraPage,
-    BenefitPage,
     //
     PopoverPage,
     SchedulePage,
