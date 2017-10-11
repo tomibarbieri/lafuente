@@ -5,27 +5,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Storage } from '@ionic/storage';
 
-//import { AboutPage } from '../pages/about/about';
-//import { AccountPage } from '../pages/account/account';
-//import { LoginPage } from '../pages/login/login';
 
-/*import { MapPage } from '../pages/map/map';*/
-
-//import { ApuntesPage } from '../pages/apuntes/apuntes';
 import { PlanesPage } from '../pages/planes/planes';
 import { HomePage } from '../pages/home/home';
 import { BienestarPage } from '../pages/bienestar/bienestar';
-//import { CarreraPage } from '../pages/carrera/carrera';
-
-//import { SignupPage } from '../pages/signup/signup';
-//import { TabsPage } from '../pages/tabs-page/tabs-page';
-//import { SchedulePage } from '../pages/schedule/schedule';
-//import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
-//import { SupportPage } from '../pages/support/support';
 
 import { AboutPage  } from '../pages/about/about';
 import { WelcomePage  } from '../pages/welcome/welcome';
-
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
