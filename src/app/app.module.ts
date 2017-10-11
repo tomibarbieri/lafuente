@@ -18,12 +18,14 @@ import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 
 
-// Aca van los import nuevos de La Fuente
+// Aca van los import nuevos de Remediar
 import { ApuntesPage } from '../pages/apuntes/apuntes';
-import { PlanesPage } from '../pages/planes/planes';
-import { HomePage } from '../pages/home/home';
 import { BienestarPage } from '../pages/bienestar/bienestar';
 import { CarreraPage } from '../pages/carrera/carrera';
+import { HomePage } from '../pages/home/home';
+import { PlanesPage } from '../pages/planes/planes';
+import { BenefitPage } from '../pages/benefit/benefit'; //sobre las becas universitarias
+
 
 
 import { SchedulePage } from '../pages/schedule/schedule';
@@ -34,6 +36,8 @@ import { SpeakerDetailPage } from '../pages/speaker-detail/speaker-detail';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { SupportPage } from '../pages/support/support';
+
+//Página de Bienvenida
 import { WelcomePage } from '../pages/welcome/welcome';
 
 import { ConferenceData } from '../providers/conference-data';
@@ -53,6 +57,7 @@ import { UserData } from '../providers/user-data';
     HomePage,
     BienestarPage,
     CarreraPage,
+    BenefitPage,
     //
     PopoverPage,
     SchedulePage,
@@ -82,13 +87,14 @@ import { UserData } from '../providers/user-data';
         { component: BienestarPage, name: 'Bienestar', segment: 'bienestar' },
         { component: CarreraPage, name: 'Carrera', segment: 'carrera' },
         { component: PlanesPage, name: 'Planes', segment: 'planes' },
-        { component: AboutPage, name: 'About', segment: 'about' },
-        { component: WelcomePage, name: 'Welcome', segment: 'welcome' },
+        { component: AboutPage, name: 'About', segment: 'quienes-somos' },
+        { component: WelcomePage, name: 'Welcome', segment: 'bienvenidos' },
         { component: SupportPage, name: 'SupportPage', segment: 'support' },
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
         { component: SignupPage, name: 'SignupPage', segment: 'signup' },
-        { component: WelcomePage, name: 'WelcomePage', segment: 'welcome' }
+        { component: WelcomePage, name: 'WelcomePage', segment: 'welcome' },
+        { component: BenefitPage, name: 'WelcomePage', segment: 'becas' }
       ]
     }),
     IonicStorageModule.forRoot()
@@ -105,6 +111,7 @@ import { UserData } from '../providers/user-data';
     BienestarPage,
     PlanesPage,
     CarreraPage,
+    BenefitPage,
     //
     PopoverPage,
     SchedulePage,
