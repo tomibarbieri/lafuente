@@ -17,6 +17,7 @@ import { CarreraPage } from '../carrera/carrera';
 export class HomePage {
 
   carreraPage = CarreraPage;
+  medicina = "Medicina";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -24,9 +25,4 @@ export class HomePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
   }
-
-  carrera() {
-    this.navCtrl.push(CarreraPage);
-  }
-
 }

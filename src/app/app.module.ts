@@ -91,7 +91,7 @@ import { UserData } from '../providers/user-data';
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
         { component: SignupPage, name: 'SignupPage', segment: 'signup' },
-        { component: BenefitPage, name: 'WelcomePage', segment: 'becas' },
+        { component: BenefitPage, name: 'BenefitPage', segment: 'becas' },
       ]
     }),
     IonicStorageModule.forRoot()

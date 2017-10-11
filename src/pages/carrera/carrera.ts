@@ -15,8 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CarreraPage {
 
+  carrera = '';
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    
+    this.carrera = navParams.get('carrera');
   }
 
   ionViewDidLoad() {
