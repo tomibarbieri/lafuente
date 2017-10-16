@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { CarreraPage } from '../carrera/carrera';
 
 /**
- * Generated class for the HomePage page.
+ * Generated class for the SubjectPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -11,18 +10,16 @@ import { CarreraPage } from '../carrera/carrera';
 
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-subject',
+  templateUrl: 'subject.html',
 })
-export class HomePage {
-
-  carreraPage = CarreraPage;
-  carrera: object = { carrera : "Medicina"};
+export class SubjectPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePage');
+    console.log('ionViewDidLoad SubjectPage');
   }
+
 }

@@ -71,3 +71,14 @@
 .socialnet-padding {
   margin-left: 4%;
 }
+
+@import "theme/variables";
+
+.menu-remediar {
+  ion-icon {
+    color: map-get($colors, primary);
+  }
+  button {
+    color: map-get($colors, primary);
+  }
+}

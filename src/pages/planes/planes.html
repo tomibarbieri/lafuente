@@ -3,91 +3,64 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Planes de estudio</ion-title>
+    <ion-title>{{ plan }}</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="outer-content speaker-list">
 
-      <ion-card>
-        <ion-card-header class="card-header md-primary">
-          <b>Listado de planes de estudio</b>
-        </ion-card-header>
+<ion-content>
 
-        <ion-list>
-          <button ion-item>
-            <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
-            Licenciatura en sistemas 2015
-          </button>
+  <ion-card>
+    <ion-item-group class="plan-group">
+      <ion-item-divider color="light">Primer año</ion-item-divider>
+      <ion-item (click)="pushSubject()">Anatomía <ion-badge color="primary">Anual</ion-badge></ion-item>
+      <ion-item>Biologia <ion-badge color="primary">Anual</ion-badge></ion-item>
+      <ion-item>Ciencias Social y Medicina <ion-badge color="primary">Bimestral</ion-badge></ion-item>
+      <ion-item>Citología, Histología y Embriología <ion-badge color="primary">Bimestral</ion-badge></ion-item>
+    </ion-item-group>
 
-          <button ion-item>
-            <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
-            Licenciatura en informática 2015
-          </button>
+    <ion-item-group class="plan-group">
+      <ion-item-divider color="light">Segundo año</ion-item-divider>
+      <ion-item>Bioquímica y Biología Molecular</ion-item>
+      <ion-item>Epidemiología</ion-item>
+      <ion-item>Fisiología y Física Biológica</ion-item>
+    </ion-item-group>
 
-          <button ion-item>
-            <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
-            A.P.U. 2015
-          </button>
-        </ion-list>
-      </ion-card>
+    <ion-item-group class="plan-group">
+      <ion-item-divider color="light">Tercer año</ion-item-divider>
+      <ion-item>Farmacología Básica</ion-item>
+      <ion-item>Patología</ion-item>
+      <ion-item>Oftalmología</ion-item>
+    </ion-item-group>
+  </ion-card>
 
-<!--
-  <ion-list [virtualScroll]="speakers">
-    <ion-grid fixed>
-      <ion-row align-items-stretch>
-
-        <ion-col col-12 col-md-6 align-self-stretch align-self-center *virtualItem="let speaker" approxItemHeight="457px">
-
-          <ion-card class="speaker-card">
-            <ion-card-header>
-              <button ion-item detail-none (click)="goToSpeakerDetail(speaker)">
-                <ion-avatar item-start>
-                  <img [src]="speaker.profilePic" alt="Speaker profile pic">
-                </ion-avatar>
-                {{speaker.name}}
-              </button>
-            </ion-card-header>
-
-            <ion-card-content class="outer-content">
-              <ion-list>
-                <button ion-item *ngFor="let session of speaker.sessions" (click)="goToSessionDetail(session)">
-                  <h3>{{session.name}}</h3>
-                </button>
-
-                <button ion-item (click)="goToSpeakerDetail(speaker)">
-                  <h3>About {{speaker.name}}</h3>
-                </button>
-              </ion-list>
-            </ion-card-content>
-
-            <ion-row no-padding>
-              <ion-col col-12 col-lg-auto text-center text-lg-left>
-                <button ion-button clear small color="primary" icon-start (click)="goToSpeakerTwitter(speaker)">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                  Tweet
-                </button>
-              </ion-col>
-              <ion-col col-12 col-lg-auto text-center>
-                <button ion-button clear small color="primary" icon-start (click)="openSpeakerShare(speaker)">
-                  <ion-icon name='share-alt'></ion-icon>
-                  Share
-                </button>
-              </ion-col>
-              <ion-col col-12 col-lg-auto text-center text-lg-right>
-                <button ion-button clear small color="primary" icon-start (click)="openContact(speaker)">
-                  <ion-icon name='chatboxes'></ion-icon>
-                  Contact
-                </button>
-              </ion-col>
-            </ion-row>
-
-          </ion-card>
-
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-
-  </ion-list>
--->
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <!--falta ver como se redirige a facebook a twitter a gmail y a instagram!! -->
+    <ion-row>
+      <ion-col class="socialnet-padding" col-2>
+        <button ion-fab browse-to="https://www.facebook.com/RemediarUNLP/">
+          <ion-icon ios="logo-facebook" md="logo-facebook"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col offset-1 col-2>
+        <button ion-fab browse-to="https://twitter.com/RemediarUNLP">
+          <ion-icon ios="logo-twitter" md="logo-twitter"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col offset-1 col-2>
+        <button ion-fab browse-to="https://www.instagram.com/remediarUNLP/">
+          <ion-icon ios="logo-instagram" md="logo-instagram"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col  offset-1 col-2>
+        <button ion-fab browse-to="mailto:remediarcienciasmedicas@gmail.com">
+          <ion-icon  ios="ios-mail" md="md-mail"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

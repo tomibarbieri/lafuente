@@ -1,3 +1,19 @@
+@import "theme/variables";
+
 page-carrera {
+
+  .carrer-title {
+    color: map-get($colors, primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 200%;
+    font-weight: bold;
+  }
+
+  .button-list {
+    button {
+      color: map-get($colors, primary);
+    }
+  }
 
 }
