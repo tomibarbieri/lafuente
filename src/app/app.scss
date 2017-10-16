@@ -83,6 +83,15 @@
   }
 }
 
+ion-header {
+  ion-title {
+    padding-left: 8%;
+  }
+  .toolbar-title-md {
+    font-size: 2.5rem;
+  }
+}
+
 ion-footer {
   text-align: center;
   button {

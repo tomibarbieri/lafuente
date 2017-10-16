@@ -16,6 +16,9 @@ import { WelcomePage  } from '../pages/welcome/welcome';
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
+
 
 export interface PageInterface {
   title: string;
@@ -72,6 +75,7 @@ export class ConferenceApp {
     public platform: Platform,
     public confData: ConferenceData,
     public storage: Storage,
+    public inAppBrowser: InAppBrowser,
     public splashScreen: SplashScreen
   ) {
 
@@ -132,6 +136,29 @@ export class ConferenceApp {
     this.nav.setRoot(WelcomePage);
   }
 
+  openFacebook() {
+    this.inAppBrowser.create(
+      `https://www.facebook.com/RemediarUNLP/`,
+    );
+  }
+
+  openTwitter() {
+    this.inAppBrowser.create(
+      `https://twitter.com/RemediarUNLP`
+    );
+  }
+
+  openInstagram() {
+    this.inAppBrowser.create(
+      `https://www.instagram.com/remediarUNLP/`
+    );
+  }
+
+  openMail() {
+    this.inAppBrowser.create(
+      `mailto:remediarcienciasmedicas@gmail.com`
+    );
+  }
   /*openPlanes() {
     this.nav.setRoot(PlanesPage);
   }*/

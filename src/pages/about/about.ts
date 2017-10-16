@@ -7,6 +7,7 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 	pushPage: any;
+  about = "group";
 
   constructor(public navCtrl: NavController) {}
 }

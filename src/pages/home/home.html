@@ -13,6 +13,7 @@
     <ion-title>
       <img src="assets/img/about_page/pill-bg-white.svg">
       Inicio
+      <img src="assets/img/about_page/pill-bg-white.svg">
     </ion-title>
   </ion-navbar>
 
@@ -22,26 +23,26 @@
 <ion-content class="tomson">
 
   <ion-card class="logo-index">
-    <img src="/../assets/img/logo.png"/>
+    <img src="assets/img/logo.png"/>
   </ion-card>
 
-  <ion-card class="img-container-index">
+  <ion-card class="first-container img-container-index">
 
     <div class="img-div">
       <a [navPush]="carreraPage" [navParams]="carrera" >
-        <img class="img-remediar" src="/../assets/img/medicina.svg" alt="medicina" />
+        <img class="img-remediar" src="assets/img/medicina.svg" alt="medicina" />
         MEDICINA
       </a>
     </div>
     <div class="img-div text-cardio">
       <a [navPush]="carreraPage" >
-        <img class="img-remediar" src="/../assets/img/cardio.svg" alt="practicas cardiologicas" />
+        <img class="img-remediar" src="assets/img/cardio.svg" alt="practicas cardiologicas" />
         PRÁCTICAS CARDIOLOGICAS
       </a>
     </div>
     <div class="img-div">
       <a [navPush]="carreraPage" >
-        <img class="img-remediar" src="/../assets/img/nutricion.svg" alt="nutricion" />
+        <img class="img-remediar" src="assets/img/nutricion.svg" alt="nutricion" />
         NUTRICIÓN
       </a>
     </div>
@@ -51,14 +52,14 @@
 
     <div class="img-div">
       <a [navPush]="carreraPage" >
-        <img class="img-remediar" src="/../assets/img/obstetricia.svg" alt="obstetricia" />
+        <img class="img-remediar" src="assets/img/obstetricia.svg" alt="obstetricia" />
         OBSTETRICIA
       </a>
     </div>
 
     <div class="img-div">
       <a [navPush]="carreraPage" >
-        <img class="img-remediar" src="/../assets/img/enfermeria.svg" alt="enfermeria" />
+        <img class="img-remediar" src="assets/img/enfermeria.svg" alt="enfermeria" />
         ENFERMERÍA
       </a>
     </div>
@@ -72,22 +73,22 @@
     <!--falta ver como se redirige a facebook a twitter a gmail y a instagram!! -->
     <ion-row>
       <ion-col class="socialnet-padding" col-2>
-        <button ion-fab browse-to="https://www.facebook.com/RemediarUNLP/">
+        <button (click)="openFacebook()" ion-fab browse-to="https://www.facebook.com/RemediarUNLP/">
           <ion-icon ios="logo-facebook" md="logo-facebook"></ion-icon>
         </button>
       </ion-col>
       <ion-col col-2>
-        <button ion-fab browse-to="https://twitter.com/RemediarUNLP">
+        <button (click)="openTwitter()" ion-fab browse-to="https://twitter.com/RemediarUNLP">
           <ion-icon ios="logo-twitter" md="logo-twitter"></ion-icon>
         </button>
       </ion-col>
       <ion-col col-2>
-        <button ion-fab browse-to="https://www.instagram.com/remediarUNLP/">
+        <button (click)="openInstagram()" ion-fab browse-to="https://www.instagram.com/remediarUNLP/">
           <ion-icon ios="logo-instagram" md="logo-instagram"></ion-icon>
         </button>
       </ion-col>
       <ion-col  col-2>
-        <button ion-fab browse-to="mailto:remediarcienciasmedicas@gmail.com">
+        <button (click)="openMail()" ion-fab browse-to="mailto:remediarcienciasmedicas@gmail.com">
           <ion-icon  ios="ios-mail" md="md-mail"></ion-icon>
         </button>
       </ion-col>

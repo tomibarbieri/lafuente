@@ -10,29 +10,47 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Bienestar estudiantil</ion-title>
+    <ion-title>
+      <img src="assets/img/about_page/pill-bg-white.svg">
+      Bienestar estudiantil
+      <img src="assets/img/about_page/pill-bg-white.svg">
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-  <ion-content padding>
-    <ion-list>
+  <ion-content class="bienstar-fondo" padding>
+    <ion-list class="bienestar-list">
       <ion-item>
-        <a  [navPush]="onBenefitPage">
-          <ion-icon name="leaf" item-start></ion-icon>
-            Becas
-          <ion-note item-right>info sobre las becas que ofrece nación, pcia, unlp y medicina</ion-note>
+        <a [navPush]="onBenefitPage">
+          <h2><ion-icon name="leaf" item-start></ion-icon> Becas</h2>
+          <p>Información a nivel Nacional, Provincial y UNLP</p>
         </a>
       </ion-item>
       <ion-item>
         <a [navPush]="onBenefitPage">
-          <ion-icon name="leaf" item-start></ion-icon>
-            Comedor
-          <ion-note item-right>info sobre las sedes de los comedores</ion-note>
+          <h2><ion-icon name="pizza" item-start></ion-icon> Comedores</h2>
+          <p>Todas las sedes del comedor de la UNLP</p>
+        </a>
+      </ion-item>
+      <ion-item>
+        <a [navPush]="onBenefitPage">
+          <h2><ion-icon name="medkit" item-start></ion-icon> Salud</h2>
+          <p>Atención en salud y vacunación de la UNLP</p>
+        </a>
+      </ion-item>
+      <ion-item>
+        <a [navPush]="onBenefitPage">
+          <h2><ion-icon name="football" item-start></ion-icon> Deportes</h2>
+          <p>Todos los deportes de la UNLP, voley, futbol y mas..</p>
+        </a>
+      </ion-item>
+      <ion-item>
+        <a [navPush]="onBenefitPage">
+          <h2><ion-icon name="bulb" item-start></ion-icon> Actividades</h2>
+          <p>Cursos, actividades extracurriculares, charlas</p>
         </a>
       </ion-item>
     </ion-list>
   </ion-content>
-</ion-content>
