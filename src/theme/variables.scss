@@ -96,4 +96,15 @@ $toolbar-md-active-color:                 #fff;
 @import "roboto";
 @import "noto-sans";
 
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@font-face {
+  font-family: Yanone;
+  src: url('../assets/fonts/YanoneKaffeesatz-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Yanone';
+  font-size: 1.2em;
+  letter-spacing: .5px;
+}

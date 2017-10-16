@@ -1,9 +1,21 @@
+@import "theme/variables";
 
 .plan-group {
   ion-item {
-    font-size: 0.9em;
+    font-size: 0.8em;
+  }
+  ion-label {
+    margin: 8px 8px 8px 0;
+  }
+  ion-item-divider {
+    font-weight: bold;
+    color: map-get($colors, primary);
+    font-size: 1em;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
   ion-badge {
-    font-size: 0.9em;
+    font-size: 0.8em;
+    padding-top: 2%
   }
 }

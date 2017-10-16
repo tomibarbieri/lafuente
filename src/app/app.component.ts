@@ -6,7 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Storage } from '@ionic/storage';
 
 
-import { PlanesPage } from '../pages/planes/planes';
+//import { PlanesPage } from '../pages/planes/planes';
 import { HomePage } from '../pages/home/home';
 import { BienestarPage } from '../pages/bienestar/bienestar';
 
@@ -41,7 +41,7 @@ export class ConferenceApp {
   // the login page disables the left menu
   appPages: PageInterface[] = [
     { title: 'Inicio', name: 'Home', component: HomePage, icon: 'home' },
-    { title: 'Facultad', name: 'Planes', component: PlanesPage, icon: 'medical' },
+    //{ title: 'Facultad', name: 'Planes', component: PlanesPage, icon: 'medical' },
     { title: 'Bienestar Estudiantil', name: 'Bienestar', component: BienestarPage, icon: 'megaphone' },
     { title: 'Remediar', name: 'About', component: AboutPage, icon: 'medkit' },
     //{ title: 'Materias', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
@@ -132,9 +132,9 @@ export class ConferenceApp {
     this.nav.setRoot(WelcomePage);
   }
 
-  openPlanes() {
+  /*openPlanes() {
     this.nav.setRoot(PlanesPage);
-  }
+  }*/
 
   listenToLoginEvents() {
     this.events.subscribe('user:login', () => {

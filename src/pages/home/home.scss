@@ -40,13 +40,14 @@
     height: 100%;
     color: map-get($colors, primary);
     text-align: center;
-    font-size: .80em;
+    font-weight: bold;
   }
   .img-div:active {
     opacity: .7;
   }
   .text-cardio {
-    font-size: .80em;
+    font-size: .90em;
+    font-weight: bold;
   }
   .img-remediar {
     margin-bottom: 8%;

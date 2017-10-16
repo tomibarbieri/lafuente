@@ -1,3 +1,47 @@
+@import "theme/variables";
+
 page-subject {
+
+  .subject-list {
+
+    margin-bottom: 8%;
+    border-radius : 6px;
+
+    .subject-title {
+      text-align: center;
+      background-image: url("../assets/img/subject_page/fondor.png");
+      //background-color: map-get($colors, primary);
+      ion-label {
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+      h1 {
+        color: map-get($colors, primary);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5em;
+      }
+    }
+
+    ion-icon {
+      font-size: 2em !important;
+    }
+
+    ion-item {
+      padding-left: 10%
+    }
+
+    h2, h3, p, ion-icon {
+      color: map-get($colors, primary);
+      font-size: .8em;
+    }
+    button {
+      font-size: 1.5rem !important;
+      padding-top: 2% !important;
+    }
+    h2 {
+      font-weight: bold;
+    }
+  }
 
 }

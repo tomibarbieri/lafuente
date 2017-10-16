@@ -69,7 +69,7 @@
 }
 
 .socialnet-padding {
-  margin-left: 4%;
+  margin-left: 17%;
 }
 
 @import "theme/variables";
@@ -80,5 +80,13 @@
   }
   button {
     color: map-get($colors, primary);
+  }
+}
+
+ion-footer {
+  text-align: center;
+  button {
+    height: 40px !important;
+    width: 40px !important;
   }
 }
