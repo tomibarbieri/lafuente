@@ -15,7 +15,12 @@
     padding-bottom: 2%;
   }
   ion-badge {
-    font-size: 0.8em;
-    padding-top: 2%
+    font-size: 0.7em;
+    padding: 1.5%
+  }
+  .badge-md-primary {
+    color: #3871c1;
+    background-color: white;
+    border: 1px solid #3871c1;
   }
 }
