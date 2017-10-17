@@ -1,0 +1,25 @@
+page-lunch-room {
+  #map_canvas {
+    height: 300px;
+    width: inherit;
+    background-color : transparent;
+  }
+
+  .pin-red    { color: #fd7567; }
+  .pin-green  { color: #00e64d; }
+  .pin-orange { color: #f90; }
+  .pin-blue   { color: #3871c1; }
+
+  .card-header {
+    font-weight: bold;
+    color: #3871c1;
+  }
+}
+
+page-lunch-room #map_canvas.show-map {
+  opacity: 1;
+}
+
+ion-app._gmaps_cdv_ .nav-decor{
+  background-color: transparent !important;
+}
