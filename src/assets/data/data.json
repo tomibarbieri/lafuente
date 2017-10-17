@@ -278,20 +278,41 @@
     "id": "13"
   }],
 
-
   "map": [{
-    "name": "Monona Terrace Convention Center",
-    "lat": 43.071584,
-    "lng": -89.380120,
-    "center": true
-  }, {
-    "name": "Ionic HQ",
-    "lat": 43.074395,
-    "lng": -89.381056
-  }, {
-    "name": "Afterparty - Brocach Irish Pub",
-    "lat": 43.07336,
-    "lng": -89.38335
+    "name": "Sede Bosque Este",
+    "lat": -34.908269,
+    "lng": -57.933521,
+    "address": "Boulevard 120 entre 61 y 62",
+    "center": true,
+    "color": "pin-red",
+    "icon": "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+  },
+  {
+    "name": "Sede ATULP",
+    "lat": -34.9131019,
+    "lng": -57.9581819,
+    "address": "44 Nº 733 entre 9 y 10",
+    "center": true,
+    "color": "pin-blue",
+    "icon": "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+  },
+  {
+    "name": "Sede Club Everton",
+    "lat": -34.9070896,
+    "lng": -57.9414137,
+    "address": "Boulevard 120 entre 61 y 62",
+    "center": true,
+    "color": "pin-green",
+    "icon": "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+  },
+  {
+    "name": "Sede Bosque Oeste",
+    "lat": -34.9303617,
+    "lng": -57.944607,
+    "address": "50 entre 116 y 117",
+    "center": true,
+    "color": "pin-orange",
+    "icon": "http://maps.google.com/mapfiles/ms/icons/orange-dot.png"
   }]
 
 }

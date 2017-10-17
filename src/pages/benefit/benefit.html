@@ -5,14 +5,65 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>benefit-page</ion-title>
+    <ion-title>Comedores Universitario</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding>
+  <ion-card>
+    <div #mapCanvas id="map_canvas"></div>
+    <ion-fab right top>
+      <button ion-fab>
+        <ion-icon name="pin"></ion-icon>
+      </button>
+    </ion-fab>
+
+    <ion-item>
+      <ion-icon name="pin" class="pin-red" item-start large></ion-icon>
+      <h2>Sede Bosque Este</h2>
+      <p>Boulevard 120 entre 61 y 62</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="pin" class="pin-blue" item-start large></ion-icon>
+      <h2>Sede ATULP</h2>
+      <p>44 Nº 733 entre 9 y 10</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="pin" class="pin-green" item-start large></ion-icon>
+      <h2>Sede Club Everton</h2>
+      <p>Salón Planta Baja- calle 14 entre 63 y 64</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="pin" class="pin-orange" item-start large></ion-icon>
+      <h2>Sede Bosque Oeste</h2>
+      <p>50 entre 116 y 117</p>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      ¿Cuánto cuestan los tickets y en donde se obtienen?
+    </ion-card-header>
+    <ion-card-content>
+      Los tickets tienen un valor de $ 15 (en tanto para docentes y no docentes es de $40)
+      y se pueden adquirir de lunes a viernes en el horario de 10 a 14, en cualquiera de las sedes.
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      ¿Que requisitos se necesitan?
+    </ion-card-header>
+    <ion-card-content>
+      Los estudiantes que se acerquen por primera vez, deberán llevar una foto carnet
+      y un certificado de alumno regular. En el caso de los ingresantes,
+      deberán presentarse con una foto y un certificado de inscripción a la UNLP.
+    </ion-card-content>
+  </ion-card>
+
+  <button (click)="openBenefitUNLP()" ion-button outline>+Info</button>
 
 </ion-content>

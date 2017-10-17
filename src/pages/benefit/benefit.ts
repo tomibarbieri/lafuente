@@ -1,5 +1,12 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild, ElementRef } from '@angular/core';
+
+import { ConferenceData } from '../../providers/conference-data';
+
+import { Platform } from 'ionic-angular';
+
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
+declare var google: any;
 
 /**
  * Generated class for the BenefitPage page.
@@ -8,18 +15,59 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * on Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-benefit',
   templateUrl: 'benefit.html',
 })
 export class BenefitPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  @ViewChild('mapCanvas') mapElement: ElementRef;
+  constructor(
+    public confData: ConferenceData,
+    public platform: Platform,
+    public inAppBrowser: InAppBrowser
+  ) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BenefitPage');
+
+    this.confData.getMap().subscribe((mapData: any) => {
+      let mapEle = this.mapElement.nativeElement;
+
+      let map = new google.maps.Map(mapEle, {
+        center: { lat: -34.9173571, lng: -57.9453303},
+        zoom: 13
+      });
+
+      mapData.forEach((markerData: any) => {
+        let infoWindow = new google.maps.InfoWindow({
+          content: `<h4>${markerData.name}</h4><h5>${markerData.address}</h5>`
+        });
+
+        let marker = new google.maps.Marker({
+          position: markerData,
+          map: map,
+          title: markerData.name,
+          icon: markerData.icon,
+          animation: google.maps.Animation.DROP
+        });
+
+        marker.addListener('click', () => {
+          infoWindow.open(map, marker);
+        });
+      });
+
+      google.maps.event.addListenerOnce(map, 'idle', () => {
+        mapEle.classList.add('show-map');
+      });
+
+    });
+
   }
 
+  openBenefitUNLP() {
+    this.inAppBrowser.create(
+      `https://www.unlp.edu.ar/estudiantes/comedor_universitario-3923`
+    );
+  }
 }
