@@ -8,10 +8,26 @@ ion-avatar {
   }
 }
 
-ion-icon {
-  color: map-get($colors, primary);
-  margin-left: 20%;
-  font-size: 1.5em !important;
+.achievements-remediars, .proposals-remediars {
+  ion-icon {
+    color: map-get($colors, primary);
+    margin-left: 20%;
+    font-size: 1.5em !important;
+  }
+}
+
+.span-bold {
+  font-weight: bold;
+  //text-decoration: underline;
+  font-size: 0.9em;
+}
+
+.logo-about {
+  margin: 5% 20% 7% 20%;
+  background-color: transparent;
+  width: 60%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
 .group-remediar {
@@ -22,7 +38,7 @@ ion-icon {
   box-shadow: none;
   -webkit-box-shadow: none;
   ion-card-content {
-    margin-top: 7%;
+    margin-top: 5%;
   }
   .button-footer {
     text-align: center;
