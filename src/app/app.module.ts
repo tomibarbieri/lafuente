@@ -25,6 +25,7 @@ import { CarreraPage } from '../pages/carrera/carrera';
 import { HomePage } from '../pages/home/home';
 import { PlanesPage } from '../pages/planes/planes';
 import { BenefitPage } from '../pages/benefit/benefit'; //sobre las becas universitarias
+import { LunchRoomPage } from '../pages/lunch-room/lunch-room'; //sobre los comedores universitarias
 import { SubjectPage } from '../pages/subject/subject';
 
 
@@ -60,6 +61,7 @@ import { UserData } from '../providers/user-data';
     BenefitPage,
     WelcomePage,
     SubjectPage,
+    LunchRoomPage,
     //
     PopoverPage,
     SchedulePage,
@@ -95,6 +97,7 @@ import { UserData } from '../providers/user-data';
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
         { component: SignupPage, name: 'SignupPage', segment: 'signup' },
         { component: BenefitPage, name: 'BenefitPage', segment: 'becas' },
+        { component: LunchRoomPage, name: 'LunchRoomPage', segment: 'comedores' },
         { component: SubjectPage, name: 'SubjectPage', segment: 'subject' },
       ]
     }),
@@ -115,6 +118,7 @@ import { UserData } from '../providers/user-data';
     WelcomePage,
     BenefitPage,
     SubjectPage,
+    LunchRoomPage,
     //
     PopoverPage,
     SchedulePage,

@@ -1,69 +1,79 @@
-<!--
-  Generated template for the BenefitPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
   <ion-navbar>
-    <ion-title>Comedores Universitario</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>
+      <img src="assets/img/about_page/pill-bg-white.svg">
+      Becas y programas
+      <img src="assets/img/about_page/pill-bg-white.svg">
+    </ion-title>
   </ion-navbar>
+  <ion-toolbar>
+    <div padding>
+      <ion-segment [(ngModel)]="about">
+        <ion-segment-button value="nationals">
+          Nacionales
+        </ion-segment-button>
+        <ion-segment-button value="provincial">
+          Provinciales
+        </ion-segment-button>
+        <ion-segment-button value="unlp">
+          UNLP
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-card>
-    <div #mapCanvas id="map_canvas"></div>
-    <ion-fab right top>
-      <button ion-fab>
-        <ion-icon name="pin"></ion-icon>
-      </button>
-    </ion-fab>
+<ion-content>
+  <div [ngSwitch]="benefit">
+    <ion-list *ngSwitchCase="'nationals'">
+      <ion-item text-wrap>
+          Somos una agrupación de estudiantes, pertenecientes a la
+          Facultad de Ciencias Médicas y a la EURHES, que hace ya 5 años
+          decidimos tomar el compromiso de acompañarte en tu vida universitaria
+          resolviendo tus dudas y problemas, y organizando actividades de apoyo
+          e interés para potenciar tu formación académica.
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'provincial'">
+      <ion-card>
+        <ion-item>
+          <ion-avatar item-start>
+            <ion-icon name='pin' item-start></ion-icon>
+          </ion-avatar>
+          <p>
+            Extensión plazos para presentar las vacunas y posta de vacunación
+            móvil para todos los estudiantes de la Facultad de Ciencias Médicas y de la EURHES
+          </p>
+        </ion-item>
+        <ion-item>
+          <ion-avatar item-start>
+            <ion-icon name='pin' item-start></ion-icon>
+          </ion-avatar>
+          <p>Logramos la extensión de la inscripción de las becas de la UNLP</p>
+        </ion-item>
+        <ion-item>
+          - Libros Digitales en PDF en los Grupos de Facebook
+          - Hicimos más de 50 actividades de apoyo académico.
+          - Hicimos más de 4 cursos de RCP
+          - Hicimos más de 15 actividades de formación académica.
+        </ion-item>
+      </ion-card>
+    </ion-list>
+    <ion-list *ngSwitchCase="'unlp'">
+      <ion-item text-wrap>
+        -Proponemos un Centro de Estudiantes y una representación de los Estudiantes en el Consejo Directivo a la altura de las circunstancias, que ponga un freno al retroceso constante en nuestros derechos y vuelva a darle legitimidad y convocatoria a los espacios de discusión de los estudiantes.
+- Mejorar los servicios de Fotocopiadora con una mejor calidad, precios más accesibles y apuntes digitales.
+-Mejorar los servicios del Buffet Estudiantil con una más amplia variedad del menú y espacios interactivos de ocio para los estudiantes.
+- Incorporar a los estudiantes a la investigación universitaria, con una participación activa en los proyectos de investigación de la salud.
+- Incorporar a los estudiantes al voluntariado universitario, con una participación activa en los proyectos de abordaje comunitario.
+- Ciclos de apoyo académico para las asignaturas, organizados según la demanda de necesidad que planteen los estudiantes
+- Ciclos de capacitación académica, para la formación complementaria y desarrollo del interés del estudiante por diversas temáticas de la salud.
 
-    <ion-item>
-      <ion-icon name="pin" class="pin-red" item-start large></ion-icon>
-      <h2>Sede Bosque Este</h2>
-      <p>Boulevard 120 entre 61 y 62</p>
-    </ion-item>
-
-    <ion-item>
-      <ion-icon name="pin" class="pin-blue" item-start large></ion-icon>
-      <h2>Sede ATULP</h2>
-      <p>44 Nº 733 entre 9 y 10</p>
-    </ion-item>
-
-    <ion-item>
-      <ion-icon name="pin" class="pin-green" item-start large></ion-icon>
-      <h2>Sede Club Everton</h2>
-      <p>Salón Planta Baja- calle 14 entre 63 y 64</p>
-    </ion-item>
-
-    <ion-item>
-      <ion-icon name="pin" class="pin-orange" item-start large></ion-icon>
-      <h2>Sede Bosque Oeste</h2>
-      <p>50 entre 116 y 117</p>
-    </ion-item>
-  </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      ¿Cuánto cuestan los tickets y en donde se obtienen?
-    </ion-card-header>
-    <ion-card-content>
-      Los tickets tienen un valor de $ 15 (en tanto para docentes y no docentes es de $40)
-      y se pueden adquirir de lunes a viernes en el horario de 10 a 14, en cualquiera de las sedes.
-    </ion-card-content>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      ¿Que requisitos se necesitan?
-    </ion-card-header>
-    <ion-card-content>
-      Los estudiantes que se acerquen por primera vez, deberán llevar una foto carnet
-      y un certificado de alumno regular. En el caso de los ingresantes,
-      deberán presentarse con una foto y un certificado de inscripción a la UNLP.
-    </ion-card-content>
-  </ion-card>
-
-  <button (click)="openBenefitUNLP()" ion-button outline>+Info</button>
-
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>
