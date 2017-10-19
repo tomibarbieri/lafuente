@@ -13,7 +13,7 @@ class Parser
 
   def parseFile
     CSV.foreach(@path, "r") do |row|
-      @subjects << @each_row = {
+      @each_row = {
         materia: get_field(row[0]),
         catedra: get_field(row[1]),
         anio: get_field(row[2]),
@@ -32,12 +32,91 @@ class Parser
         fb: get_field(row[15]),
         tw: get_field(row[16]),
         web: get_field(row[17])
-      }.to_json
+      }
+      puts "---------------------------------------------------------------------------"
+      puts @each_row
     end
 
   end
 
   def to_json()
+    {
+      "name": "medicina2004",
+      "years": [{ 
+          "name": "Primero", 
+          "regimes": [{
+              "name": "Anual",
+              "subjects": []
+            }, {
+              "name": "Cuatrimestral",
+              "subjects": []
+            }, {
+              "name": "Bimestral",
+              "subjects": []
+            }
+          }]
+        }, { 
+          "name": "Segundo", 
+          "regimes": [{
+              "name": "Anual",
+              "subjects": []
+            }, {
+              "name": "Cuatrimestral",
+              "subjects": []
+            }, {
+              "name": "Bimestral",
+              "subjects": []
+            }
+        }, { 
+          "name": "Tercero",
+          "regimes": [{
+              "name": "Anual",
+              "subjects": []
+            }, {
+              "name": "Cuatrimestral",
+              "subjects": []
+            }, {
+              "name": "Bimestral",
+              "subjects": []
+            }
+        }, {
+          "name": "Cuarto",
+          "regimes": [{
+              "name": "Anual",
+              "subjects": []
+            }, {
+              "name": "Cuatrimestral",
+              "subjects": []
+            }, {
+              "name": "Bimestral",
+              "subjects": []
+            }
+        }, { 
+          "name": "Quinto",
+          "regimes": [{
+              "name": "Anual",
+              "subjects": []
+            }, {
+              "name": "Cuatrimestral",
+              "subjects": []
+            }, {
+              "name": "Bimestral",
+              "subjects": []
+            }
+        }, { 
+          "name": "Sexto", 
+          "regimes": [{
+              "name": "Anual",
+              "subjects": []
+            }, {
+              "name": "Cuatrimestral",
+              "subjects": []
+            }, {
+              "name": "Bimestral",
+              "subjects": []
+            }
+        }]
+    }
   end
 
   def get_field(field)
@@ -48,6 +127,6 @@ end
 
 #execute script
 
-parser = Parser.new("materias-remediar.csv")
+parser = Parser.new("medicina2004.csv")
 parser.parseFile()
 
