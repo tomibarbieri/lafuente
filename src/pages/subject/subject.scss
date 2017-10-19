@@ -22,6 +22,9 @@ page-subject {
         font-weight: bold;
         font-size: 1.5em;
       }
+      span {
+        color: map-get($colors, primary);
+      }
     }
 
     ion-icon {
@@ -43,6 +46,13 @@ page-subject {
     h2 {
       font-weight: bold;
     }
+  }
+
+  .clave-entorno {
+    color: map-get($colors, primary);
+    font-size: 0.5em;
+    margin-left: 1%;
+    padding-top: 1%;
   }
 
 }
