@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title><img src="assets/img/about_page/pill-bg-white.svg"> {{ plan }} <img src="assets/img/about_page/pill-bg-white.svg"></ion-title>
+    <ion-title><img src="assets/img/about_page/pill-bg-white.svg"> {{ carreer.name }} <img src="assets/img/about_page/pill-bg-white.svg"></ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -12,29 +12,21 @@
 <ion-content>
 
   <ion-card>
-    <ion-item-group class="plan-group">
-      <ion-item-divider color="light">Primer año</ion-item-divider>
-      <ion-item (click)="pushSubject()">Anatomía <ion-badge color="primary">Anual</ion-badge></ion-item>
-      <ion-item>Biologia <ion-badge color="primary">Anual</ion-badge></ion-item>
-      <ion-item>Ciencias Social y Medicina <ion-badge color="primary">Bimestral</ion-badge></ion-item>
-      <ion-item>Citología, Histología y Embriología <ion-badge color="primary">Bimestral</ion-badge></ion-item>
+    <ion-item-group class="plan-group" *ngFor="let year of carreer.years">
+      <ion-item-divider color="light">{{ year.name }}</ion-item-divider>
+
+        <ng-container *ngFor="let regime of year.regimes">
+          <ion-item *ngFor="let subject of regime.subjects" (click)="pushSubject()">
+            {{ subject.name }}
+            <ion-badge color="primary">
+              {{ regime.name }}
+            </ion-badge>
+          </ion-item>
+      </ng-container>
+
     </ion-item-group>
 
-    <ion-item-group class="plan-group">
-      <ion-item-divider color="light">Segundo año</ion-item-divider>
-      <ion-item>Bioquímica y Biología Molecular</ion-item>
-      <ion-item>Epidemiología</ion-item>
-      <ion-item>Fisiología y Física Biológica</ion-item>
-    </ion-item-group>
-
-    <ion-item-group class="plan-group">
-      <ion-item-divider color="light">Tercer año</ion-item-divider>
-      <ion-item>Farmacología Básica</ion-item>
-      <ion-item>Patología</ion-item>
-      <ion-item>Oftalmología</ion-item>
-    </ion-item-group>
   </ion-card>
-
 </ion-content>
 
 <ion-footer>
