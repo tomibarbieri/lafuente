@@ -35,21 +35,39 @@
         </a>
       </ion-item>
       <ion-item>
-        <a [navPush]="onBenefitPage">
+        <a [navPush]="onHealthPage">
           <h2><ion-icon name="medkit" item-start></ion-icon> Salud</h2>
           <p>Atención en salud y vacunación de la UNLP</p>
         </a>
       </ion-item>
       <ion-item>
-        <a [navPush]="onBenefitPage">
+        <a (click)="openDeportes()">
           <h2><ion-icon name="football" item-start></ion-icon> Deportes</h2>
           <p>Todos los deportes de la UNLP, voley, futbol y mas..</p>
         </a>
       </ion-item>
       <ion-item>
-        <a [navPush]="onBenefitPage">
+        <a (click)="openActividades()">
           <h2><ion-icon name="bulb" item-start></ion-icon> Actividades</h2>
           <p>Cursos, actividades extracurriculares, charlas</p>
+        </a>
+      </ion-item>
+      <ion-item>
+        <a (click)="openSUBE()">
+          <h2><ion-icon name="card" item-start></ion-icon> Puntos SUBE</h2>
+          <p>Mapa con los puntos de recarga en la ciudad.</p>
+        </a>
+      </ion-item>
+      <ion-item>
+        <a (click)="openCualBondi()">
+          <h2><ion-icon name="bus" item-start></ion-icon> Recorridos de colectivos</h2>
+          <p>En la página de cualbondi los princippales recorridos.</p>
+        </a>
+      </ion-item>
+      <ion-item>
+        <a (click)="openAlquileres()">
+          <h2><ion-icon name="paper" item-start></ion-icon> Alquileres</h2>
+          <p>Pagina de referencia para conocer alquileres en la ciudad.</p>
         </a>
       </ion-item>
     </ion-list>

@@ -28,26 +28,31 @@ export class HomePage {
     { }
 
   openFacebook() {
-    this.inAppBrowser.create(
-      `https://www.facebook.com/RemediarUNLP/`
-    );
+    window.open('https://www.facebook.com/RemediarUNLP/', '_blank');
+    /*this.inAppBrowser.create(
+      `https://www.facebook.com/RemediarUNLP/`,
+      '_blank'
+    );*/
   }
 
   openTwitter() {
     this.inAppBrowser.create(
-      `https://twitter.com/RemediarUNLP`
+      `https://twitter.com/RemediarUNLP`,
+      '_blank'
     );
   }
 
   openInstagram() {
     this.inAppBrowser.create(
-      `https://www.instagram.com/remediarUNLP/`
+      `https://www.instagram.com/remediarUNLP/`,
+      '_blank'
     );
   }
 
   openMail() {
     this.inAppBrowser.create(
-      `mailto:remediarcienciasmedicas@gmail.com`
+      `mailto:remediarcienciasmedicas@gmail.com`,
+      '_blank'
     );
   }
 

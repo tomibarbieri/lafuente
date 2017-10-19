@@ -1,0 +1,26 @@
+page-health {
+
+  .card-header {
+    font-size: 2em;
+    text-overflow: ellipsis !important;
+    font-weight: bold;
+    color: #3871c1;
+  }
+
+  .card {
+    margin-bottom: 5%;
+  }
+
+  .title-health {
+    color: #3871c1;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .paragraph-health {
+    text-overflow: ellipsis !important;
+    overflow: visible;
+    color: black;
+  }
+
+}

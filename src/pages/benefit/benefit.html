@@ -12,12 +12,9 @@
   </ion-navbar>
   <ion-toolbar>
     <div padding>
-      <ion-segment [(ngModel)]="about">
-        <ion-segment-button value="nationals">
-          Nacionales
-        </ion-segment-button>
-        <ion-segment-button value="provincial">
-          Provinciales
+      <ion-segment [(ngModel)]="benefit">
+        <ion-segment-button value="nationals-provintials">
+          Nacionales y Provinciales
         </ion-segment-button>
         <ion-segment-button value="unlp">
           UNLP
@@ -29,50 +26,144 @@
 
 <ion-content>
   <div [ngSwitch]="benefit">
-    <ion-list *ngSwitchCase="'nationals'">
+    <ion-list *ngSwitchCase="'nationals-provintials'">
       <ion-item text-wrap>
-          Somos una agrupación de estudiantes, pertenecientes a la
-          Facultad de Ciencias Médicas y a la EURHES, que hace ya 5 años
-          decidimos tomar el compromiso de acompañarte en tu vida universitaria
-          resolviendo tus dudas y problemas, y organizando actividades de apoyo
-          e interés para potenciar tu formación académica.
+        <ion-card class="achievements-remediars">
+          <ion-item>
+            <ion-avatar item-start>
+              <ion-icon name="body"></ion-icon>
+            </ion-avatar>
+            <h2><p class="benefit-title">PNBB</p>
+              Está dirigido a alumnos que hayan finalizado sus estudios de
+              educación secundaria sin adeudar materias y que estén cursando
+              o aspiren a cursar una carrera de grado o pregrado de manera
+              presencial, en una Universidad Nacional o Instituto Universitario
+              Nacional. Este Programa está orientado a carreras enfocadas a las
+              ramas de salud, humanidades y ciencias sociales.
+            </h2>
+            <button (click)="openArBec()" ion-button color="primary">Más info</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <ion-icon name="body"></ion-icon>
+            </ion-avatar>
+            <h2><p class="benefit-title">IngresAR</p>
+                Otorga becas a estudiantes que ingresen a una carrera (de grado, pre-grado, tecnicaturas
+                universitarias y no universitarias y profesorados terciarios) en Universidades
+                Nacionales/Provinciales, Institutos Universitarios e institutos de gestión pública reconocidos por
+                INET.
+            </h2>
+            <button (click)="openArBec()" ion-button color="primary">Más info</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <ion-icon name="body"></ion-icon>
+            </ion-avatar>
+            <h2><p class="benefit-title">ArBec</p>
+              ArBec es un Programa que concentra la gestión de las líneas de becas existentes en el Ministerio de
+              Educación y Deportes de la Nación y en otros organismos del Estado en una plataforma única de
+              desarrollo informático, administrativo, comunicacional y de seguimiento e impacto.
+            </h2>
+            <button (click)="openArBec()" ion-button color="primary">Más info</button>
+          </ion-item>
+          <ion-item>
+            <ion-avatar item-start>
+              <ion-icon name="bus"></ion-icon>
+            </ion-avatar>
+            <h2><p class="benefit-title">Boleto Provincial Gratuito</p>
+              El boleto estudiantil es un derecho ganado por estudiantes a través de la lucha de más de
+              40 años, que permite que puedan ir a estudiar todos los días. Consiste en un monto
+              específico (45 viajes) por mes que será acreditado en la tarjeta sube del estudiante.
+            </h2>
+            <button (click)="openBoleto()" ion-button color="primary">Más info</button>
+          </ion-item>
+
+          <ion-item>
+            <ion-avatar item-start>
+              <ion-icon name="heart"></ion-icon>
+            </ion-avatar>
+            <h2><p class="benefit-title">Progresar</p>
+              PROGRESAR es un nuevo derecho que tienen los jóvenes entre los
+              18 y 24 años que no trabajan, trabajan informalmente o tienen un salario menor al mínimo
+            </h2>
+            <button (click)="openProgresar()" ion-button color="primary">Más info</button>
+          </ion-item>
+
+        </ion-card>
       </ion-item>
-    </ion-list>
-    <ion-list *ngSwitchCase="'provincial'">
-      <ion-card>
-        <ion-item>
-          <ion-avatar item-start>
-            <ion-icon name='pin' item-start></ion-icon>
-          </ion-avatar>
-          <p>
-            Extensión plazos para presentar las vacunas y posta de vacunación
-            móvil para todos los estudiantes de la Facultad de Ciencias Médicas y de la EURHES
-          </p>
-        </ion-item>
-        <ion-item>
-          <ion-avatar item-start>
-            <ion-icon name='pin' item-start></ion-icon>
-          </ion-avatar>
-          <p>Logramos la extensión de la inscripción de las becas de la UNLP</p>
-        </ion-item>
-        <ion-item>
-          - Libros Digitales en PDF en los Grupos de Facebook
-          - Hicimos más de 50 actividades de apoyo académico.
-          - Hicimos más de 4 cursos de RCP
-          - Hicimos más de 15 actividades de formación académica.
-        </ion-item>
-      </ion-card>
     </ion-list>
     <ion-list *ngSwitchCase="'unlp'">
       <ion-item text-wrap>
-        -Proponemos un Centro de Estudiantes y una representación de los Estudiantes en el Consejo Directivo a la altura de las circunstancias, que ponga un freno al retroceso constante en nuestros derechos y vuelva a darle legitimidad y convocatoria a los espacios de discusión de los estudiantes.
-- Mejorar los servicios de Fotocopiadora con una mejor calidad, precios más accesibles y apuntes digitales.
--Mejorar los servicios del Buffet Estudiantil con una más amplia variedad del menú y espacios interactivos de ocio para los estudiantes.
-- Incorporar a los estudiantes a la investigación universitaria, con una participación activa en los proyectos de investigación de la salud.
-- Incorporar a los estudiantes al voluntariado universitario, con una participación activa en los proyectos de abordaje comunitario.
-- Ciclos de apoyo académico para las asignaturas, organizados según la demanda de necesidad que planteen los estudiantes
-- Ciclos de capacitación académica, para la formación complementaria y desarrollo del interés del estudiante por diversas temáticas de la salud.
+        <ion-card class="achievements-remediars">
 
+          <ion-item>
+            <ion-avatar item-start>
+              <ion-icon name="body"></ion-icon>
+            </ion-avatar>
+            <h2><p class="benefit-title">¿De qué se tratan las becas?</p>
+              Se trata de las becas de Ayuda Económica, para Estudiantes Inquilinos, para Estudiantes con alguna
+              Discapacidad, para Estudiantes con hijos/as y de Bicicleta Universitaria.
+
+              Por medio del sistema de becas la Universidad, a través de la Prosecretaría de Bienestar Estudiantil,
+              contribuye a mejorar las condiciones de aquellos estudiantes que se encuentran en una situación
+              social y económica vulnerable, promoviendo la igualdad de oportunidades para estudiar
+            </h2>
+            <button (click)="openBecasUNLP()" ion-button color="primary">Inscripción a becas</button>
+          </ion-item>
+
+          <ion-item>
+            <ion-avatar item-start>
+              <ion-icon name="cash"></ion-icon>
+            </ion-avatar>
+            <h2><p class="benefit-title">Beca de ayuda económica​</p>
+               Consiste en un apoyo económico que se propone como mecanismo
+              de contención para sectores estudiantiles de bajos recursos.
+            </h2>
+          </ion-item>
+
+          <ion-item>
+            <ion-avatar item-start>
+              <ion-icon name="heart"></ion-icon>
+            </ion-avatar>
+            <h2><p class="benefit-title">Beca para estudiantes con alguna discapacidad​</p>
+              esta beca busca facilitar la permanencia en los
+              estudios de grado de estudiantes que poseen algún tipo de discapacidad certificada.
+            </h2>
+          </ion-item>
+
+          <ion-item>
+            <ion-avatar item-start>
+              <ion-icon name="home"></ion-icon>
+            </ion-avatar>
+            <h2><p class="benefit-title">Beca para estudiantes inquilinos</p>
+              está destinada a colaborar en el sostenimiento de los
+              estudios de grado de estudiantes que no provengan de
+              localidades pertenecientes al Gran La Plata y
+              que posean gastos de alquiler de alojamiento.
+            </h2>
+          </ion-item>
+
+          <ion-item>
+            <ion-avatar item-start>
+              <ion-icon name="happy"></ion-icon>
+            </ion-avatar>
+            <h2><p class="benefit-title">Beca para estudiantes con hijos​</p>
+              este apoyo económico está destinado a estudiantes que tienen
+              hijos de entre 45 días y 5 años de edad.
+            </h2>
+          </ion-item>
+
+          <ion-item>
+            <ion-avatar item-start>
+              <ion-icon name="bicycle"></ion-icon>
+            </ion-avatar>
+            <h2><p class="benefit-title">Beca de bicicleta universitaria​</p>
+              consiste en el préstamo de este medio de transporte ecológico
+              para utilizar durante el periodo que duren los estudios de grado.
+            </h2>
+          </ion-item>
+
+        </ion-card>
       </ion-item>
     </ion-list>
   </div>

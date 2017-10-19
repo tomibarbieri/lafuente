@@ -27,6 +27,7 @@ import { PlanesPage } from '../pages/planes/planes';
 import { BenefitPage } from '../pages/benefit/benefit'; //sobre las becas universitarias
 import { LunchRoomPage } from '../pages/lunch-room/lunch-room'; //sobre los comedores universitarias
 import { SubjectPage } from '../pages/subject/subject';
+import { HealthPage } from '../pages/health/health';
 
 
 import { SchedulePage } from '../pages/schedule/schedule';
@@ -62,6 +63,7 @@ import { UserData } from '../providers/user-data';
     WelcomePage,
     SubjectPage,
     LunchRoomPage,
+    HealthPage,
     //
     PopoverPage,
     SchedulePage,
@@ -99,6 +101,7 @@ import { UserData } from '../providers/user-data';
         { component: BenefitPage, name: 'BenefitPage', segment: 'becas' },
         { component: LunchRoomPage, name: 'LunchRoomPage', segment: 'comedores' },
         { component: SubjectPage, name: 'SubjectPage', segment: 'subject' },
+        { component: HealthPage, name: 'HealthPage', segment: 'health' },
       ]
     }),
     IonicStorageModule.forRoot()
@@ -119,6 +122,7 @@ import { UserData } from '../providers/user-data';
     BenefitPage,
     SubjectPage,
     LunchRoomPage,
+    HealthPage,
     //
     PopoverPage,
     SchedulePage,
