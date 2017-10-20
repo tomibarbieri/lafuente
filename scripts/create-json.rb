@@ -4,7 +4,11 @@ require 'json'
 
 class Parser
 
-  attr_accessor :path, :subjects
+  attr_accessor :path, :medicina,
+    :years, :year_1, :year_2, :year_3, :year_4, :year_5, :year_6,
+    :regimes, :regime_1, :regime_2, :regime_3,
+    :subjects, :cathedras 
+  #:subject_i y :cathedra_i
 
   def initialize(path)
     @path = path
@@ -13,7 +17,7 @@ class Parser
                tercero: { anual: [], cuatrimestral: [], bimestral: [] },
                cuarto:  { anual: [], cuatrimestral: [], bimestral: [] },
                quinto:  { anual: [], cuatrimestral: [], bimestral: [] },
-              sexto:    { anual: [], cuatrimestral: [], bimestral: [] }}
+               sexto:    { anual: [], cuatrimestral: [], bimestral: [] }}
   end
 
   def parseFile
@@ -44,155 +48,150 @@ class Parser
 
   def pepe(row)
 
-    unless row[:anio].blank?
-    case row[:anio] 
-    when "1"
-      unless row[:regimen].blank?
-      case row[:regimen] 
-      when "Anual"
-          @years[:primero][:anual] << row
-      #    puts "primero anual:::: #{row}"
-      #    puts "---------------------------------------------------------------------------"
-      when "Cuatrimestral"
-      #    puts "primero cuatrimestral:::: #{row}"
-      #    puts "---------------------------------------------------------------------------"
-          @years[:primero][:cuatrimestral] << row
-      when "Bimestral"
-      #    puts "primero bimestral:::: #{row}"
-      #    puts "---------------------------------------------------------------------------"
-          @years[:primero][:bimestral] << row
-      end
-      end
-    when "2"
-      case row[:regimen]
-      when "Anual"
-          @years[:segundo][:anual] << row
-      when "Cuatrimestral"
-          @years[:segundo][:cuatrimestral] << row
-      when "Bimestral"
-          @years[:segundo][:bimestral] << row
-      end
-    when "3"
-      case row[:regimen]
-      when "Anual"
-          @years[:tercero][:anual] << row
-      when "Cuatrimestral"
-          @years[:tercero][:cuatrimestral] << row
-      when "Bimestral"
-          @years[:tercero][:bimestral] << row
-      end
-    when "4"
-      case row[:regimen]
-      when "Anual"
-          @years[:cuatro][:anual] << row
-      when "Cuatrimestral"
-          @years[:cuarto][:cuatrimestral] << row
-      when "Bimestral"
-          @years[:cuarto][:bimestral] << row
-      end
-    when "5"
-      case row[:regimen]
-      when "Anual"
-          @years[:quinto][:anual] << row
-      when "Cuatrimestral"
-          @years[:quinto][:cuatrimestral] << row
-      when "Bimestral"
-          @years[:quinto][:bimestral] << row
-      end
-    when "6"
-      case row[:regimen]
-      when "Anual"
-          @years[:sexto][:anual] << row
-      when "Cuatrimestral"
-          @years[:sexto][:cuatrimestral] << row
-      when "Bimestral"
-          @years[:sexto][:bimestral] << row
-      end
-    end
-    end
-    puts "-------------------------------------------------------------------------------------------------------"
+    puts "--------------------------------------------------------------------------------------------------"
     puts row
+    unless row[:anio].blank?
+      case row[:anio] 
+      when "1"
+        unless row[:regimen].blank?
+          case row[:regimen] 
+          when "Anual"
+            @years[:primero][:anual] << row
+          when "Cuatrimestral"
+            @years[:primero][:cuatrimestral] << row
+          when "Bimestral"
+            @years[:primero][:bimestral] << row
+          end
+        end
+      when "2"
+        case row[:regimen]
+        when "Anual"
+          @years[:segundo][:anual] << row
+        when "Cuatrimestral"
+          @years[:segundo][:cuatrimestral] << row
+        when "Bimestral"
+          @years[:segundo][:bimestral] << row
+        end
+      when "3"
+        case row[:regimen]
+        when "Anual"
+          @years[:tercero][:anual] << row
+        when "Cuatrimestral"
+          @years[:tercero][:cuatrimestral] << row
+        when "Bimestral"
+          @years[:tercero][:bimestral] << row
+        end
+      when "4"
+        case row[:regimen]
+        when "Anual"
+          @years[:cuatro][:anual] << row
+        when "Cuatrimestral"
+          @years[:cuarto][:cuatrimestral] << row
+        when "Bimestral"
+          @years[:cuarto][:bimestral] << row
+        end
+      when "5"
+        case row[:regimen]
+        when "Anual"
+          @years[:quinto][:anual] << row
+        when "Cuatrimestral"
+          @years[:quinto][:cuatrimestral] << row
+        when "Bimestral"
+          @years[:quinto][:bimestral] << row
+        end
+      when "6"
+        case row[:regimen]
+        when "Anual"
+          @years[:sexto][:anual] << row
+        when "Cuatrimestral"
+          @years[:sexto][:cuatrimestral] << row
+        when "Bimestral"
+          @years[:sexto][:bimestral] << row
+        end
+      end
+    end
+    puts @years
   end
 
-#  def to_json()
-#    {
-#      "name": "medicina2004",
-#      "years": [{ 
-#          "name": "Primero", 
-#          "regimes": [{
-#              "name": "Anual",
-#              "subjects": []
-#            }, {
-#              "name": "Cuatrimestral",
-#              "subjects": []
-#            }, {
-#              "name": "Bimestral",
-#              "subjects": []
-#            }
-#          }]
-#        }, { 
-#          "name": "Segundo", 
-#          "regimes": [{
-#              "name": "Anual",
-#              "subjects": []
-#            }, {
-#              "name": "Cuatrimestral",
-#              "subjects": []
-#            }, {
-#              "name": "Bimestral",
-#              "subjects": []
-#            }
-#        }, { 
-#          "name": "Tercero",
-#          "regimes": [{
-#              "name": "Anual",
-#              "subjects": []
-#            }, {
-#              "name": "Cuatrimestral",
-#              "subjects": []
-#            }, {
-#              "name": "Bimestral",
-#              "subjects": []
-#            }
-#        }, {
-#          "name": "Cuarto",
-#          "regimes": [{
-#              "name": "Anual",
-#              "subjects": []
-#            }, {
-#              "name": "Cuatrimestral",
-#              "subjects": []
-#            }, {
-#              "name": "Bimestral",
-#              "subjects": []
-#            }
-#        }, { 
-#          "name": "Quinto",
-#          "regimes": [{
-#              "name": "Anual",
-#              "subjects": []
-#            }, {
-#              "name": "Cuatrimestral",
-#              "subjects": []
-#            }, {
-#              "name": "Bimestral",
-#              "subjects": []
-#            }
-#        }, { 
-#          "name": "Sexto", 
-#          "regimes": [{
-#              "name": "Anual",
-#              "subjects": []
-#            }, {
-#              "name": "Cuatrimestral",
-#              "subjects": []
-#            }, {
-#              "name": "Bimestral",
-#              "subjects": []
-#            }
-#        }]
-#    }
-#  end
+  #  def to_json()
+  #    {
+  #      "name": "medicina2004",
+  #      "years": [{ 
+  #          "name": "Primero", 
+  #          "regimes": [{
+  #              "name": "Anual",
+  #              "subjects": []
+  #            }, {
+  #              "name": "Cuatrimestral",
+  #              "subjects": []
+  #            }, {
+  #              "name": "Bimestral",
+  #              "subjects": []
+  #            }
+  #          }]
+  #        }, { 
+  #          "name": "Segundo", 
+  #          "regimes": [{
+  #              "name": "Anual",
+  #              "subjects": []
+  #            }, {
+  #              "name": "Cuatrimestral",
+  #              "subjects": []
+  #            }, {
+  #              "name": "Bimestral",
+  #              "subjects": []
+  #            }
+  #        }, { 
+  #          "name": "Tercero",
+  #          "regimes": [{
+  #              "name": "Anual",
+  #              "subjects": []
+  #            }, {
+  #              "name": "Cuatrimestral",
+  #              "subjects": []
+  #            }, {
+  #              "name": "Bimestral",
+  #              "subjects": []
+  #            }
+  #        }, {
+  #          "name": "Cuarto",
+  #          "regimes": [{
+  #              "name": "Anual",
+  #              "subjects": []
+  #            }, {
+  #              "name": "Cuatrimestral",
+  #              "subjects": []
+  #            }, {
+  #              "name": "Bimestral",
+  #              "subjects": []
+  #            }
+  #        }, { 
+  #          "name": "Quinto",
+  #          "regimes": [{
+  #              "name": "Anual",
+  #              "subjects": []
+  #            }, {
+  #              "name": "Cuatrimestral",
+  #              "subjects": []
+  #            }, {
+  #              "name": "Bimestral",
+  #              "subjects": []
+  #            }
+  #        }, { 
+  #          "name": "Sexto", 
+  #          "regimes": [{
+  #              "name": "Anual",
+  #              "subjects": []
+  #            }, {
+  #              "name": "Cuatrimestral",
+  #              "subjects": []
+  #            }, {
+  #              "name": "Bimestral",
+  #              "subjects": []
+  #            }
+  #        }]
+  #    }
+  #  end
 
   def get_field(field)
     field.blank? ? nil : field.strip
@@ -204,4 +203,4 @@ end
 
 parser = Parser.new("medicina2004.csv")
 parser.parseFile()
-
+puts @years

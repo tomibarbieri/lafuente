@@ -1,124 +1,161 @@
-materia,catedra,Año,regimen,Titular,secretaria: horarios,secretaria: ubicacion,contacto: Secreatrixs,contacto: Teléfono,contacto: e-Mail,Horarios de  consulta (tutorías),Entorno Educativo ,Clave del Entorno,Apuntes digitalizados,Grupo facebook,Redes Sociales: facebook,Redes Sociales: twitter,Redes Sociales: Web,,Programa de Final / Bolillero
-Anatomía,A,1,Anual,Dr. Marcelo H. Cerezo,Lunes a Viernes 13-17hs ,PB ala Berisso,Pablo E. Riente,4236711 Int: 376,,,,,,,"FB(estudiantil): https://www.facebook.com/groups/unlp.anato/
-",@AnatomiaA,www.anatomia.a.com.ar,,
+materia,catedra,Año,Régimen,Titular,Secretaria: horarios,Secretaria: ubicacion,Contacto: Secreatrixs,Contacto: Teléfono,Contacto: e-Mail,Horarios de  consulta (tutorías),Entorno Educativo ,Clave del Entorno,Apuntes digitalizados,Redes Sociales: facebook,Redes Sociales: twitter,Redes Sociales: Web,,Programa de Final / Bolillero,,,
+Anatomía,A,1,Anual,Dr. Marcelo H. Cerezo,Lunes a Viernes 13-17hs ,PB ala Berisso,Pablo E. Riente,4236711 Int: 376,,,,,https://drive.google.com/open?id=0ByUr4vIBXzCzdS1PVVVDWU9XM1k,"FB(estudiantil): https://www.facebook.com/groups/unlp.anato/
+",@AnatomiaA,www.anatomia.a.com.ar,,,,,
 Anátomia,B,1,Anual,"Julio C. Hijano
-",Lunes a Viernes 13.30-16.30hs ,1º piso ala Berisso,María Alejandra Vittori,4276726,anatom-b@med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=23,AnatoB2017,,,FB (estudiantil): https://www.facebook.com/groups/unlp.anato/,,,,
+",Lunes a Viernes 13.30-16.30hs ,1º piso ala Berisso,María Alejandra Vittori,4276726,anatom-b@med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=23,AnatoB2017,https://drive.google.com/open?id=0ByUr4vIBXzCzdS1PVVVDWU9XM1k,FB (estudiantil): https://www.facebook.com/groups/unlp.anato/,,,,,,,Régimen
 Anátomia,C ,1,Anual,"Ángel Narduzzi
-",Lunes a Jueves 13-15hs ,3º piso ala Berisso,Gustavo Fabré,4244693,,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=33,"c2017c1, c2017c2, c2017c3
+",Lunes a Jueves 13-15hs ,3º Piso Ala Berisso,Gustavo Fabré,4244693,,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=33,"c2017c1, c2017c2, c2017c3
 c2017c4, c2017c5. c2017c6
 c2017c7, c2017c8, c2017c9
 c2017c10
-",,,FB (estudiantil): https://www.facebook.com/groups/unlp.anato/,,,,
+",https://drive.google.com/open?id=0ByUr4vIBXzCzdS1PVVVDWU9XM1k,FB (estudiantil): https://www.facebook.com/groups/unlp.anato/,,,,,,,Anual
 Bioética,,5,Bimestral,"Marta Lucía Pérez
-",Lunes 9.30-15hs | Martes a Jueves 9.30-13.30hs,Subsuelo ala Berisso,Telma Pedernera,,catbioetica@med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=11,(enviar mail para matricularse),,,FB (estudiantil): https://www.facebook.com/groups/115189445229592/,,,,
+",Lunes 9.30-15hs | Martes a Jueves 9.30-13.30hs,Subsuelo Ala Berisso,Telma Pedernera,,catbioetica@med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=11,(enviar mail para matricularse),https://drive.google.com/open?id=0ByUr4vIBXzCzZEVlM0RNUnFSX0E,FB (estudiantil): https://www.facebook.com/groups/115189445229592/,,,,,,,Anual
 Biología,,1,Anual,"Margarita García de Bravo
 ","Lunes y Miércoles 8.30-12hs | Martes, Jueves y Viernes 8.30-12.30hs
-",Subsuelo ala Berisso,Maria Eugenia Fontana,4241596 int:361,biología@med.unlp.edu.ar,"Martes 10.15-15.30hs  |  Jueves 10.15-11.15hs, 12.30-13hs, 13.30-14.30hs y 17.30-18.30hs",http://educativa.med.unlp.edu.ar/enrol/index.php?id=18,redox2017,,,FB (estudiantil): https://www.facebook.com/groups/unlp.biologia/,,,,
+",Subsuelo Ala Berisso,Maria Eugenia Fontana,4241596 int:361,biología@med.unlp.edu.ar,"Martes 10.15-15.30hs  |  Jueves 10.15-11.15hs, 12.30-13hs, 13.30-14.30hs y 17.30-18.30hs",http://educativa.med.unlp.edu.ar/enrol/index.php?id=18,redox2017,https://drive.google.com/open?id=0ByUr4vIBXzCzaTFVRUxOdVZSTEk,FB (estudiantil): https://www.facebook.com/groups/unlp.biologia/,,,,,,,Anual
 Bioquímica Clínica I,,4,Bimestral,"María Alejandra Tricerri
-",Lunes y Miércoles 14-16hs,Subsuelo ala La plata,Fabián Ariel Rondan,,bioclinica@yahoo.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=35,bioclin1,,,FB (estudiantil): https://www.facebook.com/groups/148615281870811/,,,,
+",Lunes y Miércoles 14-16hs,Subsuelo Ala La plata,Fabián Ariel Rondan,,bioclinica@yahoo.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=35,bioclin1,,FB (estudiantil): https://www.facebook.com/groups/148615281870811/,,,,,,,Bimestral (optativa)
 Bioquímica Clínica II,,5,Bimestral,"Adrián Antonio Durán
-",Lunes y Miércoles 14-16hs,Subsuelo ala La plata,Fabián Ariel Rondan,,bioclinica@yahoo.com,"
+",Lunes y Miércoles 14-16hs,Subsuelo Ala La plata,Fabián Ariel Rondan,,bioclinica@yahoo.com,"
 Lunes a Viernes 8hs y a las 14hs
-",http://educativa.med.unlp.edu.ar/enrol/index.php?id=57,bioclin2,,,FB (estudiantil): https://www.facebook.com/groups/148615281870811/,,,,
+",http://educativa.med.unlp.edu.ar/enrol/index.php?id=57,bioclin2,,FB (estudiantil): https://www.facebook.com/groups/148615281870811/,,,,,,,Anual
 Bioquímica y Biología Molecular,,2,Anual,"Horacio Alberto Garda
 
  
 
-",Lunes y Viernes 11-12hs,Subsuelo ala La Plata,Guillermo Rodera,4236967,secrebbm@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=12,bbm2017,,,FB (estudiantil): https://www.facebook.com/groups/unlp.bioquimicamed/,,,,
+",Lunes y Viernes 11-12hs,Subsuelo Ala La plata,Guillermo Rodera,4236967,secrebbm@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=12,bbm2017,https://drive.google.com/open?id=0ByUr4vIBXzCzb2tJTlNVdklzeDQ,FB (estudiantil): https://www.facebook.com/groups/unlp.bioquimicamed/,,,,,,,Bimestral
 Ciencias Exáctas,,1,Cuatrimestral,"Carlos V. Federico
 ","Lunes, Miércoles y Viernes 8-12hs |  Lunes y Miércoles 18-20.30hs
-",Sede de 7 n°1523 e/ 63 y 64,Cristian Marchetti,,exactas_med@yahoo.com.ar |  exactas_peirano@yahoo.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=13,(enviar mail para matricularse),,,FB (estudiantil): https://www.facebook.com/groups/206271379395540/,,,,
-Ciencias Sociales y Medicina,,1,Bimestral,Emilce Cristina Alvarez,Lunes a Viernes 12-13.30hs y 17-18hs,Subsuelo ala Berisso,Claudia Cristina Corti |  Silvia Giovagnoli,,,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=27,csociales2017,,,FB (estudiantil): https://www.facebook.com/groups/unlp.sociales/,,,,
-Cirugía I,A,4,Anual,"Edgardo Carlos Ferrari
-",Lunes a Jueves 8-11hs,Hospital San Juan de Dios,Corina Suarez,4522542,catedradecirugiaa@yahoo.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=88,(enviar mail para matricularse),,,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,
+",Sede de 7 n°1523 e/ 63 y 64,Cristian Marchetti,,exactas_med@yahoo.com.ar |  exactas_peirano@yahoo.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=13,(enviar mail para matricularse),,FB (estudiantil): https://www.facebook.com/groups/206271379395540/,,,,,,,Bimestral
+Ciencias Sociales y Medicina,,1,Bimestral,Emilce Cristina Alvarez,Lunes a Viernes 12-13.30hs y 17-18hs,Subsuelo Ala Berisso,Claudia Cristina Corti |  Silvia Giovagnoli,,,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=27,csociales2017,,FB (estudiantil): https://www.facebook.com/groups/unlp.sociales/,,,,,,,Anual
+Cirugía I ,A,4,Anual,"Edgardo Carlos Ferrari
+",Lunes a Jueves 8-11hs,Hospital San Juan de Dios,Corina Suarez,4522542,catedradecirugiaa@yahoo.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=88,(enviar mail para matricularse),https://drive.google.com/open?id=0ByUr4vIBXzCzRDluZ1FCYzlyaU0,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,,,,Cuatrimestral (optativa)
+Cirugía  II,A,5,Anual,"Edgardo Carlos Ferrari
+",Lunes a Jueves 8-11hs,Hospital San Juan de Dios,Corina Suarez,4522542,catedradecirugiaa@yahoo.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=88,(enviar mail para matricularse),https://drive.google.com/open?id=0ByUr4vIBXzCzRDluZ1FCYzlyaU0,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,,,,Bimestral
 Cirugía I,B,4,Anual,"Jorge Daniel Bartoli
 ",Lunes a Viernes 8-11hs,Pabellón Academico.Hospital San Martin,Lidia Marrero,4213572,,,"http://educativa.med.unlp.edu.ar/enrol/index.php?id=53 | http://educativa.med.unlp.edu.ar/enrol/index.php?id=149
-",Cirb217,,,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,
+",Cirb217,https://drive.google.com/open?id=0ByUr4vIBXzCzRDluZ1FCYzlyaU0,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,,,,Anual
+Cirugía II,B,5,Anual,"Jorge Daniel Bartoli
+",Lunes a Viernes 8-11hs,Pabellón Academico.Hospital San Martin,Lidia Marrero,4213572,,,"http://educativa.med.unlp.edu.ar/enrol/index.php?id=53 | http://educativa.med.unlp.edu.ar/enrol/index.php?id=149
+",Cirb217,https://drive.google.com/open?id=0ByUr4vIBXzCzRDluZ1FCYzlyaU0,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,,,,Anual
 Cirugía I,C,4,Anual,"Carlos Guido Michelini
-",Lunes a Viernes 8-11hs,Pabellón Academico.Hospital San Martin,Liliana Meriggiola,4273941,leonardocoscarelli@hotmail.com,,,,,,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,
- Cirugía II,D,5,Anual,"Enrique Ortíz
+",Lunes a Viernes 8-11hs,Pabellón Academico.Hospital San Martin,Liliana Meriggiola,4273941,leonardocoscarelli@hotmail.com,,,,https://drive.google.com/open?id=0ByUr4vIBXzCzRDluZ1FCYzlyaU0,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,,,,Anual
+Cirugía II,C,5,Anual,"Carlos Guido Michelini
+",Lunes a Viernes 8-11hs,Pabellón Academico.Hospital San Martin,Liliana Meriggiola,4273941,leonardocoscarelli@hotmail.com,,,,https://drive.google.com/open?id=0ByUr4vIBXzCzRDluZ1FCYzlyaU0,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,,,,Anual
+Cirugía I,D,4,Anual,"Enrique Ortíz
 ",Lunes a Viernes 7.30-11.30hs,Pabellón Academico.Hospital San Martin,María Eva Sanfelice,4299699 | 2215901563  ,"cirugiad@med.unlp.edu.ar | mariaevasanfelice@hotmail.com
 
-",,http://educativa.med.unlp.edu.ar/enrol/index.php?id=148 | http://educativa.med.unlp.edu.ar/enrol/index.php?id=29,cirugiad,,,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,
+",,http://educativa.med.unlp.edu.ar/enrol/index.php?id=148 | http://educativa.med.unlp.edu.ar/enrol/index.php?id=29,cirugiad,https://drive.google.com/open?id=0ByUr4vIBXzCzRDluZ1FCYzlyaU0,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,,,,Anual
+Cirugía II,D,5,Anual,"Enrique Ortíz
+",Lunes a Viernes 7.30-11.30hs,Pabellón Academico.Hospital San Martin,María Eva Sanfelice,4299699 | 2215901563  ,"cirugiad@med.unlp.edu.ar | mariaevasanfelice@hotmail.com
+
+",,http://educativa.med.unlp.edu.ar/enrol/index.php?id=148 | http://educativa.med.unlp.edu.ar/enrol/index.php?id=29,cirugiad,https://drive.google.com/open?id=0ByUr4vIBXzCzRDluZ1FCYzlyaU0,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,,,,Anual
+Cirugía I,E,4,Anual,"Alberto Cariello
+",Lunes a Viernes 9-12hs (llamar con anticipación para turno),"
+Edificio del Estacionamiento del Hospital Rossi",Mariel Bengolea,4826911,cirugiaeunlp@gmail.com | bengolea.mariel@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=32,cirugiae,https://drive.google.com/open?id=0ByUr4vIBXzCzRDluZ1FCYzlyaU0,"FB (estudiantil): https://www.facebook.com/groups/173067599410202/
+FB (cátedra): https://www.facebook.com/Catedra-E-Cirug%C3%ADa-213403892512270/",,,,,,,Anual
 Cirugía II,E,5,Anual,"Alberto Cariello
 ",Lunes a Viernes 9-12hs (llamar con anticipación para turno),"
-Edificio del Estacionamiento del Hospital Rossi",Mariel Bengolea,4826911,cirugiaeunlp@gmail.com | bengolea.mariel@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=32,cirugiae,,,"FB (estudiantil): https://www.facebook.com/groups/173067599410202/
-FB (cátedra): https://www.facebook.com/Catedra-E-Cirug%C3%ADa-213403892512270/",,,,
-Cirugía de Tórax,,5,Bimestral,"Prat, Guillermo",,Hospital San Juan de Dios,Corina Suarez,,catedradecirugiaa@yahoo.com.ar,,,,,,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,http://www.med.unlp.edu.ar/images/grado/medicina/cirugia-torax/Cirugia_Tor%C3%A1cica_2.pdf
+Edificio del Estacionamiento del Hospital Rossi",Mariel Bengolea,4826911,cirugiaeunlp@gmail.com | bengolea.mariel@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=32,cirugiae,https://drive.google.com/open?id=0ByUr4vIBXzCzRDluZ1FCYzlyaU0,"FB (estudiantil): https://www.facebook.com/groups/173067599410202/
+FB (cátedra): https://www.facebook.com/Catedra-E-Cirug%C3%ADa-213403892512270/",,,,,,,Anual
+Cirugía de Tórax,,5,Bimestral,"Prat, Guillermo",,Hospital San Juan de Dios,Corina Suarez,,catedradecirugiaa@yahoo.com.ar,,,,https://drive.google.com/open?id=0ByUr4vIBXzCzRDluZ1FCYzlyaU0,FB (estudiantil): https://www.facebook.com/groups/173067599410202/,,,,http://www.med.unlp.edu.ar/images/grado/medicina/cirugia-torax/Cirugia_Tor%C3%A1cica_2.pdf,,,Anual
 "Citología, Histología y Embriología",A,1,Anual,"Ana Lía Errecalde
-",,2º piso ala Berisso,María Elena Gómez,4835524,landrini@atlas.med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=25,Chea2017,,,FB (estudiantil): https://www.facebook.com/groups/unlp.histo/,,,,
+",,2º piso ala Berisso,María Elena Gómez,4835524,landrini@atlas.med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=25,Chea2017,https://drive.google.com/open?id=0ByUr4vIBXzCzSnMtTjNhVWlMWWM,FB (estudiantil): https://www.facebook.com/groups/unlp.histo/,,,,,,,Anual
 "Citología, Histología y Embriología",B,1,Anual,"Dr. Héctor Del Zotto
-",Lunes a Viernes 10.30-12.30hs y 14-16hs,3º piso ala Berisso,Pablo Degregori,4256735,histologiab@yahoo.com.ar,,,,,,FB (estudiantil): https://www.facebook.com/groups/unlp.histo/,,www.ciclo-lectivo.webnode.es,,
+",Lunes a Viernes 10.30-12.30hs y 14-16hs,3º Piso Ala Berisso,Pablo Degregori,4256735,histologiab@yahoo.com.ar,,,,https://drive.google.com/open?id=0ByUr4vIBXzCzSnMtTjNhVWlMWWM,FB (estudiantil): https://www.facebook.com/groups/unlp.histo/,,www.ciclo-lectivo.webnode.es,,,,,Bimestral (optativa)
 Deontología y Medicina Legal,,5,Bimestral,"Miguel A. Garcia Olivera
-",Lunes a Viernes 14-16hs,4º piso ala Berisso(pasillo),Roxana Veronica Vazquez,,,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=48,baby4car,,,FB (estudiantil): https://www.facebook.com/groups/199317730089672/,,,,
+",Lunes a Viernes 14-16hs,4º piso ala Berisso(pasillo),Roxana Veronica Vazquez,,,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=48,baby4car,https://drive.google.com/open?id=0ByUr4vIBXzCzWEJxbGlIOGllMXc,FB (estudiantil): https://www.facebook.com/groups/199317730089672/,,,,,,,Anual
 Dermatología,,4,Bimestral,"Stella Maris Ingratta
-","Lunes, Miércoles y Viernes 8-11hs",Sede de 7 n°1523 e/ 63 y 64,Silvina López Seoane,,dermatounlp@hotmail.com,Martes y Jueves 9.30-10.30hs,http://educativa.med.unlp.edu.ar/course/view.php?id=14,09derma,,,FB (estudiantil): https://www.facebook.com/groups/198364760194820/,,,,
+","Lunes, Miércoles y Viernes 8-11hs",Sede de 7 n°1523 e/ 63 y 64,Silvina López Seoane,,dermatounlp@hotmail.com,Martes y Jueves 9.30-10.30hs,http://educativa.med.unlp.edu.ar/course/view.php?id=14,09derma,https://drive.google.com/open?id=0ByUr4vIBXzCzSUR5RnhSQUZiREk,FB (estudiantil): https://www.facebook.com/groups/198364760194820/,,,,,,,Anual
 Diagnóstico y Terapéutica por Imágenes I,,4,Bimestral,"Raul Simonetto 
-",Lunes a Jueves 13-15hs, 4º piso ala Berisso (pasillo),María Teresa Méndez Barrera,4241596/3068 int. 345,dytmedlaplata@yahoo.com.ar | raulsimonetto@fibertel.com.ar,,,,,,FB (estudiantil): https://www.facebook.com/groups/109141519166973/,,http://www.dytlaplata.org/,,
+",Lunes a Jueves 13-15hs, 4º piso ala Berisso (pasillo),María Teresa Méndez Barrera,4241596/3068 int. 345,dytmedlaplata@yahoo.com.ar | raulsimonetto@fibertel.com.ar,,,,,FB (estudiantil): https://www.facebook.com/groups/109141519166973/,,http://www.dytlaplata.org/,,,,,Bimestral
 Diagnóstico y Terapéutica por Imágenes II,,5,Bimestral,"Raul Simonetto 
-",Lunes a Jueves 13-15hs, 4º piso ala Berisso (pasillo),María Teresa Méndez Barrera,4241596/3068 int. 345,dytmedlaplata@yahoo.com.ar | raulsimonetto@fibertel.com.ar,,,,,,FB (estudiantil): https://www.facebook.com/groups/109141519166973/,,http://www.dytlaplata.org/,,
+",Lunes a Jueves 13-15hs, 4º piso ala Berisso (pasillo),María Teresa Méndez Barrera,4241596/3068 int. 345,dytmedlaplata@yahoo.com.ar | raulsimonetto@fibertel.com.ar,,,,,FB (estudiantil): https://www.facebook.com/groups/109141519166973/,,http://www.dytlaplata.org/,,,,,Bimestral (móvil)
 Ecología Humana y Promoción de la Salud,,2,Bimestral,"Horacio Oscar Pracilio
-",Lunes a Viernes 9-12hs,Edificio biblioteca 1º piso,Adriana Andrea Arisnavarreta,4236711 int:367,saludymc2014@hotmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=39,ecologia2,,,FB (estudiantil): https://www.facebook.com/groups/209526482406038/,,,,
+",Lunes a Viernes 9-12hs,Edificio Biblioteca 1° Piso,Adriana Andrea Arisnavarreta,4236711 int:367,saludymc2014@hotmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=39,ecologia2,,FB (estudiantil): https://www.facebook.com/groups/209526482406038/,,,,,,,Bimestral
 Educación para la Salud,,3,Cuatrimestral,"Ana Candreva
-",,Edificio Biblioteca PB,Gisela Trotta,,pedagogiamedica@med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=28,,,,FB (estudiantil):,,,,
+",,Edificio Biblioteca PB,Gisela Trotta,,pedagogiamedica@med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=28,,,FB (estudiantil): https://www.facebook.com/profile.php?id=209247655759944,,,,,,,Bimestral
 Epidemiología,,2,Bimestral,"Graciela Etchegoyen
-","Lunes, Miércoles y Viernes 8.30-10hs | Martes y Jueves 16-18.30hs",2° Piso Centro,Nacha Stevani,,epidemiologia_unlp@yahoo.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=20,Epidemiologia,,,FB (estudiantil): https://www.facebook.com/groups/unlp.epidemio/,,,,
+","Lunes, Miércoles y Viernes 8.30-10hs | Martes y Jueves 16-18.30hs",2° Piso Centro,Nacha Stevani,,epidemiologia_unlp@yahoo.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=20,Epidemiologia,,FB (estudiantil): https://www.facebook.com/groups/unlp.epidemio/,,,,,,,Bimestral (optativa)
 Farmacología Aplicada,,4,Cuatrimestral,"Osvaldo Farina
-",Lunes y Miércoles 15-18hs, 3º piso ala La Plata         ,Andrea Machado,4236710,farmacoaplicada@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=34,aplicada11,,,"FB (estudiantil): https://www.facebook.com/groups/203572789672924/
-FB (cátedra): https://www.facebook.com/C%C3%A1tedra-de-Farmacolog%C3%ADa-Aplicada-UNLP-180821925263447/",,,,
+",Lunes y Miércoles 15-18hs, 3º piso ala La Plata         ,Andrea Machado,4236710,farmacoaplicada@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=34,aplicada11,https://drive.google.com/open?id=0ByUr4vIBXzCzSjJwaGV6VS1GQUk,"FB (estudiantil): https://www.facebook.com/groups/203572789672924/
+FB (cátedra): https://www.facebook.com/C%C3%A1tedra-de-Farmacolog%C3%ADa-Aplicada-UNLP-180821925263447/",,,,,,,Cuatrimestral (optativa)
 Farmacología Básica,,3,Anual,"Jorge Errecalde
-",Lunes a Viernes 10-11hs,3º piso ala La Plata,Maria Daniela Fernández Barreyro |  Luis Javier Fioravanti,4216932,farmacologia@aetos.med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=15,,,,FB (estudiantil): https://www.facebook.com/groups/203572789672924/,,,,
+",Lunes a Viernes 10-11hs,3º piso ala La Plata,Maria Daniela Fernández Barreyro |  Luis Javier Fioravanti,4216932,farmacologia@aetos.med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=15,nuevo2015,https://drive.google.com/open?id=0ByUr4vIBXzCzSjJwaGV6VS1GQUk,FB (estudiantil): https://www.facebook.com/groups/203572789672924/,,,,,,,Bimestral
 Filosofía Médica,,4,Bimestral,"Marta Lucía Pérez
-",Lunes 9.30-15hs | Martes a Jueves 9.30-13.30hs,Subsuelo ala Berisso,Telma Pedernera,,filosofiamedica@med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=9,(enviar mail para matricularse),,,FB (estudiantil): https://www.facebook.com/groups/187708521275003/,,,,
+",Lunes 9.30-15hs | Martes a Jueves 9.30-13.30hs,Subsuelo Ala Berisso,Telma Pedernera,,filosofiamedica@med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=9,(enviar mail para matricularse),,FB (estudiantil): https://www.facebook.com/groups/187708521275003/,,,,,,,Cuatrimestral
 Fisiología y Física Biológica,,2,Anual,"Leticia Vittone
 ","Lunes, Miércoles y Viernes 7.30-8.30hs",2º piso ala La Plata,Alba Cabrera Torres | María Inés Vera,4894813,"catedrafisiologia@med.unlp.edu.ar | cabreraalba@yahoo.com.ar
-",,http://educativa.med.unlp.edu.ar/enrol/index.php?id=7,(enviar mail para matricularse),,,FB (estudiantil): https://www.facebook.com/groups/unlp.fisiomed/,,,,
+",,http://educativa.med.unlp.edu.ar/enrol/index.php?id=7,(enviar mail para matricularse),https://drive.google.com/open?id=0ByUr4vIBXzCzVFBZZHVrZkdxa0U,FB (estudiantil): https://www.facebook.com/groups/unlp.fisiomed/,,,,,,,Anual
 Genética,,3,Bimestral,"J.T.P.: Mauro Aldo Montanaro
-",Lunes a Viernes 9-11hs,Subsuelo ala Berisso,Jorge Horacio Luengo,,genetica@med.unlp.edu.ar,,,,,,FB (estudiantil): https://www.facebook.com/groups/181188645267034/,,,,
+",Lunes a Viernes 9-11hs,Subsuelo Ala Berisso,Jorge Horacio Luengo,,genetica@med.unlp.edu.ar,,,,https://drive.google.com/open?id=0ByUr4vIBXzCzMzAtcXNEQlF4U1k,FB (estudiantil): https://www.facebook.com/groups/181188645267034/,,,,,,,Bimestral (optativa)
 Ginecología,A,5,Cuatrimestral,"Blanca Monica Campostrini
-","Lunes, Martes, Miércoles y Viernes 8-12hs | Jueves 8-10hs",Pabellón Academico.Hospital San Martin,Juan Manuel Tello,, juanma_punkee@hotmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=55,ginecologiaa,,,FB (estudiantil): https://www.facebook.com/groups/198077883556145/,,,,
+","Lunes, Martes, Miércoles y Viernes 8-12hs | Jueves 8-10hs",Pabellón Academico.Hospital San Martin,Juan Manuel Tello,, juanma_punkee@hotmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=55,ginecologiaa,https://drive.google.com/open?id=0ByUr4vIBXzCzOERWc3ZXV0F3OXc,FB (estudiantil): https://www.facebook.com/groups/198077883556145/,,,,,,,Anual
 Ginecología,B,5,Cuatrimestral,"Orlando Ángel Forestieri
-",Lunes  a Jueves 8-11hs,Edificio biblioteca 1º piso,Diego Rainski,,,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=6,gineco,,,FB (estudiantil): https://www.facebook.com/groups/198077883556145/,,,,
+",Lunes  a Jueves 8-11hs,Edificio Biblioteca 1° Piso,Diego Rainski,,,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=6,gineco,https://drive.google.com/open?id=0ByUr4vIBXzCzOERWc3ZXV0F3OXc,FB (estudiantil): https://www.facebook.com/groups/198077883556145/,,,,,,,Bimestral (optativa)
 Historia de la Medicina,,2,Bimestral,"Rubén Storino
-","Lunes, Miércoles y Jueves 9-12hs",Edificio biblioteca 1º piso,María Emilia Rodríguez,4241596 int: 374,,,http://educativa.med.unlp.edu.ar/course/view.php?id=112,historia2015,,,FB (estudiantil): https://www.facebook.com/groups/205655499465596/,,,,
+","Lunes, Miércoles y Jueves 9-12hs",Edificio Biblioteca 1° Piso,María Emilia Rodríguez,4241596 int: 374,,,http://educativa.med.unlp.edu.ar/course/view.php?id=112,historia2015,,FB (estudiantil): https://www.facebook.com/groups/205655499465596/,,,,,,,Cuatrimestral
 Infectología,,4,Cuatrimestral,"Silvia González Ayala
-","Lunes, Miércoles y Jueves 13:30-15hs | Martes y Viernes 9-11hs","
-Subsuelo ala La Plata",Docente Coordinador: Juan Pablo Stagnaro,,secretaria.infectologia@gmail.com,, http://educativa.med.unlp.edu.ar/enrol/index.php?id=26, infecto17,,,FB (estudiantil): https://www.facebook.com/groups/203908199637499/,,,,
+","Lunes, Miércoles y Jueves 13:30-15hs | Martes y Viernes 9-11hs",Subsuelo Ala La plata,Docente Coordinador: Juan Pablo Stagnaro,,secretaria.infectologia@gmail.com,, http://educativa.med.unlp.edu.ar/enrol/index.php?id=26, infecto17,https://drive.google.com/open?id=0ByUr4vIBXzCzaTdSbm5Eb2liOWs,FB (estudiantil): https://www.facebook.com/groups/203908199637499/,,,,,,,Cuatrimestral
 Informática Médica,,3,Anual,"Osvaldo Spinelli
-",,Edificio de biblioteca 1º piso,Graciela Giannini,4241596 int:350,infomedica@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=47,(enviar mail para matricularse),,,FB (estudiantil): https://www.facebook.com/groups/unlp.infomedica/,,,,
-Informática Aplicada,,,,"Graciela Etchegoyen 
-","Lunes, Miércoles y Viernes 8.30-10hs | Martes y Jueves 16-18.30hs",2° Piso Centro,Nacha Stevani,,epidemiologia_unlp@yahoo.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=31,,,,FB (estudiantil): https://www.facebook.com/groups/209907795695788/,,,,
+",,Edificio Biblioteca 1° Piso,Graciela Giannini,4241596 int:350,infomedica@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=47,(enviar mail para matricularse),,FB (estudiantil): https://www.facebook.com/groups/unlp.infomedica/,,,,,,,Bimestral (optativa)
+La informática aplicada al análisis y presentación de trabajos científicos en ciencias de la salud,,3,Cuatrimestral,"Graciela Etchegoyen 
+","Lunes, Miércoles y Viernes 8.30-10hs | Martes y Jueves 16-18.30hs",2° Piso Centro,Nacha Stevani,,epidemiologia_unlp@yahoo.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=31,,,FB (estudiantil): https://www.facebook.com/groups/209907795695788/,,,,,,,Cuatrimestral
 Informática Básica,,1,Bimestral,"Osvaldo Spinelli 
-",,Edificio de biblioteca 1º piso,Graciela Giannini,4241596 int:350,infomedica@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=3,(enviar mail para matricularse),,,FB (estudiantil): https://www.facebook.com/groups/unlp.infobasica/,,,,
+",,Edificio Biblioteca 1° Piso,Graciela Giannini,4241596 int:350,infomedica@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=3,(enviar mail para matricularse),,FB (estudiantil): https://www.facebook.com/groups/unlp.infobasica/,,,,,,,Anual
 Inglés Médico,,2,Anual," Jovanka Vukovic
-","Lunes, Miércoles y Viernes 9-12hs",Edificio de biblioteca 1º piso,Graciela Giannini,4241596 int:350,,,"http://educativa.med.unlp.edu.ar/enrol/index.php?id=21 | 
-http://educativa.med.unlp.edu.ar/enrol/index.php?id=90",Libre: ingleslibre,,,FB (estudiantil): https://www.facebook.com/groups/unlp.inglesmedico/,,,,
-Inmunología,,3,Bimestral,,,,,,,,,,,,FB (estudiantil):,,,,
-Introducción a la Epistemología de la Salud,,4,Cuatrimestral,,,,,,,,,,,,FB (estudiantil):,,,,
-Introducción a la Vida Universitaria,,1,Semanal,,,,,,,,,,,,FB (estudiantil):,,,,
-"Literatura, Cine y Medicina",,2,Bimestral,,,,,,,,,,,,FB (estudiantil):,,,,
-Medicina Interna ?,A,,,,,,,,,,,,,,FB (estudiantil):,,,,
-Medicina Interna II,B,5,Anual,,,,,,,,,,,,FB (estudiantil):,,,,
-Medicina Interna I,C,4,Anual,,,,,,,,,,,,FB (estudiantil):,,,,
-Medicina Interna I,D,4,Anual,,,,,,,,,,,,FB (estudiantil):,,,,
-Medicina Interna II,E,5,Anual,,,,,,,,,,,,FB (estudiantil):,,,,
-Medicina Interna ??,F,,,,,,,,,,,,,,FB (estudiantil):,,,,
-Micriobiología,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Neurología,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Nutrición Clínica,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Obstetricia,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Oftalmología,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Ortopedia y Traumatología,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Otorrinolaringología,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Patología A,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Patología B,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Pediatría A,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Pediatría B,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Psicología Médica,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Psiquiatría,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Salud Ambiental,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Salud Pública,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Salud y Medicina Comunitaria,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Toxicología,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Transplante de Órganos y Tejidos,,,,,,,,,,,,,FB (estudiantil):,,,,,,
-Urología,,,,,,,,,,,,,FB (estudiantil):,,,,,,
+","Lunes, Miércoles y Viernes 9-12hs",Edificio Biblioteca 1° Piso,Graciela Giannini,4241596 int:350,,,"http://educativa.med.unlp.edu.ar/enrol/index.php?id=21 
+http://educativa.med.unlp.edu.ar/enrol/index.php?id=90",Libre: ingleslibre,,FB (estudiantil): https://www.facebook.com/groups/unlp.inglesmedico/,,,,,,,Cuatrimestral (optativa)
+Inmunología,,3,Bimestral,María Teresa Vanda Di Girolamo,Lunes a Viernes 9-11hs,Subsuelo Ala Berisso,Jorge Horacio Luengo,,inmunología@med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=8,inmuno2012,https://drive.google.com/open?id=0ByUr4vIBXzCzcWNkeXlRSWtuajg,FB (estudiantil): https://www.facebook.com/groups/150669058334342/,,,,,,,Bimestral
+Introducción a la Epistemología de la Salud,,4,Cuatrimestral,Graciela Etchegoyen ,"Lunes, Miércoles y Viernes 8.30-10hs | Martes y Jueves 16-18.30hs",2° Piso Centro,Nacha Stevani,,epidemiologia_unlp@yahoo.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=30,Epistemo,,FB (estudiantil): https://www.facebook.com/groups/103042139784492/,,,,,,,Anual
+Introducción a la Vida Universitaria,,1,Semanal,,,,,,,,,,,,,,,,,,Bimestral (optativa)
+"Literatura, Cine y Medicina",,2,Bimestral,Rubén Storino,Lunes a Viernes 9-12hs,Edificio Biblioteca 1° Piso,María Emilia Rodríguez,,r_storino@yahoo.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=144,literaturaycine,,FB (estudiantil): https://www.facebook.com/groups/1747851382121928/,,,,,,,Cuatrimestral (optativa)
+Semio / Medicina Interna I o II ,A,"3, 4 Y 5",Anual,Eduardo Mansilla,Lunes a Viernes 8.30-10.30hs,Pabellón Academico.Hospital San Martin,María Elena Mena,4273908,camiunlp@yahoo.com.ar,,Semiología2017: http://educativa.med.unlp.edu.ar/enrol/index.php?id=155,,"Semio: https://drive.google.com/open?id=0ByUr4vIBXzCzT3U0YUloM1A5em8
+Interna: https://drive.google.com/open?id=0ByUr4vIBXzCzSDU1TDBET3JQVE0",FB (estudiantil): https://www.facebook.com/groups/187380521304890/,,,,,,,Semanal (NO EXISTE)
+Semio / Medicina Interna I o II ,B,"3, 4 Y 5",Anual,Alberto Rubén Ré,Lunes a Viernes 8-12hs,Pabellón Academico.Hospital San Martin,Julieta Grego,4897801,catedramedinternab@gmail.com,,"Semiología2017: http://educativa.med.unlp.edu.ar/enrol/index.php?id=56
+Interna II2017: http://educativa.med.unlp.edu.ar/enrol/index.php?id=54
+Interna IV2017: http://educativa.med.unlp.edu.ar/enrol/index.php?id=42",(enviar mail para matricularse),"Semio: https://drive.google.com/open?id=0ByUr4vIBXzCzT3U0YUloM1A5em8
+Interna: https://drive.google.com/open?id=0ByUr4vIBXzCzSDU1TDBET3JQVE0",FB (estudiantil): https://www.facebook.com/groups/187380521304890/,,,,,,,Bimestral (optativa)
+Semio / Medicina Interna I o II ,C,"3, 4 y 5",Anual,"Semio: Héctor Caíno
+InternaI: Gabriel Horacio Lupi ",Lunes a Viernes 8-11hs,Pabellón Academico.Hospital San Martin,Mariana Tassi,4223949,medicina_interna_c@hotmail.com,,Interna I2017: http://educativa.med.unlp.edu.ar/enrol/index.php?id=150,Interna I2017: medintc1,"Semio: https://drive.google.com/open?id=0ByUr4vIBXzCzT3U0YUloM1A5em8
+Interna: https://drive.google.com/open?id=0ByUr4vIBXzCzSDU1TDBET3JQVE0",FB (estudiantil): https://www.facebook.com/groups/187380521304890/,,,,,,,Anual
+Semio / Medicina Interna I o II ,D,"3, 4 Y 5",Anual,Horacio Carabajal,Lunes a Viernes 8.30-11.30hs,Pabellón Academico.Hospital San Martin,Gonzalo Diez,4250811,catmedint@med.unlp.edu.ar,,,,"Semio: https://drive.google.com/open?id=0ByUr4vIBXzCzT3U0YUloM1A5em8
+Interna: https://drive.google.com/open?id=0ByUr4vIBXzCzSDU1TDBET3JQVE0",FB (estudiantil): https://www.facebook.com/groups/187380521304890/,,,,,,,Anual
+Semio / Medicina Interna I o II ,E,"3, 4 Y 5",Anual,Jorge Guillermo Martínez,Lunes a Viernes 8-11hs,Pabellón Academico.Hospital San Martin,Marcelo Pablo Busquets,4234716,internae53@gmail.com,,Medicina Interna II2017: http://educativa.med.unlp.edu.ar/enrol/index.php?id=89,E2017,"Semio: https://drive.google.com/open?id=0ByUr4vIBXzCzT3U0YUloM1A5em8
+Interna: https://drive.google.com/open?id=0ByUr4vIBXzCzSDU1TDBET3JQVE0",FB (estudiantil): https://www.facebook.com/groups/187380521304890/,,,,,,,Anual
+Semio / Medicina Interna I o II ,F,"3, 4 Y 5",Anual,Fernando Curcio,Lunes a Viernes 8-11hs,Pabellón Academico.Hospital San Martin,Antonio Alejandro Pincence,4216307,mif1986@yahoo.com.ar,,Semiología: http://educativa.med.unlp.edu.ar/enrol/index.php?id=147,(enviar mail para matricularse),"Semio: https://drive.google.com/open?id=0ByUr4vIBXzCzT3U0YUloM1A5em8
+Interna: https://drive.google.com/open?id=0ByUr4vIBXzCzSDU1TDBET3JQVE0",FB (estudiantil): https://www.facebook.com/groups/187380521304890/,,,,,,,Anual
+Micriobiología,,3,Anual,Juan Ángel Basualdo Farjat,Lunes a Viernes 13-15hs,4° Piso Ala Berisso,"Cristina Irene
+Verónica Sergnese",4258967,,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=19,micro2017,https://drive.google.com/open?id=0ByUr4vIBXzCzTlc5bFJWMktrNkU,FB (estudiantil): https://www.facebook.com/groups/unlp.micro/,,,,,,,Anual
+Neurología,,4,Bimestral,Luis Carlos Pedersoli,Lunes a Viernes 8-11hs,Pabellón Academico.Hospital San Martin,Jorge Omar Giannattasio,4826919,"catedraneuro@hotmail.com
+yojmb@hotmail.com",,http://educativa.med.unlp.edu.ar/enrol/index.php?id=22,CatNeuro2017,https://drive.google.com/open?id=0ByUr4vIBXzCzaXdCYVc0ZFVVYUE,FB (estudiantil): https://www.facebook.com/groups/163039680417825/,,,,,,,Anual
+Nutrición Clínica,,5,Trimestral,,,,,,,,,,,FB (estudiantil): https://www.facebook.com/groups/2274739506084467/,,,,,,,Anual
+Obstetricia,,5,Bimestral ,Mario Lovisuto,"Lunes 8-10hs
+Martes 8-12hs",Pabellón Academico.Hospital San Martin,María Cecilia Lastra,4214729,mariacecilialastra@hotmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=46,obstetricia,https://drive.google.com/open?id=0ByUr4vIBXzCzZnRNTlEwYm5kWUE,FB (estudiantil): https://www.facebook.com/groups/199514670079332/,,,,,,,Bimestral (móvil)
+Oftalmología,,3,Bimestral,Jorge Hansen,"Lunes, Martes, Miércoles y Viernes 8-11hs",Edificio del Estacionamiento del Hospital Rossi,Matías Botello,4826911,,,,,https://drive.google.com/open?id=0ByUr4vIBXzCzVFlQalFQR3Z3OHM,"FB (estudiantil): https://www.facebook.com/groups/198559326841365/
+FB (cátedra): https://www.facebook.com/catedraoftalmologia.unlp",,,,,,,Trimestral (optativa)
+Ortopedia y Traumatología,,4,Bimestral,Alberto Cicchino,Lunes a Viernes 8-11hs,Pabellón Academico.Hospital San Martin,Melina Baigorri,4826912,catedraoyt@yahoo.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=45,traumato,https://drive.google.com/open?id=0ByUr4vIBXzCzbVVXV0ZCN1d1ZWs,FB (estudiantil): https://www.facebook.com/groups/138240592913415/,,,,,,,Bimestral 
+Otorrinolaringología,,4,Bimestral,Alberto Daniel Urban,Lunes a Viernes 8.30-11.30hs,Pabellón Academico.Hospital San Martin,Mariela Mayo,,orl@med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=40,copre,https://drive.google.com/open?id=0ByUr4vIBXzCzdVBZR3lFalVPUU0,FB (estudiantil): https://www.facebook.com/groups/120155784727285/?ref=br_rs,,,,,,,Bimestral (móvil)
+Patología ,A,3,Anual,Ricardo Drut,,Pabellón Academico.Hospital San Martin,Juan Carlos Rainski,4827960,,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=91,(te matriculan automaticamente),https://drive.google.com/open?id=0ByUr4vIBXzCzOWxYSkI2Y0ZKbms,FB (estudiantil): https://www.facebook.com/groups/unlp.pato/,,,,,,,Bimestral (móvil)
+Patología ,B,3,Anual,Pedro H. Gonzalez,,Subsuelo Ala La Plata,Gisela Bonvini,,secretaria@patologiab.com.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=17,(te matriculan automaticamente),https://drive.google.com/open?id=0ByUr4vIBXzCzOWxYSkI2Y0ZKbms,FB (estudiantil): https://www.facebook.com/groups/unlp.pato/,,,,,,,Bimestral (móvil)
+Pediatría A,,5,Anual,Luis Alberto Fumagalli,Lunes a Viernes 8.30-10hs,Hospital de Niños,Alicia Dragun,,"pediatria_a@yahoo.com.ar
+simaffia@yahoo.com.ar",,http://educativa.med.unlp.edu.ar/enrol/index.php?id=16,pediatriaA2017,https://drive.google.com/open?id=0ByUr4vIBXzCzUVcyUzhzX0hKWnc,FB (estudiantil) https://www.facebook.com/groups/163500747038357/,,,,,,,Anual
+Pediatría B,,5,Anual,María Alicia Marini,Lunes a Viernes 8.30-11.30hs,Hospital Noel Sbarra,Roxana Garay,4520804,,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=108,(te matriculan automaticamente),https://drive.google.com/open?id=0ByUr4vIBXzCzUVcyUzhzX0hKWnc,FB (estudiantil): https://www.facebook.com/groups/163500747038357/,,,,,,,Anual
+Psicología Médica,,2,Bimestral,José Luis Carrera,Lunes a Viernes 8-11.30hs,Edificio Biblioteca 1º piso,Leticia Eckard,4241596 int: 350,,,,,,FB (estudiantil): https://www.facebook.com/groups/unlp.psicomed/,,,,,,,Anual
+Psiquiatría I,,4,Bimestral,Jorge Folino,"Facultad: Lunes, Miércoles y Viernes 8.30-11.30hs
+Romero: Martes y Jueves 8.30-11.30hs","Facultad: Subsuelo Ala Berisso
+Romero: Edificio de la Izquierda",Susana Bogarsukoff,,psiquiatría@aetos.med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=24,psiquiatria2015,https://drive.google.com/open?id=0ByUr4vIBXzCzejlNZjh0TnFnQ3c,FB (estudiantil): https://www.facebook.com/groups/209247479088364/,,,,,,,Anual
+Psiquiatría II,,5,Bimestral,Jorge Folino,"Facultad: Lunes, Miércoles y Viernes 8.30-11.30hs
+ Romero: Martes y Jueves 8.30-11.30hs","Facultad: Subsuelo Ala Berisso
+ Romero: Edificio de la Izquierda",Susana Bogarsukoff,,psiquiatría@aetos.med.unlp.edu.ar,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=24,psiquiatria2015,https://drive.google.com/open?id=0ByUr4vIBXzCzejlNZjh0TnFnQ3c,FB (estudiantil); https://www.facebook.com/groups/209247479088364/,,,,,,,Bimestral
+Salud Ambiental,,3,Bimestral,Horacio Oscar Pracilio,Lunes a Viernes 9-12hs,Edificio Biblioteca 1º piso,Adriana Andrea Arisnavarreta,4236711 int:367,saludymc2014@hotmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=37,sambiental3,,FB (estudiantil): https://www.facebook.com/groups/168282089891600/,,,,,,,Bimestral
+Salud Pública I,,4,Cuatrimestral,Rubén A. Storino,Lunes a Viernes 16-19hs,1° Piso Ala La Plata,Benjamín Illaurreguy,4241596 int: 346,benjalp@hotmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=43,saludpublica,,FB (estudiantil): https://www.facebook.com/groups/191079964261036/,,,,,,,Bimestral
+Salud Pública II,,5,Cuatrimestral,Rubén A. Storino,Lunes a Viernes 16-19hs,1° Piso Ala La Plata,Benjamín Illaurreguy,4241596 int: 346,benjalp@hotmail.com,,http://educativa.med.unlp.edu.ar/course/view.php?id=49,saludpublica,,FB (estudiantil): https://www.facebook.com/groups/191079964261036/,,,,,,,Bimestral
+Salud y Medicina Comunitaria,,3,Cuatrimestral,Horacio Oscar Pracilio,Lunes a Viernes 9-12hs,Edificio Biblioteca 1º piso,Adriana Andrea Arisnavarreta,4236711 int:367,saludymc2014@hotmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=38,"3ro: saludymc3
+PFO: mgfc5",,FB (estudiantil): https://www.facebook.com/groups/unlp.saludymedcomunitaria/,,,,,,,Cuatrimestral
+Toxicología,,5,Bimestral,Ana María GIrardelli,"Martes, Miércoles y Jueves 14-16hs",Sede de 7 n°1523 e/ 63 y 64,Ana Laura Rinaldi,,catedratoxicologia@hotmail.com,,,,https://drive.google.com/open?id=0ByUr4vIBXzCzbzItdUE0Z2RzQWs,FB (estudiantil): https://www.facebook.com/groups/146230568779433/,,,,,,,Cuatrimestral
+Transplante de Órganos y Tejidos,,5,Anual,Jorge Clemente Raimondi,"Lunes, Miércoles y Viernes 10-11.30hs",Subsuelo Ala Berisso,Natalia Raquel Lausada,,materiatx@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=44,(enviar mail para matricularse),,FB (estudiantil): https://www.facebook.com/groups/182974255083686/,,,,,,,Cuatrimestral
+Urología,,4,Bimestral,Sebastian Tobia,Lunes a Viernes 8-11hs,Pabellón Academico.Hospital San Martin,Diego Javeri Rodríguez,4214247,urología.fcm@gmail.com,,http://educativa.med.unlp.edu.ar/enrol/index.php?id=36,caturo,https://drive.google.com/open?id=0ByUr4vIBXzCzbDB6WDBRbExWU2s,FB (estudiantil): https://www.facebook.com/groups/145547122182735/,,,,,,,Bimestral
+,,,,,,,,,,,,,,,,,,,,,Anual (optativa)
+,,,,,,,,,,,,,,,,,,,,,Bimestral (móvil)
