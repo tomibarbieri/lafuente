@@ -5,10 +5,11 @@ require 'ostruct'
 
 class Parser
 
-  attr_accessor :program
+  attr_accessor :program, :YEARS
 
   def initialize(path)
     @path = path
+    @YEARS = { "1" => "Primero", "2" => "Segundo", "3" => "Tercero", "4" => "Cuarto", "5" => "Quinto", "6" => "Sexto" }
 #    @cathedra1 = OpenStruct.new(nombre: nil, titular: nil, sec_horarios: nil, sec_ubicacion: nil)
     @catedras = []
 #    @subject1 = OpenStruct.new(subject: nil, cathedras: @catedras)
@@ -71,16 +72,20 @@ class Parser
     def create_subject(row)
       cathedra = create_cathedra(row)
       subject = OpenStruct.new(subject: row.materia, cathedras: [cathedra])
-      if regime_was_created
-        find_and_add_subject_to_regime(subject, row.anio)
+      regime = select_year_regime(row.year, row.regimen)
+      if regime
+        add_subject_to_regime(row.anio, regime, subject)
       else
         create_regime(row)
       end
     end
 
+    def year_regime_was_created(year, regime)
+      @years[year-1].regimes.select { |r| r.name == regime }
+    end
   
-    def find_and_add_subject_to_regime(subject, iyear)
-
+    def add_subject_to_regime(year, regime, subject)
+      @years[year-1].regimes << subject
     end
 
     def create_regime(with_subject, year)
