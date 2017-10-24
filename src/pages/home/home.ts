@@ -19,7 +19,11 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 export class HomePage {
 
   carreraPage = CarreraPage;
-  carrera: object = { carrera : "Medicina"};
+  medicina: object = { carrera : "medicina"};
+  enfermeria: object = { carrera : "enfermeria"};
+  cardio: object = { carrera : "cardio"};
+  obstetricia: object = { carrera : "obstetricia"};
+  nutricion: object = { carrera : "nutricion"};
 
   constructor(
     public navCtrl: NavController,
