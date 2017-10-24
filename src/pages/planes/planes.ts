@@ -4,6 +4,8 @@ import { NavController, NavParams } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { SubjectPage } from '../subject/subject';
 
+import { CarreerDataProvider } from '../../providers/carreer-data/carreer-data';
+
 @Component({
   selector: 'planes',
   templateUrl: 'planes.html'
@@ -11,7 +13,8 @@ import { SubjectPage } from '../subject/subject';
 export class PlanesPage {
 
   plan:string;
-  carreer = {	"name": "Medicina 2004",
+  carreer:any;
+  /*carreer = {	"name": "Medicina 2004",
 	            "years": [
 				{ 	"name": 	"Primero",
 					"regimes":	[{  "name": 	"Anual",
@@ -34,14 +37,16 @@ export class PlanesPage {
 				{	"name": "tercero",
 					"regimes": []}
 			]
-    };
+    };*/
 
   constructor(
     public navCtrl: NavController,
     public inAppBrowser: InAppBrowser,
-    public navParams: NavParams
+    public navParams: NavParams,
+    public carreerData: CarreerDataProvider,
   ) {
     this.plan = navParams.get('plan');
+    this.carreer = carreerData.getCarrers()
   }
 
   pushSubject() {
