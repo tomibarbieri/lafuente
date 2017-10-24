@@ -1,0 +1,32 @@
+{
+  "name": "medicina2004",
+  "years": [{
+    "name": "Primero",
+    "regimes": [{
+      "name": "Anual",
+      "subjects": [{
+        "anatomia": [{
+          "name": "A",
+          "professor": "pepe"
+        },
+        {
+          "name": "B",
+          "professor": "luis"
+        }
+        ]
+      },
+      {
+        "prueba2": [{
+          "name": "A",
+          "professor": "pepe"
+        },
+        {
+          "name": "B",
+          "professor": "luis"
+        }
+        ]
+      }
+      ]
+    }]
+  }]
+}
