@@ -1,0 +1,54 @@
+{
+  "subject": "Anatomia",
+  "cathedras": [{
+          "name": 	"Anatomia A",
+          "titular": "Juan Peron",
+          "horario-secretaria": "",
+          "ubicacion-secretaria": "",
+          "secretario": "Eva Duarte",
+          "email-secretario": "eva@fundacionevaperon.com",
+          "tel-secretario": "4563456",
+          "horario consulta": "lu a vi 12 a 14",
+          "entorno-educativo": "",
+          "clave-entorno": "",
+          "apuntes": "",
+          "grupo-facebook": "",
+          "catedra-twitter": "",
+          "catedra-facebook": "",
+          "catedra-web": ""
+      }, {
+        "name": 	"Anatomia A",
+          "titular": "Juan Peron",
+          "horario-secretaria": "",
+          "ubicacion-secretaria": "",
+          "secretario": "Eva Duarte",
+          "email-secretario": "eva@fundacionevaperon.com",
+          "tel-secretario": "4563456",
+          "horario consulta": "lu a vi 12 a 14",
+          "entorno-educativo": "",
+          "clave-entorno": "",
+          "apuntes": "",
+          "grupo-facebook": "",
+          "catedra-twitter": "",
+          "catedra-facebook": "",
+          "catedra-web": ""
+      }, {
+        "name": 	"Anatomia A",
+          "titular": "Juan Peron",
+          "horario-secretaria": "",
+          "ubicacion-secretaria": "",
+          "secretario": "Eva Duarte",
+          "email-secretario": "eva@fundacionevaperon.com",
+          "tel-secretario": "4563456",
+          "horario consulta": "lu a vi 12 a 14",
+          "entorno-educativo": "",
+          "clave-entorno": "",
+          "apuntes": "",
+          "grupo-facebook": "",
+          "catedra-twitter": "",
+          "catedra-facebook": "",
+          "catedra-web": ""
+      }
+    ]
+
+}

@@ -6,7 +6,8 @@ import { MenuController, NavController, Slides } from 'ionic-angular';
 
 import { Storage } from '@ionic/storage';
 
-import { TabsPage } from '../tabs-page/tabs-page';
+//import { TabsPage } from '../tabs-page/tabs-page';
+import { HomePage } from '../home/home';
 
 @Component({
   selector: 'page-welcome',
@@ -25,7 +26,7 @@ export class WelcomePage {
   ) { }
 
   startApp() {
-    this.navCtrl.push(TabsPage).then(() => {
+    this.navCtrl.push(HomePage).then(() => {
       this.storage.set('hasSeenWelcomePage', 'true');
     })
   }

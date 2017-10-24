@@ -15,151 +15,151 @@
 
 <ion-content padding>
 
-  <ion-card class="subject-list">
+  <ng-container *ngFor="let cathedra of subject.cathedras">
+    <ion-card class="subject-list">
 
-    <ion-list no-border>
+      <ion-list no-border>
 
-      <ion-list-header class="subject-title">
-        <h1>Anatomía A</h1>
-        <span>Titular: Juan Perez</span>
-      </ion-list-header>
+        <ion-list-header class="subject-title">
+          <h1>{{ subject.subject }} {{ cathedra.name }}</h1>
+          <span>Titular: {{ cathedra.titular }}</span>
+        </ion-list-header>
 
-      <ion-item>
-        <ion-avatar item-start>
-          <ion-icon name='pin' item-start></ion-icon>
-        </ion-avatar>
-        <h2>Secretaría</h2>
-        <p>Horario: Lu a Vi de 12 a 15hs</p>
-        <p>Ubicación: Segundo piso. Oficina 2</p>
-      </ion-item>
+        <ion-item>
+          <ion-avatar item-start>
+            <ion-icon name='pin' item-start></ion-icon>
+          </ion-avatar>
+          <h2>Secretaría</h2>
+          <p>Horario: {{ cathedra.horario-secretaria }} </p>
+          <p>Ubicación: {{ cathedra.ubicacion-secretaria }}</p>
+        </ion-item>
 
-      <ion-item>
-        <ion-avatar item-start>
-          <ion-icon name='contact' item-start></ion-icon>
-        </ion-avatar>
-        <h2>Contacto</h2>
-        <h3>Secretario/a: Juan Domingo Peron</h3>
-        <p>Email: juandoming@gmail.com</p>
-        <p>Telefono: 4234455</p>
-      </ion-item>
+        <ion-item>
+          <ion-avatar item-start>
+            <ion-icon name='contact' item-start></ion-icon>
+          </ion-avatar>
+          <h2>Contacto</h2>
+          <h3>Secretario/a: {{ cathedra.secretario }}</h3>
+          <p>Email: juandoming@gmail.com</p>
+          <p>Telefono: 4234455</p>
+        </ion-item>
 
-      <ion-item>
-        <ion-avatar item-start>
-          <ion-icon name='body' item-start></ion-icon>
-        </ion-avatar>
-        <h2>Horario consulta (tutorías)</h2>
-        <h3>Lu a vie 12 a 14hs</h3>
-      </ion-item>
+        <ion-item>
+          <ion-avatar item-start>
+            <ion-icon name='body' item-start></ion-icon>
+          </ion-avatar>
+          <h2>Horario consulta (tutorías)</h2>
+          <h3>Lu a vie 12 a 14hs</h3>
+        </ion-item>
 
-      <ion-item>
-        <ion-avatar item-start>
-          <ion-icon name='book' item-start></ion-icon>
-        </ion-avatar>
-        <span>
-          <div><button ion-button color="primary">Entorno educativo</button><span class="clave-entorno">asdf12</span></div>
-        </span>
-        <p>
-          <button ion-button color="primary">Apuntes digitalizados</button>
-        </p>
-        <p>
-          <button ion-button color="primary">Grupo Facebook</button>
-        </p>
-      </ion-item>
+        <ion-item>
+          <ion-avatar item-start>
+            <ion-icon name='book' item-start></ion-icon>
+          </ion-avatar>
+          <span>
+            <div><button ion-button color="primary">Entorno educativo</button><span class="clave-entorno">asdf12</span></div>
+          </span>
+          <p>
+            <button ion-button color="primary">Apuntes digitalizados</button>
+          </p>
+          <p>
+            <button ion-button color="primary">Grupo Facebook</button>
+          </p>
+        </ion-item>
 
-      <ion-item>
-        <ion-avatar item-start>
-          <ion-icon name='chatboxes' item-start></ion-icon>
-        </ion-avatar>
-        <h2>Redes sociales cátedra</h2>
-        <p>
-          <button ion-button color="primary">Twitter</button>
-        </p>
-        <p>
-          <button ion-button color="primary">Facebook</button>
-        </p>
-        <p>
-          <button ion-button color="primary">Web</button>
-        </p>
-      </ion-item>
+        <ion-item>
+          <ion-avatar item-start>
+            <ion-icon name='chatboxes' item-start></ion-icon>
+          </ion-avatar>
+          <h2>Redes sociales cátedra</h2>
+          <p>
+            <button ion-button color="primary">Twitter</button>
+          </p>
+          <p>
+            <button ion-button color="primary">Facebook</button>
+          </p>
+          <p>
+            <button ion-button color="primary">Web</button>
+          </p>
+        </ion-item>
 
-    </ion-list>
-
-
-  </ion-card>
-
-  <ion-card class="subject-list">
-
-    <ion-list no-border>
-
-      <ion-list-header class="subject-title">
-        <h1>Anatomía B</h1>
-        <span>Titular: Juan Perez</span>
-      </ion-list-header>
-
-      <ion-item>
-        <ion-avatar item-start>
-          <ion-icon name='pin' item-start></ion-icon>
-        </ion-avatar>
-        <h2>Secretaría</h2>
-        <p>Horario: Lu a Vi de 12 a 15hs</p>
-        <p>Ubicación: Segundo piso. Oficina 2</p>
-      </ion-item>
-
-      <ion-item>
-        <ion-avatar item-start>
-          <ion-icon name='contact' item-start></ion-icon>
-        </ion-avatar>
-        <h2>Contacto</h2>
-        <h3>Secretario/a: Juan Domingo Peron</h3>
-        <p>Email: juandoming@gmail.com</p>
-        <p>Telefono: 4234455</p>
-      </ion-item>
-
-      <ion-item>
-        <ion-avatar item-start>
-          <ion-icon name='body' item-start></ion-icon>
-        </ion-avatar>
-        <h2>Horario consulta (tutorías)</h2>
-        <h3>Lu a vie 12 a 14hs</h3>
-      </ion-item>
-
-      <ion-item>
-        <ion-avatar item-start>
-          <ion-icon name='book' item-start></ion-icon>
-        </ion-avatar>
-        <span>
-          <div><button ion-button color="primary">Entorno educativo</button><span class="clave-entorno">asdf12</span></div>
-        </span>
-        <p>
-          <button ion-button color="primary">Apuntes digitalizados</button>
-        </p>
-        <p>
-          <button ion-button color="primary">Grupo Facebook</button>
-        </p>
-      </ion-item>
-
-      <ion-item>
-        <ion-avatar item-start>
-          <ion-icon name='chatboxes' item-start></ion-icon>
-        </ion-avatar>
-        <h2>Redes sociales cátedra</h2>
-        <p>
-          <button ion-button color="primary">Twitter</button>
-        </p>
-        <p>
-          <button ion-button color="primary">Facebook</button>
-        </p>
-        <p>
-          <button ion-button color="primary">Web</button>
-        </p>
-      </ion-item>
-
-    </ion-list>
+      </ion-list>
 
 
-  </ion-card>
+    </ion-card>
 
+    <!--
+    <ion-card class="subject-list">
 
+      <ion-list no-border>
+
+        <ion-list-header class="subject-title">
+          <h1>Anatomía B</h1>
+          <span>Titular: Juan Perez</span>
+        </ion-list-header>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <ion-icon name='pin' item-start></ion-icon>
+          </ion-avatar>
+          <h2>Secretaría</h2>
+          <p>Horario: Lu a Vi de 12 a 15hs</p>
+          <p>Ubicación: Segundo piso. Oficina 2</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <ion-icon name='contact' item-start></ion-icon>
+          </ion-avatar>
+          <h2>Contacto</h2>
+          <h3>Secretario/a: Juan Domingo Peron</h3>
+          <p>Email: juandoming@gmail.com</p>
+          <p>Telefono: 4234455</p>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <ion-icon name='body' item-start></ion-icon>
+          </ion-avatar>
+          <h2>Horario consulta (tutorías)</h2>
+          <h3>Lu a vie 12 a 14hs</h3>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <ion-icon name='book' item-start></ion-icon>
+          </ion-avatar>
+          <span>
+            <div><button ion-button color="primary">Entorno educativo</button><span class="clave-entorno">asdf12</span></div>
+          </span>
+          <p>
+            <button ion-button color="primary">Apuntes digitalizados</button>
+          </p>
+          <p>
+            <button ion-button color="primary">Grupo Facebook</button>
+          </p>
+        </ion-item>
+
+        <ion-item>
+          <ion-avatar item-start>
+            <ion-icon name='chatboxes' item-start></ion-icon>
+          </ion-avatar>
+          <h2>Redes sociales cátedra</h2>
+          <p>
+            <button ion-button color="primary">Twitter</button>
+          </p>
+          <p>
+            <button ion-button color="primary">Facebook</button>
+          </p>
+          <p>
+            <button ion-button color="primary">Web</button>
+          </p>
+        </ion-item>
+
+      </ion-list>
+    </ion-card>
+    -->
+  </ng-container>
 
 
 

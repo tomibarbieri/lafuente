@@ -1,4 +1,7 @@
+@import "theme/variables";
+
 page-welcome {
+
   .toolbar-background {
     background: transparent;
     border-color: transparent;
@@ -9,13 +12,47 @@ page-welcome {
   }
 
   .slide-title {
-    margin-top: 2.8rem;
+    margin-top: 3.8rem;
+    margin-left: 35px;
+    margin-right: 35px;
+    .br-title {
+      font-size: 0em;
+    }
+    .text-span {
+      color: map-get($colors, primary);
+      font-size: 1em;
+    }
+    .title-span {
+      color: map-get($colors, primary);
+      font-size: 1.5em;
+      font-weight: bold;
+    }
   }
 
   .slide-image {
-    max-height: 50%;
-    max-width: 60%;
-    margin: 36px 0;
+    margin-top: 15%;
+    max-height: 30%;
+    margin-bottom: 10%;
+  }
+
+  .eurhes-img {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .logo-img {
+    margin-top: 30%;
+    margin-bottom: 15%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .medicina-img {
+    width: 40%;
+    height: 25%;
+    margin-left: 30%;
+    margin-right: 30%;
   }
 
   b {

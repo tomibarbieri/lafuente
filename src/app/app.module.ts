@@ -44,6 +44,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
+import { CarreerDataProvider } from '../providers/carreer-data/carreer-data';
 
 
 @NgModule({
@@ -139,7 +140,8 @@ import { UserData } from '../providers/user-data';
     ConferenceData,
     UserData,
     InAppBrowser,
-    SplashScreen
+    SplashScreen,
+    CarreerDataProvider
   ]
 })
 export class AppModule { }

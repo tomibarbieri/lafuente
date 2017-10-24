@@ -14,6 +14,7 @@ import { AboutPage  } from '../pages/about/about';
 import { WelcomePage  } from '../pages/welcome/welcome';
 
 import { ConferenceData } from '../providers/conference-data';
+import { CarreerDataProvider } from '../providers/carreer-data/carreer-data';
 import { UserData } from '../providers/user-data';
 
 import { InAppBrowser } from '@ionic-native/in-app-browser';
@@ -74,6 +75,7 @@ export class ConferenceApp {
     public menu: MenuController,
     public platform: Platform,
     public confData: ConferenceData,
+    public carreerData: CarreerDataProvider,
     public storage: Storage,
     public inAppBrowser: InAppBrowser,
     public splashScreen: SplashScreen
@@ -94,6 +96,8 @@ export class ConferenceApp {
 
     // load the conference data
     confData.load();
+
+    carreerData.load();
 
     // decide which menu items should be hidden by current login status stored in local storage
     this.userData.hasLoggedIn().then((hasLoggedIn) => {
