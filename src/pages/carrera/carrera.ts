@@ -20,9 +20,12 @@ export class CarreraPage {
 
   planesPage = PlanesPage;
   carrera = '';
+  isEurhes: any;
 
   constructor(public navCtrl: NavController, public inAppBrowser: InAppBrowser, public navParams: NavParams) {
     this.carrera = navParams.get('carrera');
+    this.isEurhes = navParams.get('isEurhes');
+    console.log(this.isEurhes);
     console.log(this.carrera);
   }
 

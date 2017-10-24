@@ -25,10 +25,27 @@
 
     <ion-list class="button-list">
 
+      <ng-template *ngIf="isEurhes;then medicina; else eurhes">
+      </ng-template>
+
+      <ng-template #medicina>
+        <button (click)="pushPlanes()" ion-item>
+          Plan de estudios
+          <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
+        </button>
+      </ng-template>
+      <ng-template #eurhes>
+        <button (click)="pushPlanes()" ion-item>
+          Información de cátedras y secretarías
+          <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
+        </button>
+      </ng-template>
+
+      <!--
       <button (click)="pushPlanes()" ion-item>
         Información de cátedras y secretarías
         <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
-      </button>
+      </button>-->
 
       <button (click)="openGuarani()" ion-item>
         <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
@@ -38,6 +55,11 @@
       <button (click)="openWebMed()" ion-item>
         <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
         Pagina web principal
+      </button>
+
+      <button *ngIf="isEurhes" (click)="openWebMed()" ion-item>
+        <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
+        Cordinadora de carrera
       </button>
 
     </ion-list>
