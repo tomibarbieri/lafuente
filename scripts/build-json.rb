@@ -28,6 +28,15 @@ class Parser
     @program = OpenStruct.new(name: "Medicina 2004", years: @years)
   end
 
+  def build_row(row)
+    if row.catedra.blank?
+      create_subject(row)
+    else
+      result = find_subject(row.materia)
+      add_cathedra_to_subject(result, row)
+    end 
+  end
+
   def parse_file
     CSV.foreach(@path, "r") do |row|
       build_row(
@@ -53,15 +62,6 @@ class Parser
          })
         )
     end
-  end
-
-  def build_row(row)
-    if row.catedra.blank?
-      create_subject(row)
-    else
-      result = find_subject(row.materia)
-      add_cathedra_to_subject(result, row)
-    end 
   end
 
     def create_cathedra(row)
@@ -265,6 +265,6 @@ class Parser
 
   #execute script
 
-  parser = Parser.new("medicina2004.csv")
-  #parser.parseFile()
-  #puts @years
+parser = Parser.new("medicina2004.csv")
+parser.parse_file
+puts @years
