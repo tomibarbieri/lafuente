@@ -10,7 +10,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title><img src="assets/img/about_page/pill-bg-white.svg"> {{ carrera }} <img src="assets/img/about_page/pill-bg-white.svg"></ion-title>
+    <ion-title class="title-page" ><img src="assets/img/about_page/pill-bg-white.svg"> {{ title }} <img src="assets/img/about_page/pill-bg-white.svg"></ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -27,42 +27,32 @@
   -->
     <ion-list class="button-list">
 
-      <ng-template *ngIf="isEurhes;then medicina; else eurhes">
+      <ng-template *ngIf="isEurhes;then eurhes; else medicina">
       </ng-template>
 
       <ng-template #medicina>
-        <button (click)="pushPlanes()" ion-item>
-          Plan de estudios
-          <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
-        </button>
-      </ng-template>
-      <ng-template #eurhes>
         <button (click)="pushPlanes()" ion-item>
           Información de cátedras y secretarías
           <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
         </button>
-      </ng-template>
-
-      <ng-template #medicina>
         <button (click)="openGuarani()" ion-item>
           <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
           Entorno Siu Guarani
         </button>
-      </ng-template>
-      <ng-template #eurhes>
-        <button (click)="openGuaraniEurhes()" ion-item>
-          <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
-          Entorno Siu Guarani
-        </button>
-      </ng-template>
-
-      <ng-template #medicina>
         <button (click)="openWebMed()" ion-item>
           <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
           Pagina web principal
         </button>
       </ng-template>
       <ng-template #eurhes>
+        <button (click)="pushPlanesEurhes()" ion-item>
+          Plan de estudios
+          <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
+        </button>
+        <button (click)="openGuaraniEurhes()" ion-item>
+          <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
+          Entorno Siu Guarani
+        </button>
         <button (click)="openWebEurhes()" ion-item>
           <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
           Pagina web principal

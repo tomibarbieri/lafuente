@@ -1,5 +1,12 @@
 @import "theme/variables";
 
+.title-page {
+  padding-left: 2% !important;
+  div {
+    font-size: 1.5em !important;
+  }
+}
+
 .plan-group {
   ion-item {
     font-size: 0.9em;

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PlanesPage } from '../planes/planes';
+import { PlanesEurhesPage } from '../planes-eurhes/planes';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 
@@ -21,27 +22,32 @@ export class CarreraPage {
   planesPage = PlanesPage;
   carrera = '';
   isEurhes: any;
+  title = '';
 
   cordinadoras:any = {
     'enfermeria':{
       'coordinador':'Lic. Fabio Antonini',
       'horario':'Lunes 10.30hs | Martes 16hs',
-      'ubicacion':'Edificio Central 3er Piso'
+      'ubicacion':'Edificio Central 3er Piso',
+      'name':'Enfermería'
     },
     'nutricion':{
       'coordinador':'Lic. Cintia Ambrosino',
       'horario':'Lunes 10hs | Viernes 13hs',
-      'ubicacion':'Edificio Central 3er Piso'
+      'ubicacion':'Edificio Central 3er Piso',
+      'name':'Nutrición'
     },
     'obstetricia':{
       'coordinador':'Lic. Silvia Rosella',
       'horario':'Lunes 10hs | Miércoles 9hs',
-      'ubicacion':'Edificio Central 3er Piso'
+      'ubicacion':'Edificio Central 3er Piso',
+      'name':'Obstetricia'
     }
     ,'cardio':{
       'coordinador':'Dra. Analía cuello',
       'horario':'Lunes 10hs | Miércoles 15hs',
-      'ubicacion':'Edificio Central 3er Piso'
+      'ubicacion':'Edificio Central 3er Piso',
+      'name':'Prácticas cardiológicas'
     }
   }
 
@@ -50,6 +56,11 @@ export class CarreraPage {
 
   constructor(public navCtrl: NavController, public inAppBrowser: InAppBrowser, public navParams: NavParams) {
     this.carrera = navParams.get('carrera');
+    if (this.carrera == 'medicina') {
+      this.title = 'Medicina';
+    } else {
+      this.title = this.cordinadoras[this.carrera].name;
+    }
     this.isEurhes = navParams.get('isEurhes');
     this.coordinadoraActual = this.cordinadoras[this.carrera];
     console.log(this.coordinadoraActual)
@@ -95,6 +106,12 @@ export class CarreraPage {
     this.navCtrl.push(PlanesPage, {
       plan: "Medicina 2004",
       id: "1"
+    });
+  }
+
+  pushPlanesEurhes() {
+    this.navCtrl.push(PlanesEurhesPage, {
+      plan: this.carrera
     });
   }
 

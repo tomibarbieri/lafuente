@@ -14,7 +14,8 @@ import 'rxjs/add/observable/of';
 @Injectable()
 export class CarreerDataProvider {
 
-  data: any;
+  medicina: any;
+  eurhes: any;
 
   constructor(public http: Http) {
     console.log('Hello CarreerDataProvider Provider');
@@ -23,12 +24,21 @@ export class CarreerDataProvider {
   load() {
     this.http.get('assets/data/medicina.json').map(res => res.json()).subscribe(data => {
         console.log(data);
-        this.data = data;
+        this.medicina = data;
     });
+    this.http.get('assets/data/eurhes.json').map(res => res.json()).subscribe(data => {
+        console.log(data);
+        this.eurhes = data;
+    });
+
   }
 
-  getCarrers() {
-    return this.data;
+  getCarreerMedicina() {
+    return this.medicina;
+  }
+
+  getCarreerEurhes(carrer:any) {
+    return this.eurhes[carrer];
   }
 
 }

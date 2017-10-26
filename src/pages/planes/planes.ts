@@ -46,7 +46,7 @@ export class PlanesPage {
     public carreerData: CarreerDataProvider,
   ) {
     this.plan = navParams.get('plan');
-    this.carreer = carreerData.getCarrers()
+    this.carreer = carreerData.getCarreerMedicina()
   }
 
   pushSubject() {

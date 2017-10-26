@@ -2,6 +2,13 @@
 
 page-carrera {
 
+  .title-page {
+    padding-left: 2% !important;
+    div {
+      font-size: 1.5em !important;
+    }
+  }
+
   .carrer-title {
     color: map-get($colors, primary);
     text-align: center;

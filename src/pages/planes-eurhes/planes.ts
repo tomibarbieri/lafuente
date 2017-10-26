@@ -22,7 +22,8 @@ export class PlanesEurhesPage {
     public carreerData: CarreerDataProvider,
   ) {
     this.plan = navParams.get('plan');
-    this.carreer = carreerData.getCarrers()
+    console.log(this.plan);
+    this.carreer = carreerData.getCarreerEurhes(this.plan);
   }
 
 }

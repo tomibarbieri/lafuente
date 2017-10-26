@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title><img src="assets/img/about_page/pill-bg-white.svg"> {{ carreer.name }} <img src="assets/img/about_page/pill-bg-white.svg"></ion-title>
+    <ion-title class="title-page"><img src="assets/img/about_page/pill-bg-white.svg"> {{ carreer.name }} <img src="assets/img/about_page/pill-bg-white.svg"></ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -14,17 +14,9 @@
   <ion-card>
     <ion-item-group class="plan-group" *ngFor="let year of carreer.years">
       <ion-item-divider color="light">{{ year.name }}</ion-item-divider>
-
-        <ng-container *ngFor="let regime of year.regimes">
-          <ion-item *ngFor="let subject of regime.subjects">
+          <ion-item *ngFor="let subject of year.subjects">
             {{ subject.name }}
-            <ion-badge color="primary">
-              {{ regime.name }}
-            </ion-badge>
-            <ion-note item-end>Ver más <ion-icon name="ios-arrow-forward"></ion-icon></ion-note>
           </ion-item>
-      </ng-container>
-
     </ion-item-group>
 
   </ion-card>

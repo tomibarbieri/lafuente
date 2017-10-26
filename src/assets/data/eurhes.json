@@ -1,0 +1,68 @@
+{	"cardio": {	"name": "Prácticas cardiológicas",
+  "years": [{
+    "name": 	"Primero",
+    "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+  },{
+    "name": 	"Segundo",
+    "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+  },{
+    "name": 	"Tercero",
+    "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+  },{
+    "name": 	"Cuarto",
+    "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+  }]},
+
+
+
+  "nutricion": {	"name": "Nutrición",
+    "years": [{
+      "name": 	"Primero",
+      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    },{
+      "name": 	"Segundo",
+      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    },{
+      "name": 	"Tercero",
+      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    },{
+      "name": 	"Cuarto",
+      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    }]},
+
+
+
+
+  "obstetricia": {	"name": "Obstetricia",
+    "years": [{
+      "name": 	"Primero",
+      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    },{
+      "name": 	"Segundo",
+      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    },{
+      "name": 	"Tercero",
+      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    },{
+      "name": 	"Cuarto",
+      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    }]},
+
+
+
+
+  "enfermeria": {	"name": "Enfermería",
+    "years": [{
+      "name": 	"Primero",
+      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    },{
+      "name": 	"Segundo",
+      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    },{
+      "name": 	"Tercero",
+      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    },{
+      "name": 	"Cuarto",
+      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    }]}
+}

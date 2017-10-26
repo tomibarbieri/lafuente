@@ -33,7 +33,7 @@ export class HomePage {
 
   openFacebook() {
     this.inAppBrowser.create(
-      `fb://RemediarUNLP`,
+      `fb://https://www.facebook.com/LaFuenteUNLP/`,
       '_system'
     );
   }
