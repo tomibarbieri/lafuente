@@ -17,17 +17,13 @@ export class CarreerDataProvider {
   medicina: any;
   eurhes: any;
 
-  constructor(public http: Http) {
-    console.log('Hello CarreerDataProvider Provider');
-  }
+  constructor(public http: Http) {}
 
   load() {
     this.http.get('assets/data/medicina.json').map(res => res.json()).subscribe(data => {
-        console.log(data);
         this.medicina = data;
     });
     this.http.get('assets/data/eurhes.json').map(res => res.json()).subscribe(data => {
-        console.log(data);
         this.eurhes = data;
     });
 
