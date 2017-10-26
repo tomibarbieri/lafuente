@@ -18,14 +18,15 @@
   <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>
 
     <ion-slide>
-      <img src="assets/img/welcome_page/medicina2.png" class="medicina-img"/>
-      <img src="assets/img/welcome_page/eurhes.png" class="eurhes-img"/>
-      <h2 class="slide-title">
+      <img src="assets/img/welcome_page/medicina.jpg" class="medicina-img"/>
+      <!--<img src="assets/img/welcome_page/medicina2.png" class="medicina-img"/>
+      <img src="assets/img/welcome_page/eurhes.png" class="eurhes-img"/>-->
+      <div class="slide-title">
         <span class="title-span">Bienvenidos a la <br class="br-title"> aplicación de Remediar</span>
         <br>
         <br>
         <span class="text-span">Generamos esta herramienta para que todos los estudiantes puedan tener la información mas al alcance.</span>
-      </h2>
+      </div>
     </ion-slide>
 
     <ion-slide>
@@ -40,21 +41,21 @@
 
     <ion-slide>
       <img src="assets/img/welcome_page/studying.svg" class="slide-image"/>
-      <h2 class="slide-title" >
+      <div class="slide-title" >
         <span class="title-span">BIENESTAR ESTUDIANTIL</span>
         <br>
         <br>
         <span class="text-span">Toda la data de becas, actividades y servicios que brinda la universidad.</span>
-      </h2>
+      </div>
     </ion-slide>
 
     <ion-slide>
       <img src="assets/img/welcome_page/logo.png" class="logo-img"/>
-      <h2 class="slide-title">
+      <div class="slide-title">
         <span class="title-span">¿Querés ver más?</span>
         <br>
         <span class="text-span">#TodoElAñoJuntoAVos</span>
-      </h2>
+      </div>
       <button ion-button icon-end large clear (click)="startApp()">
         Entrá
         <ion-icon name="arrow-forward"></ion-icon>

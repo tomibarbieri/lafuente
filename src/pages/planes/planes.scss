@@ -2,9 +2,11 @@
 
 .plan-group {
   ion-item {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   ion-label {
+    font-size: 1.2em;
+    margin-top: 0;
     margin: 8px 8px 8px 0;
   }
   ion-item-divider {
@@ -15,7 +17,7 @@
     padding-bottom: 2%;
   }
   ion-badge {
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding: 1.5%
   }
   .badge-md-primary {

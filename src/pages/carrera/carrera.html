@@ -19,10 +19,12 @@
 
   <ion-card>
     <img src="assets/img/carrer_page/{{carrera}}.png"/>
+
+    <!--
     <ion-card-header class="carrer-title card-header md-primary">
 
     </ion-card-header>
-
+  -->
     <ion-list class="button-list">
 
       <ng-template *ngIf="isEurhes;then medicina; else eurhes">
@@ -41,12 +43,6 @@
         </button>
       </ng-template>
 
-      <!--
-      <button (click)="pushPlanes()" ion-item>
-        Información de cátedras y secretarías
-        <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
-      </button>-->
-
       <button (click)="openGuarani()" ion-item>
         <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
         Entorno Siu Guarani
@@ -57,13 +53,24 @@
         Pagina web principal
       </button>
 
-      <button *ngIf="isEurhes" (click)="openWebMed()" ion-item>
-        <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
-        Cordinadora de carrera
-      </button>
-
     </ion-list>
   </ion-card>
+
+  <ion-card>
+    <div *ngIf="isEurhes" class="div-coordinadora" ion-item>
+      <label class="label-coordinadora">Cordinaciones de carrera</label>
+      <ion-item>
+        <ion-avatar item-start>
+          <ion-icon name='contact' item-start></ion-icon>
+        </ion-avatar>
+        <h3><b>Coordinador/a:</b> {{coordinadoraActual.coordinador}}</h3>
+        <p><b>Días y horarios:</b> {{coordinadoraActual.horario}}/p>
+        <p><b>Ubicación:</b> {{coordinadoraActual.ubicacion}}</p>
+      </ion-item>
+    </div>
+  </ion-card>
+
+
 
 </ion-content>
 

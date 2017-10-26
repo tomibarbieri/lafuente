@@ -20,7 +20,8 @@ page-subject {
         color: map-get($colors, primary);
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 1.5em;
+        font-size: 1.45em;
+        margin-top: 0;
       }
       span {
         color: map-get($colors, primary);
@@ -38,6 +39,7 @@ page-subject {
     h2, h3, p, ion-icon {
       color: map-get($colors, primary);
       font-size: .8em;
+      margin-top: 0 !important;
     }
     button {
       font-size: 1.5rem !important;

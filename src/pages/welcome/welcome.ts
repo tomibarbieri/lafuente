@@ -26,7 +26,7 @@ export class WelcomePage {
   ) { }
 
   startApp() {
-    this.navCtrl.push(HomePage).then(() => {
+    this.navCtrl.setRoot(HomePage).then(() => {
       this.storage.set('hasSeenWelcomePage', 'true');
     })
   }
