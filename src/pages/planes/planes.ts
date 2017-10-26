@@ -14,30 +14,6 @@ export class PlanesPage {
 
   plan:string;
   carreer:any;
-  /*carreer = {	"name": "Medicina 2004",
-	            "years": [
-				{ 	"name": 	"Primero",
-					"regimes":	[{  "name": 	"Anual",
-									"subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]},
-								 {  "name": 	"Bimestral",
-								 	"subjects": [{ "name": "Ciencias Sociales y médicas"}, { "name": "Citología" } ]}
-								, { "name": "Cuatrimestral",
-								  	"subjects": [ {"name": "Ciencias exactas" } ]}
-								]
-				},
-				{
-					"name":		"Segundo",
-					"regimes": [{ "name": "Anual",
-								   "subjects": [{ "name": "Bioquímica y biología molecular" }, { "name": "Fisiología y física biológica" }]},
-								{ "name": "Bimestral",
-								  "subjects": [ { "name": "Epidemiología" }]},
-								{ "name": "Cuatrimestral",
-								  "subjects": [] }]
-				},
-				{	"name": "tercero",
-					"regimes": []}
-			]
-    };*/
 
   constructor(
     public navCtrl: NavController,

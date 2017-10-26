@@ -70,12 +70,8 @@ export class SubjectPage {
 
   };
 
+  constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SubjectPage');
-  }
+  ionViewDidLoad() {}
 
 }
