@@ -14,7 +14,7 @@ import { AboutPage  } from '../pages/about/about';
 import { WelcomePage  } from '../pages/welcome/welcome';
 
 import { ConferenceData } from '../providers/conference-data';
-import { CarreerDataProvider } from '../providers/carreer-data/carreer-data';
+import { CarreerDataProvider } from '../providers/carreer-data';
 import { UserData } from '../providers/user-data';
 
 import { InAppBrowser } from '@ionic-native/in-app-browser';
