@@ -177,85 +177,85 @@ class Parser
       end
     end
 
-    #  def to_json()
-    #    {
-    #      "name": "medicina2004",
-    #      "years": [{ 
-    #          "name": "Primero", 
-    #          "regimes": [{
-    #              "name": "Anual",
-    #              "subjects": []
-    #            }, {
-    #              "name": "Cuatrimestral",
-    #              "subjects": []
-    #            }, {
-    #              "name": "Bimestral",
-    #              "subjects": []
-    #            }
-    #          }]
-    #        }, { 
-    #          "name": "Segundo", 
-    #          "regimes": [{
-    #              "name": "Anual",
-    #              "subjects": []
-    #            }, {
-    #              "name": "Cuatrimestral",
-    #              "subjects": []
-    #            }, {
-    #              "name": "Bimestral",
-    #              "subjects": []
-    #            }
-    #        }, { 
-    #          "name": "Tercero",
-    #          "regimes": [{
-    #              "name": "Anual",
-    #              "subjects": []
-    #            }, {
-    #              "name": "Cuatrimestral",
-    #              "subjects": []
-    #            }, {
-    #              "name": "Bimestral",
-    #              "subjects": []
-    #            }
-    #        }, {
-    #          "name": "Cuarto",
-    #          "regimes": [{
-    #              "name": "Anual",
-    #              "subjects": []
-    #            }, {
-    #              "name": "Cuatrimestral",
-    #              "subjects": []
-    #            }, {
-    #              "name": "Bimestral",
-    #              "subjects": []
-    #            }
-    #        }, { 
-    #          "name": "Quinto",
-    #          "regimes": [{
-    #              "name": "Anual",
-    #              "subjects": []
-    #            }, {
-    #              "name": "Cuatrimestral",
-    #              "subjects": []
-    #            }, {
-    #              "name": "Bimestral",
-    #              "subjects": []
-    #            }
-    #        }, { 
-    #          "name": "Sexto", 
-    #          "regimes": [{
-    #              "name": "Anual",
-    #              "subjects": []
-    #            }, {
-    #              "name": "Cuatrimestral",
-    #              "subjects": []
-    #            }, {
-    #              "name": "Bimestral",
-    #              "subjects": []
-    #            }
-    #        }]
-    #    }
-    #  end
+      def to_json()
+        {
+          "name": "medicina2004",
+          "years": [{ 
+              "name": "Primero", 
+              "regimes": [{
+                  "name": "Anual",
+                  "subjects": []
+                }, {
+                  "name": "Cuatrimestral",
+                  "subjects": []
+                }, {
+                  "name": "Bimestral",
+                  "subjects": []
+                }
+              }]
+            }, { 
+              "name": "Segundo", 
+              "regimes": [{
+                  "name": "Anual",
+                  "subjects": []
+                }, {
+                  "name": "Cuatrimestral",
+                  "subjects": []
+                }, {
+                  "name": "Bimestral",
+                  "subjects": []
+                }
+            }, { 
+              "name": "Tercero",
+              "regimes": [{
+                  "name": "Anual",
+                  "subjects": []
+                }, {
+                  "name": "Cuatrimestral",
+                  "subjects": []
+                }, {
+                  "name": "Bimestral",
+                  "subjects": []
+                }
+            }, {
+              "name": "Cuarto",
+              "regimes": [{
+                  "name": "Anual",
+                  "subjects": []
+                }, {
+                  "name": "Cuatrimestral",
+                  "subjects": []
+                }, {
+                  "name": "Bimestral",
+                  "subjects": []
+                }
+            }, { 
+              "name": "Quinto",
+              "regimes": [{
+                  "name": "Anual",
+                  "subjects": []
+                }, {
+                  "name": "Cuatrimestral",
+                  "subjects": []
+                }, {
+                  "name": "Bimestral",
+                  "subjects": []
+                }
+            }, { 
+              "name": "Sexto", 
+              "regimes": [{
+                  "name": "Anual",
+                  "subjects": []
+                }, {
+                  "name": "Cuatrimestral",
+                  "subjects": []
+                }, {
+                  "name": "Bimestral",
+                  "subjects": []
+                }
+            }]
+        }
+      end
 
     def get_field(field)
       field.blank? ? nil : field.strip
