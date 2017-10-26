@@ -32,31 +32,30 @@ export class HomePage {
     { }
 
   openFacebook() {
-    window.open('https://www.facebook.com/RemediarUNLP/', '_blank');
-    /*this.inAppBrowser.create(
+    this.inAppBrowser.create(
       `https://www.facebook.com/RemediarUNLP/`,
-      '_blank'
-    );*/
+      '_system'
+    );
   }
 
   openTwitter() {
     this.inAppBrowser.create(
       `https://twitter.com/RemediarUNLP`,
-      '_blank'
+      '_system'
     );
   }
 
   openInstagram() {
     this.inAppBrowser.create(
-      `https://www.instagram.com/remediarUNLP/`,
-      '_blank'
+      `https://www.instagram.com/remediarunlp/`,
+      '_system'
     );
   }
 
   openMail() {
     this.inAppBrowser.create(
       `mailto:remediarcienciasmedicas@gmail.com`,
-      '_blank'
+      '_system'
     );
   }
 

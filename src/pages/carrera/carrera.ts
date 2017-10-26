@@ -63,13 +63,31 @@ export class CarreraPage {
 
   openGuarani() {
     this.inAppBrowser.create(
-      `https://www.guarani-medicina.unlp.edu.ar/`
+      `https://www.guarani-medicina.unlp.edu.ar/`,'_system'
     );
   }
 
   openWebMed() {
     this.inAppBrowser.create(
-      `http://www.med.unlp.edu.ar/`
+      `http://www.med.unlp.edu.ar/`,'_system'
+    );
+  }
+
+  openGuaraniEurhes() {
+    this.inAppBrowser.create(
+      `https://guarani-eurh.unlp.edu.ar/`,'_system'
+    );
+  }
+
+  openWebEurhes() {
+    this.inAppBrowser.create(
+      `http://www.eurhes.unlp.edu.ar/`,'_system'
+    );
+  }
+
+  openFacebookEurhes() {
+    this.inAppBrowser.create(
+      `https://www.facebook.com/Eurhes.unlp/`,'_system'
     );
   }
 

@@ -43,15 +43,31 @@
         </button>
       </ng-template>
 
-      <button (click)="openGuarani()" ion-item>
-        <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
-        Entorno Siu Guarani
-      </button>
+      <ng-template #medicina>
+        <button (click)="openGuarani()" ion-item>
+          <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
+          Entorno Siu Guarani
+        </button>
+      </ng-template>
+      <ng-template #eurhes>
+        <button (click)="openGuaraniEurhes()" ion-item>
+          <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
+          Entorno Siu Guarani
+        </button>
+      </ng-template>
 
-      <button (click)="openWebMed()" ion-item>
-        <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
-        Pagina web principal
-      </button>
+      <ng-template #medicina>
+        <button (click)="openWebMed()" ion-item>
+          <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
+          Pagina web principal
+        </button>
+      </ng-template>
+      <ng-template #eurhes>
+        <button (click)="openWebEurhes()" ion-item>
+          <ion-icon name="ios-arrow-dropright-outline" item-start></ion-icon>
+          Pagina web principal
+        </button>
+      </ng-template>
 
     </ion-list>
   </ion-card>
@@ -66,6 +82,9 @@
         <h3><b>Coordinador/a:</b> {{coordinadoraActual.coordinador}}</h3>
         <p><b>Días y horarios:</b> {{coordinadoraActual.horario}}/p>
         <p><b>Ubicación:</b> {{coordinadoraActual.ubicacion}}</p>
+        <p>
+          <button ion-button (click)='openFacebookEurhes()' color="primary">Facebook EURHES</button>
+        </p>
       </ion-item>
     </div>
   </ion-card>

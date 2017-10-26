@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { BenefitPage } from '../benefit/benefit'; //sobre las becas universitarias
 import { LunchRoomPage } from '../lunch-room/lunch-room'; //sobre las becas universitarias
-import { HealthPage } from '../health/health'; 
+import { HealthPage } from '../health/health';
 
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 
@@ -33,31 +33,31 @@ export class BienestarPage {
 
   openActividades() {
     this.inAppBrowser.create(
-      `http://www.asuntosestudiantiles.unlp.edu.ar/?cat=6`
+      `http://www.asuntosestudiantiles.unlp.edu.ar/?cat=6`,'_system'
     );
   }
 
   openDeportes() {
     this.inAppBrowser.create(
-      `http://deportes.unlp.edu.ar/`
+      `http://deportes.unlp.edu.ar/`,'_system'
     );
   }
 
   openSUBE() {
     this.inAppBrowser.create(
-      `https://www.sube.gob.ar/MapasSUBE.aspx`
+      `https://www.sube.gob.ar/MapasSUBE.aspx`,'_system'
     );
   }
 
   openCualBondi() {
     this.inAppBrowser.create(
-      `https://cualbondi.com.ar/mapa/la-plata/`
+      `https://cualbondi.com.ar/mapa/la-plata/`,'_system'
     );
   }
 
   openAlquileres() {
     this.inAppBrowser.create(
-      `http://clasificados.eldia.com/casas-la-plata`
+      `http://clasificados.eldia.com/casas-la-plata`,'_system'
     );
   }
 
