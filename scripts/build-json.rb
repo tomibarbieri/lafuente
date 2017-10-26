@@ -1,270 +1,78 @@
-require 'active_support/core_ext/object/blank'
 require 'csv'
+require 'active_support/core_ext/object/blank'
 require 'json'
-require 'ostruct'
 
 class Parser
 
-  attr_accessor :program, :YEARS
+  attr_accessor :path, :medicina2004, :year_actual, :regime_actual, :subject_actual
 
   def initialize(path)
     @path = path
-    @YEARS = { "1" => "Primero", "2" => "Segundo", "3" => "Tercero", "4" => "Cuarto", "5" => "Quinto", "6" => "Sexto" }
-#    @cathedra1 = OpenStruct.new(nombre: nil, titular: nil, sec_horarios: nil, sec_ubicacion: nil)
-    @catedras = []
-#    @subject1 = OpenStruct.new(subject: nil, cathedras: @catedras)
-    @subjects = []
-#    @regime3 = OpenStruct.new(name: "Bimestral", subjects: @subjects )
-#    @regime2 = OpenStruct.new(name: "Cuatrimestral", subjects: @subjects )
-#    @regime1 = OpenStruct.new(name: "Anual", subjects: @subjects )
-#    @regimes = [@regime1, @regime2, @regime3] 
-    @year1= OpenStruct.new(name: "Primero", regimes: [])
-    @year2= OpenStruct.new(name: "Segundo", regimes: [])
-    @year3= OpenStruct.new(name: "Tercero", regimes: [])
-    @year4= OpenStruct.new(name: "Cuarto",  regimes: [])
-    @year5= OpenStruct.new(name: "Quinto",  regimes: [])
-    @year6= OpenStruct.new(name: "Sexto",   regimes: [])
-    @years = [@year1, @year2, @year3, @year4, @year5, @year6]
-    @program = OpenStruct.new(name: "Medicina 2004", years: @years)
+    @medicina2004 = { "name": "medicina2004", "years": [] }
   end
 
-  def build_row(row)
-    if row.catedra.blank?
-      create_subject(row)
-    else
-      result = find_subject(row.materia)
-      add_cathedra_to_subject(result, row)
-    end 
+  def build_json
+    previous_year = ""
+    year_index = 0
+    previous_regime = ""
+    regime_index = 0
+    previous_subject = ""
+    subject_index = 0
+    i = 0
+
+    CSV.foreach(@path, row_sep: "\r\n", col_sep: ",") do |row|
+      unless previous_year == row[0] #row[0] -> year
+        @medicina2004[:years] << { "name": row[0], "regimes": [] }
+        previous_year = row[0]
+        @year_actual = @medicina2004[:years][year_index]
+        year_index = year_index + 1
+        regime_index = 0
+        subject_index = 0
+        i = 0
+      end
+
+      if previous_regime != row[1] || previous_year != row[0]  # row[1] -> regime
+        @year_actual[:regimes] << { "name": row[1], "subjects": [] }
+        previous_regime = row[1]
+        regime_index = regime_index + 1
+        subject_index = 0
+      end
+
+      if previous_subject != row[2] || previous_regime != row[1] || previous_year != row[0]
+        @year_actual[:regimes][regime_index-1][:subjects] << { "name": row[2], "cathedras": [] } 
+        previous_subject = row[2]
+        subject_index = subject_index + 1
+      end
+      
+      cathedra = {
+        "name": clean_field(row[3]),
+        "regime": clean_field(row[4]),
+        "regime_type": clean_field(row[5]),
+        "professor": clean_field(row[6]),
+        "sec_scheduler": clean_field(row[7]),
+        "sec_location": clean_field(row[8]),
+        "contact_name": clean_field(row[9]),
+        "contact_phone": clean_field(row[10]),
+        "contact_email": clean_field(row[11]),
+        "tutorship_schedule": clean_field(row[12]),
+        "environment": clean_field(row[13]),
+        "environment_keys": clean_field(row[14]),
+        "sn_preparemos_fb": clean_field(row[15]),
+        "sn_facebook": clean_field(row[16]),
+        "sn_twitter": clean_field(row[17]),
+        "sn_web": clean_field(row[18])
+      }
+      @year_actual[:regimes][regime_index-1][:subjects][subject_index-1][:cathedras] << cathedra
+      File.open("resultado.json", 'w') { |file| file.write(@medicina2004.to_json) }
+
+    end
   end
 
-  def parse_file
-    CSV.foreach(@path, "r") do |row|
-      build_row(
-        OpenStruct.new({
-           materia: get_field(row[0]),
-           catedra: get_field(row[1]),
-           anio: get_field(row[2]),
-           regimen: get_field(row[3]),
-           titular: get_field(row[4]),
-           sec_horarios: get_field(row[5]),
-           sec_ubicacion: get_field(row[6]),
-           secretarix: get_field(row[7]), 
-           telefono: get_field(row[8]),
-           email: get_field(row[9]),
-           tutorias: get_field(row[10]),
-           entorno: get_field(row[11]), 
-           clave: get_field(row[12]), 
-           apuntes: get_field(row[13]), 
-           grupo_fb: get_field(row[14]),
-           fb: get_field(row[15]),
-           tw: get_field(row[16]),
-           web: get_field(row[17])
-         })
-        )
-    end
+  def clean_field(field)
+    field.blank? ? "" : field.strip
   end
 
-    def create_cathedra(row)
-       OpenStruct.new(nombre: row.catedra, titular: row.titular,
-                      sec_horarios: row.sec_horarios, sec_ubicacion: row.sec_ubicacion)
-    end
+end
 
-    def create_subject(row)
-      cathedra = create_cathedra(row)
-      subject = OpenStruct.new(subject: row.materia, cathedras: [cathedra])
-      regime = select_year_regime(row.year, row.regimen)
-      if regime
-        add_subject_to_regime(row.anio, regime, subject)
-      else
-        create_regime(row)
-      end
-    end
-
-    def year_regime_was_created(year, regime)
-      @years[year-1].regimes.select { |r| r.name == regime }
-    end
-  
-    def add_subject_to_regime(year, regime, subject)
-      @years[year-1].regimes << subject
-    end
-
-    def create_regime(with_subject, year)
-      regime = OpenStruct.new(name: row.regime ,subjects: with_subject )
-      case year
-      when "1"
-        @year1.regimes << regime
-      when "2"
-        @year2.regimes << regime
-      when "3"
-        @year3.regimes << regime
-      when "4"
-        @year4.regimes << regime
-      when "5"
-        @year5.regimes << regime
-      when "6"
-        @year6.regimes << regime
-      end
-    end
-
-    def find_and_create_subject(row)
-
-    end
-    
-
-    def pepe(row)
-
-      puts "--------------------------------------------------------------------------------------------------"
-      puts row
-      unless row[:anio].blank?
-        case row[:anio] 
-        when "1"
-          unless row[:regimen].blank?
-            case row[:regimen] 
-            when "Anual"
-              @years[:primero][:anual] << row
-            when "Cuatrimestral"
-              @years[:primero][:cuatrimestral] << row
-            when "Bimestral"
-              @years[:primero][:bimestral] << row
-            end
-          end
-        when "2"
-          case row[:regimen]
-          when "Anual"
-            @years[:segundo][:anual] << row
-          when "Cuatrimestral"
-            @years[:segundo][:cuatrimestral] << row
-          when "Bimestral"
-            @years[:segundo][:bimestral] << row
-          end
-        when "3"
-          case row[:regimen]
-          when "Anual"
-            @years[:tercero][:anual] << row
-          when "Cuatrimestral"
-            @years[:tercero][:cuatrimestral] << row
-          when "Bimestral"
-            @years[:tercero][:bimestral] << row
-          end
-        when "4"
-          case row[:regimen]
-          when "Anual"
-            @years[:cuatro][:anual] << row
-          when "Cuatrimestral"
-            @years[:cuarto][:cuatrimestral] << row
-          when "Bimestral"
-            @years[:cuarto][:bimestral] << row
-          end
-        when "5"
-          case row[:regimen]
-          when "Anual"
-            @years[:quinto][:anual] << row
-          when "Cuatrimestral"
-            @years[:quinto][:cuatrimestral] << row
-          when "Bimestral"
-            @years[:quinto][:bimestral] << row
-          end
-        when "6"
-          case row[:regimen]
-          when "Anual"
-            @years[:sexto][:anual] << row
-          when "Cuatrimestral"
-            @years[:sexto][:cuatrimestral] << row
-          when "Bimestral"
-            @years[:sexto][:bimestral] << row
-          end
-        end
-      end
-    end
-
-      def to_json()
-        {
-          "name": "medicina2004",
-          "years": [{ 
-              "name": "Primero", 
-              "regimes": [{
-                  "name": "Anual",
-                  "subjects": []
-                }, {
-                  "name": "Cuatrimestral",
-                  "subjects": []
-                }, {
-                  "name": "Bimestral",
-                  "subjects": []
-                }
-              }]
-            }, { 
-              "name": "Segundo", 
-              "regimes": [{
-                  "name": "Anual",
-                  "subjects": []
-                }, {
-                  "name": "Cuatrimestral",
-                  "subjects": []
-                }, {
-                  "name": "Bimestral",
-                  "subjects": []
-                }
-            }, { 
-              "name": "Tercero",
-              "regimes": [{
-                  "name": "Anual",
-                  "subjects": []
-                }, {
-                  "name": "Cuatrimestral",
-                  "subjects": []
-                }, {
-                  "name": "Bimestral",
-                  "subjects": []
-                }
-            }, {
-              "name": "Cuarto",
-              "regimes": [{
-                  "name": "Anual",
-                  "subjects": []
-                }, {
-                  "name": "Cuatrimestral",
-                  "subjects": []
-                }, {
-                  "name": "Bimestral",
-                  "subjects": []
-                }
-            }, { 
-              "name": "Quinto",
-              "regimes": [{
-                  "name": "Anual",
-                  "subjects": []
-                }, {
-                  "name": "Cuatrimestral",
-                  "subjects": []
-                }, {
-                  "name": "Bimestral",
-                  "subjects": []
-                }
-            }, { 
-              "name": "Sexto", 
-              "regimes": [{
-                  "name": "Anual",
-                  "subjects": []
-                }, {
-                  "name": "Cuatrimestral",
-                  "subjects": []
-                }, {
-                  "name": "Bimestral",
-                  "subjects": []
-                }
-            }]
-        }
-      end
-
-    def get_field(field)
-      field.blank? ? nil : field.strip
-    end
-
-  end
-
-  #execute script
-
-parser = Parser.new("medicina2004.csv")
-parser.parse_file
-puts @years
+parser=Parser.new("medicina2004.csv")
+parser.build_json
