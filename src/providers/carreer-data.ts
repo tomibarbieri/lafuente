@@ -21,7 +21,7 @@ export class CarreerDataProvider {
   }
 
   load() {
-    this.http.get('../assets/data/medicina.json').map(res => res.json()).subscribe(data => {
+    this.http.get('assets/data/medicina.json').map(res => res.json()).subscribe(data => {
         console.log(data);
         this.data = data;
     });

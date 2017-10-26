@@ -4,7 +4,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { SubjectPage } from '../subject/subject';
 
-import { CarreerDataProvider } from '../../providers/carreer-data/carreer-data';
+import { CarreerDataProvider } from '../../providers/carreer-data';
 
 @Component({
   selector: 'planes',

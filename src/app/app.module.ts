@@ -24,6 +24,7 @@ import { BienestarPage } from '../pages/bienestar/bienestar';
 import { CarreraPage } from '../pages/carrera/carrera';
 import { HomePage } from '../pages/home/home';
 import { PlanesPage } from '../pages/planes/planes';
+import { PlanesEurhesPage } from '../pages/planes-eurhes/planes';
 import { BenefitPage } from '../pages/benefit/benefit'; //sobre las becas universitarias
 import { LunchRoomPage } from '../pages/lunch-room/lunch-room'; //sobre los comedores universitarias
 import { SubjectPage } from '../pages/subject/subject';
@@ -44,7 +45,7 @@ import { WelcomePage } from '../pages/welcome/welcome';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
-import { CarreerDataProvider } from '../providers/carreer-data/carreer-data';
+import { CarreerDataProvider } from '../providers/carreer-data';
 
 
 @NgModule({
@@ -57,6 +58,7 @@ import { CarreerDataProvider } from '../providers/carreer-data/carreer-data';
     //
     ApuntesPage, // Agregar los nuevos aca tambien
     PlanesPage,
+    PlanesEurhesPage,
     HomePage,
     BienestarPage,
     CarreraPage,
@@ -92,6 +94,7 @@ import { CarreerDataProvider } from '../providers/carreer-data/carreer-data';
         { component: HomePage, name: 'Home', segment: 'home' },
         { component: BienestarPage, name: 'Bienestar', segment: 'bienestar' },
         { component: CarreraPage, name: 'Carrera', segment: 'carrera' },
+        { component: PlanesEurhesPage, name: 'PlanesEurhes', segment: 'planes-eurhes' },
         { component: PlanesPage, name: 'Planes', segment: 'planes' },
         { component: AboutPage, name: 'About', segment: 'quienes-somos' },
         { component: WelcomePage, name: 'Welcome', segment: 'bienvenidos' },
@@ -118,6 +121,7 @@ import { CarreerDataProvider } from '../providers/carreer-data/carreer-data';
     HomePage,
     BienestarPage,
     PlanesPage,
+    PlanesEurhesPage,
     CarreraPage,
     WelcomePage,
     BenefitPage,
