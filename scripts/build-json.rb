@@ -43,28 +43,27 @@ class Parser
         previous_subject = row[2]
         subject_index = subject_index + 1
       end
-      
       cathedra = {
         "name": clean_field(row[3]),
-        "regime": clean_field(row[4]),
-        "regime_type": clean_field(row[5]),
-        "professor": clean_field(row[6]),
-        "sec_scheduler": clean_field(row[7]),
-        "sec_location": clean_field(row[8]),
-        "contact_name": clean_field(row[9]),
-        "contact_phone": clean_field(row[10]),
-        "contact_email": clean_field(row[11]),
-        "tutorship_schedule": clean_field(row[12]),
-        "environment": clean_field(row[13]),
-        "environment_keys": clean_field(row[14]),
-        "sn_preparemos_fb": clean_field(row[15]),
-        "sn_facebook": clean_field(row[16]),
+        "regime:" clean_field(row[1]),
+        "regime_type": clean_field(row[4]),
+        "professor": clean_field(row[5]),
+        "sec_scheduler": clean_field(row[6]),
+        "sec_location": clean_field(row[7]),
+        "contact_name": clean_field(row[8]),
+        "contact_phone": clean_field(row[9]),
+        "contact_email": clean_field(row[10]),
+        "tutorship_schedule": clean_field(row[11]),
+        "environment": clean_field(row[12]),
+        "environment_keys": clean_field(row[13]),
+        "sn_preparemos_fb": clean_field(row[14]),
+        "sn_facebook": clean_field(row[15]),
+        "sn_cathedra_fb": clean_field(row[16])
         "sn_twitter": clean_field(row[17]),
         "sn_web": clean_field(row[18])
       }
       @year_actual[:regimes][regime_index-1][:subjects][subject_index-1][:cathedras] << cathedra
       File.open("resultado.json", 'w') { |file| file.write(@medicina2004.to_json) }
-
     end
   end
 
