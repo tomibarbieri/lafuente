@@ -33,7 +33,7 @@ export class HomePage {
 
   openFacebook() {
     this.inAppBrowser.create(
-      `https://www.facebook.com/RemediarUNLP/`,
+      `https://m.facebook.com/RemediarUNLP/`,
       '_system'
     );
   }
@@ -47,7 +47,7 @@ export class HomePage {
 
   openInstagram() {
     this.inAppBrowser.create(
-      `https://www.instagram.com/remediarunlp/`,
+      `instagram://remediarunlp`,
       '_system'
     );
   }
