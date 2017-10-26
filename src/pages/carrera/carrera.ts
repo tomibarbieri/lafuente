@@ -87,7 +87,7 @@ export class CarreraPage {
 
   openFacebookEurhes() {
     this.inAppBrowser.create(
-      `https://m.facebook.com/Eurhes.unlp/`,'_system'
+      `fb://Eurhes.unlp`,'_system'
     );
   }
 
