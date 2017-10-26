@@ -45,7 +45,7 @@ class Parser
       end
       cathedra = {
         "name": clean_field(row[3]),
-        "regime:" clean_field(row[1]),
+        "regime": clean_field(row[1]),
         "regime_type": clean_field(row[4]),
         "professor": clean_field(row[5]),
         "sec_scheduler": clean_field(row[6]),
