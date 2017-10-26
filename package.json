@@ -1,7 +1,7 @@
 {
-    "name": "lf",
+    "name": "Remediar UNLP",
     "version": "0.0.1",
-    "description": "An Ionic project",
+    "description": "Aplicacion de la agrupacion 'Remediar' de la Facultad de Cs. Medicas de la UNLP",
     "license": "Apache-2.0",
     "repository": {
         "type": "git",

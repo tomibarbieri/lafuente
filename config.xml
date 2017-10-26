@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.remediar.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Ionic Conference</name>
+    <name>Remediar UNLP</name>
     <description>
-        An Ionic Framework application for the Ionic Conference.
+        Aplicacion de la agrupacion "Remediar" de la Facultad de Cs. Medicas de la UNLP
   </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="lafuenteunlp@gmail.com" href="http://lafuenteunlp.com.ar">
+      La Fuente UNLP
   </author>
     <content src="index.html" />
     <access origin="*" />
