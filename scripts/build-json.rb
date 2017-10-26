@@ -58,7 +58,7 @@ class Parser
         "environment_keys": clean_field(row[13]),
         "sn_preparemos_fb": clean_field(row[14]),
         "sn_facebook": clean_field(row[15]),
-        "sn_cathedra_fb": clean_field(row[16])
+        "sn_cathedra_fb": clean_field(row[16]),
         "sn_twitter": clean_field(row[17]),
         "sn_web": clean_field(row[18])
       }
