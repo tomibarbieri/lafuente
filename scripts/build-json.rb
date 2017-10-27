@@ -73,5 +73,5 @@ class Parser
 
 end
 
-parser=Parser.new("medicina2004.csv")
+parser=Parser.new("../src/assets/data/medicina2004.csv")
 parser.build_json
