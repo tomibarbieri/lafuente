@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 /**
  * Generated class for the HealthPage page.
@@ -15,7 +16,35 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class HealthPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,public inAppBrowser: InAppBrowser, public navParams: NavParams) {
+  }
+
+  openRemediarFacebook() {
+    this.inAppBrowser.create(
+      `fb://https://www.facebook.com/LaFuenteUNLP/`,
+      '_system'
+    );
+  }
+
+  openRemediarTwitter() {
+    this.inAppBrowser.create(
+      `https://twitter.com/RemediarUNLP`,
+      '_system'
+    );
+  }
+
+  openRemediarInstagram() {
+    this.inAppBrowser.create(
+      `http://instagram.com/_u/remediarunlp/`,
+      '_system'
+    );
+  }
+
+  openRemediarMail() {
+    this.inAppBrowser.create(
+      `mailto:remediarcienciasmedicas@gmail.com`,
+      '_system'
+    );
   }
 
   ionViewDidLoad() {

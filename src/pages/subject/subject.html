@@ -63,10 +63,10 @@
             </div>
           </span>
           <p *ngIf=" cathedra.sn_facebook != ''">
-            <button ion-button color="primary">Apuntes digitalizados</button>
+            <button (click)="openPreparemos(cathedra.sn_facebook)" ion-button color="primary">Preparemos en facebook</button>
           </p>
           <p *ngIf=" cathedra.sn_preparemos_fb != ''">
-            <button (click)="openPreparemos(cathedra.sn_preparemos_fb)" ion-button color="primary">Grupo Facebook</button>
+            <button (click)="openApuntes(cathedra.sn_preparemos_fb)" ion-button color="primary">Apuntes digitalizados</button>
           </p>
         </ion-item>
 
@@ -76,13 +76,13 @@
           </ion-avatar>
           <h2>Redes sociales cátedra</h2>
           <p *ngIf=" cathedra.sn_cathedra_fb != ''">
-            <button (click)="openCathedraFacebook(sn_cathedra_fb)" ion-button color="primary">Facebook</button>
+            <button (click)="openCathedraFacebook(cathedra.sn_cathedra_fb)" ion-button color="primary">Facebook</button>
           </p>
           <p *ngIf=" cathedra.sn_twitter != ''">
-            <button (click)="openCathedraTwitter(sn_twitter)" ion-button color="primary">Twitter</button>
+            <button (click)="openCathedraTwitter(cathedra.sn_twitter)" ion-button color="primary">Twitter</button>
           </p>
           <p *ngIf=" cathedra.sn_web != ''">
-            <button (click)="openCathedraWeb(sn_web)" ion-button color="primary">Web</button>
+            <button (click)="openCathedraWeb(cathedra.sn_web)" ion-button color="primary">Web</button>
           </p>
         </ion-item>
       </ion-list>
@@ -93,25 +93,24 @@
 
 <ion-footer>
   <ion-toolbar>
-    <!--falta ver como se redirige a facebook a twitter a gmail y a instagram!! -->
     <ion-row>
       <ion-col class="socialnet-padding" col-2>
-        <button ion-fab browse-to="https://www.facebook.com/RemediarUNLP/">
+        <button (click)="openRemediarFacebook()" ion-fab >
           <ion-icon ios="logo-facebook" md="logo-facebook"></ion-icon>
         </button>
       </ion-col>
       <ion-col col-2>
-        <button ion-fab browse-to="https://twitter.com/RemediarUNLP">
+        <button (click)="openRemediarTwitter()" ion-fab >
           <ion-icon ios="logo-twitter" md="logo-twitter"></ion-icon>
         </button>
       </ion-col>
       <ion-col col-2>
-        <button ion-fab browse-to="https://www.instagram.com/remediarUNLP/">
+        <button (click)="openRemediarInstagram()" ion-fab >
           <ion-icon ios="logo-instagram" md="logo-instagram"></ion-icon>
         </button>
       </ion-col>
       <ion-col  col-2>
-        <button ion-fab browse-to="mailto:remediarcienciasmedicas@gmail.com">
+        <button (click)="openRemediarMail()" ion-fab >
           <ion-icon  ios="ios-mail" md="md-mail"></ion-icon>
         </button>
       </ion-col>

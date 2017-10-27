@@ -31,28 +31,28 @@ export class HomePage {
     public navParams: NavParams)
     { }
 
-  openFacebook() {
+  openRemediarFacebook() {
     this.inAppBrowser.create(
       `fb://https://www.facebook.com/LaFuenteUNLP/`,
       '_system'
     );
   }
 
-  openTwitter() {
+  openRemediarTwitter() {
     this.inAppBrowser.create(
       `https://twitter.com/RemediarUNLP`,
       '_system'
     );
   }
 
-  openInstagram() {
+  openRemediarInstagram() {
     this.inAppBrowser.create(
       `http://instagram.com/_u/remediarunlp/`,
       '_system'
     );
   }
 
-  openMail() {
+  openRemediarMail() {
     this.inAppBrowser.create(
       `mailto:remediarcienciasmedicas@gmail.com`,
       '_system'

@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { CarreerDataProvider } from '../../providers/carreer-data';
 
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+
 /**
  * Generated class for the SubjectPage page.
  *
@@ -26,6 +28,7 @@ export class SubjectPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
+    public inAppBrowser: InAppBrowser,
     public carreerData: CarreerDataProvider,
     ) {
 
@@ -51,25 +54,79 @@ export class SubjectPage {
           }
         }
       }
+    };
+  }
+
+  openPreparemos(fb:any) {
+    this.inAppBrowser.create(
+      `fb://`+fb,
+      '_system'
+    );
+  }
+
+  openApuntes(fb:any) {
+    this.inAppBrowser.create(
+      fb,
+      '_system'
+    );
+  }
+
+  openCathedraFacebook(fb:any){
+    this.inAppBrowser.create(
+      `fb://`+fb,
+      '_system'
+    );
+  }
+
+  openCathedraTwitter(tw:any) {
+    this.inAppBrowser.create(
+      tw,
+      '_system'
+    );
+  }
+
+  openCathedraWeb(web:any) {
+    this.inAppBrowser.create(
+      web,
+      '_system'
+    );
+  }
+
+  openEnvironment(env:any){
+    this.inAppBrowser.create(
+      env,
+      '_system'
+    );
+  }
+
+
+    openRemediarFacebook() {
+      this.inAppBrowser.create(
+        `fb://https://www.facebook.com/LaFuenteUNLP/`,
+        '_system'
+      );
     }
 
-    /*
-    this.carreer['years'].forEach(function(element: any) {
-                                                if (element.name == year){
-                                                  element.regimes.forEach(function(reg: any) {
-                                                    if (reg.name == regime){
-                                                      reg.subjects.forEach(function(s: any) {
-                                                        if (s.name == subj){
-                                                          subject = s;
-                                                        }
-                                                      });
-                                                    }
-                                                  });
-                                                }
-                                            });
-    console.log(subject);*/
+    openRemediarTwitter() {
+      this.inAppBrowser.create(
+        `https://twitter.com/RemediarUNLP`,
+        '_system'
+      );
+    }
 
-  }
+    openRemediarInstagram() {
+      this.inAppBrowser.create(
+        `http://instagram.com/_u/remediarunlp/`,
+        '_system'
+      );
+    }
+
+    openRemediarMail() {
+      this.inAppBrowser.create(
+        `mailto:remediarcienciasmedicas@gmail.com`,
+        '_system'
+      );
+    }
 
   ionViewDidLoad() {}
 

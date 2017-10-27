@@ -65,9 +65,38 @@ export class LunchRoomPage {
 
   }
 
+    openRemediarFacebook() {
+      this.inAppBrowser.create(
+        `fb://https://www.facebook.com/LaFuenteUNLP/`,
+        '_system'
+      );
+    }
+
+    openRemediarTwitter() {
+      this.inAppBrowser.create(
+        `https://twitter.com/RemediarUNLP`,
+        '_system'
+      );
+    }
+
+    openRemediarInstagram() {
+      this.inAppBrowser.create(
+        `http://instagram.com/_u/remediarunlp/`,
+        '_system'
+      );
+    }
+
+    openRemediarMail() {
+      this.inAppBrowser.create(
+        `mailto:remediarcienciasmedicas@gmail.com`,
+      );
+      '_system'
+    }
+
   openLunchRoomUNLP() {
     this.inAppBrowser.create(
-      `https://www.unlp.edu.ar/estudiantes/comedor_universitario-3923`
+      `https://www.unlp.edu.ar/estudiantes/comedor_universitario-3923`,
+      '_system'
     );
   }
 }
