@@ -17,60 +17,6 @@ import { CarreerDataProvider } from '../../providers/carreer-data';
 })
 export class SubjectPage {
 
-  /*subject = {
-    "subject": "Anatomia",
-    "cathedras": [{
-            "name": "A",
-            "titular": "Juan Peron",
-            "horario-secretaria": "Lu a Vi de 12 a 15hs",
-            "ubicacion-secretaria": "Segundo piso. Oficina 2",
-            "secretario": "Eva Duarte",
-            "email-secretario": "eva@fundacionevaperon.com",
-            "tel-secretario": "4563456",
-            "horario-consulta": "lu a vi 12 a 14",
-            "entorno-educativo": "",
-            "clave-entorno": "",
-            "apuntes": "",
-            "grupo-facebook": "",
-            "catedra-twitter": "",
-            "catedra-facebook": "",
-            "catedra-web": ""
-        }, {
-          "name": 	"Anatomia B",
-            "titular": "Juan Peron",
-            "horario-secretaria": "",
-            "ubicacion-secretaria": "",
-            "secretario": "Eva Duarte",
-            "email-secretario": "eva@fundacionevaperon.com",
-            "tel-secretario": "4563456",
-            "horario consulta": "lu a vi 12 a 14",
-            "entorno-educativo": "",
-            "clave-entorno": "",
-            "apuntes": "",
-            "grupo-facebook": "",
-            "catedra-twitter": "",
-            "catedra-facebook": "",
-            "catedra-web": ""
-        }, {
-          "name": 	"Anatomia C",
-            "titular": "Juan Peron",
-            "horario-secretaria": "",
-            "ubicacion-secretaria": "",
-            "secretario": "Eva Duarte",
-            "email-secretario": "eva@fundacionevaperon.com",
-            "tel-secretario": "4563456",
-            "horario consulta": "lu a vi 12 a 14",
-            "entorno-educativo": "",
-            "clave-entorno": "",
-            "apuntes": "",
-            "grupo-facebook": "",
-            "catedra-twitter": "",
-            "catedra-facebook": "",
-            "catedra-web": ""
-        }
-      ]
-
-  };*/
   carreer:any;
   subject:any;
   year: any;
@@ -83,25 +29,45 @@ export class SubjectPage {
     public carreerData: CarreerDataProvider,
     ) {
 
-    this.year = 'Primero';//navParams.get('year');
-    this.regime = 'Anual';//navParams.get('anual');
-    this.subj = 'Anatomia';//navParams.get('subj');
+    var year_param = navParams.get('year');
+    var regime_param = navParams.get('regime');
+    var subject_param = navParams.get('subject');
 
     this.carreer = carreerData.getCarreerMedicina();
-    this.subject = this.carreer['years'].forEach(function(element: any) {
+    console.log(this.carreer);
+
+    for (let y of this.carreer['years']) {
+      console.log(y);
+      if (y['name'] == year_param) {
+          console.log(y);
+          for (let r of y['regimes']) {
+          if (r['name'] == regime_param) {
+            for (let m of r['subjects']) {
+              console.log(m);
+              if (m['name'] == subject_param) {
+                this.subject = m;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    /*
+    this.carreer['years'].forEach(function(element: any) {
                                                 if (element.name == year){
                                                   element.regimes.forEach(function(reg: any) {
                                                     if (reg.name == regime){
                                                       reg.subjects.forEach(function(s: any) {
                                                         if (s.name == subj){
-                                                          this.subject = s;
+                                                          subject = s;
                                                         }
                                                       });
                                                     }
                                                   });
                                                 }
                                             });
-    console.log(this.subject);
+    console.log(subject);*/
 
   }
 

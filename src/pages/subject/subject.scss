@@ -10,11 +10,13 @@ page-subject {
     .subject-title {
       text-align: center;
       background-color: #f4f4f4;
+
       //background-image: url("../assets/img/subject_page/fondor.png");
       //background-color: map-get($colors, primary);
       ion-label {
         margin-top: 15px;
         margin-bottom: 10px;
+        white-space: normal;
       }
       h1 {
         color: map-get($colors, primary);

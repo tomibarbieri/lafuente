@@ -20,9 +20,10 @@ page-carrera {
 
   .button-list {
     div {
-      font-size: 1.05em;
+      font-size: 1.05em !important;
     }
     ion-label {
+      font-size: 1.05em !important;
       font-weight: bold;
     }
     ion-icon {

@@ -14,7 +14,7 @@
   <ion-card>
     <ion-item-group class="plan-group" *ngFor="let year of carreer.years">
       <ion-item-divider color="light">{{ year.name }}</ion-item-divider>
-          <ion-item *ngFor="let subject of year.subjects">
+          <ion-item text-wrap *ngFor="let subject of year.subjects">
             {{ subject.name }}
           </ion-item>
     </ion-item-group>

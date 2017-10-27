@@ -16,7 +16,7 @@
       <ion-item-divider color="light">{{ year.name }}</ion-item-divider>
 
         <ng-container *ngFor="let regime of year.regimes">
-          <ion-item *ngFor="let subject of regime.subjects" (click)="pushSubject()">
+          <ion-item text-wrap *ngFor="let subject of regime.subjects" (click)="pushSubject(year.name,regime.name,subject.name)">
             {{ subject.name }}
             <ion-badge color="primary">
               {{ regime.name }}

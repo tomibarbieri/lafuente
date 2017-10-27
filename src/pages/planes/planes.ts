@@ -25,9 +25,11 @@ export class PlanesPage {
     this.carreer = carreerData.getCarreerMedicina()
   }
 
-  pushSubject() {
+  pushSubject(year:any,regime:any,subject:any) {
     this.navCtrl.push(SubjectPage, {
-      id: "1"
+      year: year,
+      regime: regime,
+      subject: subject
     });
   }
 
