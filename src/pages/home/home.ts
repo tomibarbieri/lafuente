@@ -32,7 +32,10 @@ export class HomePage {
     { }
 
   openRemediarFacebook() {
-    this.inAppBrowser.create(`fb://page/RemediarUNLP`, '_system', 'location=no');
+    this.inAppBrowser.create(
+      `fb://page/344490962408079`,
+      '_system',
+      'location=no');
   }
 
   openRemediarTwitter() {

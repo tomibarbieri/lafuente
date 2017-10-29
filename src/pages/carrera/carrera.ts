@@ -98,7 +98,7 @@ export class CarreraPage {
 
   openFacebookEurhes() {
     this.inAppBrowser.create(
-      `fb://Eurhes.unlp`,'_system'
+      `fb://page/145147879420674`,'_system'
     );
   }
 
@@ -117,9 +117,9 @@ export class CarreraPage {
 
   openRemediarFacebook() {
     this.inAppBrowser.create(
-      `fb://https://www.facebook.com/LaFuenteUNLP/`,
-      '_system'
-    );
+      `fb://page/344490962408079`,
+      '_system',
+      'location=no');
   }
 
   openRemediarTwitter() {

@@ -63,9 +63,9 @@ export class BienestarPage {
 
   openRemediarFacebook() {
     this.inAppBrowser.create(
-      `fb://https://www.facebook.com/LaFuenteUNLP/`,
-      '_system'
-    );
+      `fb://page/344490962408079`,
+      '_system',
+      'location=no');
   }
 
   openRemediarTwitter() {

@@ -65,12 +65,12 @@ export class LunchRoomPage {
 
   }
 
-    openRemediarFacebook() {
-      this.inAppBrowser.create(
-        `fb://https://www.facebook.com/LaFuenteUNLP/`,
-        '_system'
-      );
-    }
+  openRemediarFacebook() {
+    this.inAppBrowser.create(
+      `fb://page/344490962408079`,
+      '_system',
+      'location=no');
+  }
 
     openRemediarTwitter() {
       this.inAppBrowser.create(
