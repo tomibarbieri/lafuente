@@ -30,10 +30,16 @@ export class CarreerDataProvider {
   }
 
   getCarreerMedicina() {
+    if (this.medicina == undefined) {
+      this.load();
+    }
     return this.medicina;
   }
 
   getCarreerEurhes(carrer:any) {
+    if (this.eurhes == undefined) {
+      this.load();
+    }
     return this.eurhes[carrer];
   }
 

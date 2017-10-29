@@ -1,33 +1,110 @@
-{	"cardio": {	"name": "Prácticas cardiológicas",
+{
+  "cardio":
+
+  {	"name": "Prácticas cardiológicas",
   "years": [{
     "name": 	"Primero",
-    "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    "subjects":	[
+      { "name": "Prácticas Cardiológicas y Salud" },
+      { "name": "Anatomía y Fisiología Cardiovascular"},
+      { "name": "Microbiología y Parasitología"},
+      { "name": "Fundamentos de la Práctica Cardiológica"}
+    ]
   },{
     "name": 	"Segundo",
-    "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    "subjects":	[
+      { "name": "Cardiología Clínica" },
+      { "name": "Electrocardiografía"},
+      { "name": "Ultrasonido en Cardiología"},
+      { "name": "Psicología Social e Institucional"},
+      { "name": "Inglés Técnico I"},
+      { "name": "Inglés Técnico II"}
+    ]
   },{
     "name": 	"Tercero",
-    "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
-  },{
-    "name": 	"Cuarto",
-    "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+    "subjects":	[
+      { "name": "Cardiología Nuclear" },
+      { "name": "Hemodinamia y Cardiología Intervencionista"},
+      { "name": "Rehabilitación Cardíaca"},
+      { "name": "Ética y Marco Legal Profesional"},
+      { "name": "Informática I"},
+      { "name": "Informática II"}
+    ]
   }]},
 
 
 
-  "nutricion": {	"name": "Nutrición",
+  "nutricion":
+
+  {	"name": "Nutrición",
     "years": [{
       "name": 	"Primero",
-      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+      "subjects":	[
+        { "name": "Bioquímica" },
+        { "name": "Anatomía"},
+        { "name": "Biología e introducción a la biología molecular"},
+        { "name": "Elementos de física y matemática"},
+        { "name": "Introducción al proceso intelectual"},
+        { "name": "Fisiología"},
+        { "name": "Educación para la salud"},
+        { "name": "Estadística"},
+        { "name": "Informática"}
+      ]
     },{
       "name": 	"Segundo",
-      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+      "subjects":	[
+        { "name": "Bromatología" },
+        { "name": "Fisiopatología"},
+        { "name": "Nutrición normal del adulto"},
+        { "name": "Técnica dietética"},
+        { "name": "Laboratorio de gastronomía I"},
+        { "name": "Socioantropología"},
+        { "name": "Introducción a la salud pública"}
+      ]
     },{
       "name": 	"Tercero",
-      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+      "subjects":	[
+        { "name": "Economía, desarrollo y seguridad alimentaria" },
+        { "name": "Nutrición normal del niño"},
+        { "name": "Dietoterapia del adulto" },
+        { "name": "Nutrición en salud pública" },
+        { "name": "Microbiología y parasitología" },
+        { "name": "Metodología de la investigación" },
+        { "name": "Elementos de didáctica y pedagogía" },
+        { "name": "Psicología de la nutrición" },
+        { "name": "Tecnología alimentaria" },
+        { "name": "Laboratorio de gastronomía II" },
+        { "name": "Inglés técnico" }
+      ]
     },{
       "name": 	"Cuarto",
-      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+      "subjects":	[
+        { "name": "Educación alimentarIo-nutricional" },
+        { "name": "Dietoterapia del niño" },
+        { "name": "Administración de servicios de alimentación" },
+        { "name": "Técnica dietoterápica" },
+        { "name": "Epidemiología de la nutrición" },
+        { "name": "Evaluación nutricional" },
+        { "name": "Ética y ejercicio profesional" },
+        { "name": "Ambiente y nutrición" },
+        { "name": "Planificación general y sanitaria" },
+        { "name": "Política alimentaria" },
+        { "name": "Seminario farmacología y nutrición"},
+        { "name": "Seminario de consejería nutricional"}
+      ]
+    },{
+      "name": 	"Quinto",
+      "subjects":	[
+        { "name": "Principios de la comunicación social" },
+        { "name": "Extensión rural" },
+        { "name": "Introducción a la nutrigenómica" },
+        { "name": "Finanzas y costos alimentarios" },
+        { "name": "Nutrición y deportes" },
+        { "name": "Informática aplicada al análisis y presentación de trabajos científicos" },
+        { "name": "Servicios de comida: de la vianda a la industria" },
+        { "name": "Trabajo final"},
+        { "name": "PFO"}
+      ]
     }]},
 
 
@@ -36,16 +113,37 @@
   "obstetricia": {	"name": "Obstetricia",
     "years": [{
       "name": 	"Primero",
-      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+      "subjects":	[
+        { "name": "Anatomía e Histología" },
+        { "name": "Fisiología Humana"},
+        { "name": "Obstetricia Normal" },
+        { "name": "Salud Perinatal I" },
+        { "name": "Psicología" }
+      ]
     },{
       "name": 	"Segundo",
-      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+      "subjects":	[
+        { "name": "Obstetricia Patológica" },
+        { "name": "Neonatología Normal y Patológica"},
+        { "name": "Microbiología y Parasitología"},
+        { "name": "Salud Perinatal II" },
+        { "name": "Farmacología General" }
+      ]
     },{
       "name": 	"Tercero",
-      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+      "subjects":	[
+        { "name": "Clínica Obstétrica Normal y Patológica" },
+        { "name": "Enfermedades Infecciosas"},
+        { "name": "Terapéutica: Bases Farmacológicas" }
+      ]
     },{
       "name": 	"Cuarto",
-      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+      "subjects":	[
+        { "name": "Ética, Deontología y Obstetricia Legal" },
+        { "name": "Higiene"},
+        { "name": "Practicantado obligatorio: guardia de 24 hs., consultorio, SIP" },
+        { "name": "Tesina" }
+      ]
     }]},
 
 
@@ -54,15 +152,38 @@
   "enfermeria": {	"name": "Enfermería",
     "years": [{
       "name": 	"Primero",
-      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+      "subjects":	[
+        { "name": "Cultura, estado y salud" },
+        { "name": "Fundamentos, Prácticas y Tendencias en  Enfermería"},
+        { "name": "Bases de Biofísica y Bioquímica"},
+        { "name": "Estructura y Función del Cuerpo Humano"},
+        { "name": "Introducción a la Microbiología y Parasitología"},
+        { "name": "Fundamentos de Farmacología y Toxicología"},
+        { "name": "Atención de Enfermería en Salud Materno Infantil I"}
+      ]
     },{
       "name": 	"Segundo",
-      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
+      "subjects":	[
+        { "name": "Atención de Enfermería en Salud Materno Infantil II"},
+        { "name": "Atención de Enfermería en Salud del Adulto y Anciano"},
+        { "name": "Fundamentos de Nutrición y Dietética"}
+      ]
     },{
       "name": 	"Tercero",
-      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
-    },{
-      "name": 	"Cuarto",
-      "subjects":	[{ "name": "Anatomía" }, { "name": "Biología"}]
-    }]}
+      "subjects":	[
+        { "name": "Investigación en Salud"},
+        { "name": "Enfermería en Salud Mental"},
+        { "name": "Gestión de Servicios de Salud"},
+        { "name": "Educación y Salud"},
+        { "name": "Aspectos Éticos Legales de la Práctica Profesional"},
+        { "name": "Gestión de Servicios de Enfermería"},
+        { "name": "Enfermería y la Salud Comunitaria"},
+        { "name": "Inglés I"},
+        { "name": "Inglés II"},
+        { "name": "Informática I"},
+        { "name": "Informática II"},
+        { "name": "Práctica Final Obligatoria"}
+      ]
+    }]
+  }
 }
