@@ -32,10 +32,7 @@ export class HomePage {
     { }
 
   openRemediarFacebook() {
-    this.inAppBrowser.create(
-      `fb://https://www.facebook.com/LaFuenteUNLP/`,
-      '_system'
-    );
+    this.inAppBrowser.create(`fb://page/RemediarUNLP`, '_system', 'location=no');
   }
 
   openRemediarTwitter() {
