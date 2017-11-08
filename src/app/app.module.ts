@@ -34,7 +34,6 @@ import { HealthPage } from '../pages/health/health';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { ScheduleFilterPage } from '../pages/schedule-filter/schedule-filter';
 import { SessionDetailPage } from '../pages/session-detail/session-detail';
-import { SignupPage } from '../pages/signup/signup';
 import { SpeakerDetailPage } from '../pages/speaker-detail/speaker-detail';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
@@ -72,7 +71,6 @@ import { CarreerDataProvider } from '../providers/carreer-data';
     SchedulePage,
     ScheduleFilterPage,
     SessionDetailPage,
-    SignupPage,
     SpeakerDetailPage,
     SpeakerListPage,
     TabsPage,
@@ -101,7 +99,6 @@ import { CarreerDataProvider } from '../providers/carreer-data';
         { component: SupportPage, name: 'SupportPage', segment: 'support' },
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
-        { component: SignupPage, name: 'SignupPage', segment: 'signup' },
         { component: BenefitPage, name: 'BenefitPage', segment: 'becas' },
         { component: LunchRoomPage, name: 'LunchRoomPage', segment: 'comedores' },
         { component: SubjectPage, name: 'SubjectPage', segment: 'subject' },
@@ -133,7 +130,6 @@ import { CarreerDataProvider } from '../providers/carreer-data';
     SchedulePage,
     ScheduleFilterPage,
     SessionDetailPage,
-    SignupPage,
     SpeakerDetailPage,
     SpeakerListPage,
     TabsPage,
